@@ -19,6 +19,10 @@ describe('workout-exercise-comments', () => {
     expect(getExerciseCommentDisplay(sets)).toBe('knee ok');
   });
 
+  it('TEMP intentional failure to verify CI gate (will be reverted)', () => {
+    expect(getExerciseCommentDisplay(sets)).toBe('this is wrong on purpose');
+  });
+
   it('preserves spaces while typing (no trim on display value)', () => {
     const trailingSpace = [
       { exerciseId: 'a', setNumber: 1, completed: true, comments: 'Careful with left ' },
