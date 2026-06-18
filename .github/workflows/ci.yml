@@ -86,16 +86,28 @@ jobs:
   secret-scan:
     name: Secret scan (gitleaks)
     runs-on: ubuntu-latest
+    # Uses the gitleaks CLI (MIT, no license) via Docker instead of the
+    # gitleaks-action, which requires a paid GITLEAKS_LICENSE for org repos.
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: gitleaks
-        uses: gitleaks/gitleaks-action@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # Private/org repos require a free license key (Settings -> Secrets):
-          # GITLEAKS_LICENSE: ${{ secrets.GITLEAKS_LICENSE }}
+
+      # On PRs: scan only the commits this PR introduces (base..head), so
+      # already-committed files are not re-flagged. Blocking.
+      - name: gitleaks (PR diff, blocking)
+        if: github.event_name == 'pull_request'
+        run: |
+          docker run --rm -v "$PWD:/repo" ghcr.io/gitleaks/gitleaks:latest \
+            git /repo --redact --exit-code 1 \
+            --log-opts="${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }}"
+
+      # On push to main: full working-tree scan, informational.
+      - name: gitleaks (full, informational)
+        if: github.event_name == 'push'
+        run: |
+          docker run --rm -v "$PWD:/repo" ghcr.io/gitleaks/gitleaks:latest \
+            dir /repo --redact --exit-code 1 || true
 
   pip-audit:
     name: Dependency audit - Python (informational)
