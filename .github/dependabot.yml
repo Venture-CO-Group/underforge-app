@@ -1,0 +1,33 @@
+version: 2
+
+# Weekly dependency update PRs. Security-specific PRs additionally require the
+# repo-level "Dependabot security updates" toggle (Settings -> Code security).
+updates:
+  # JavaScript / Expo app (root package.json + package-lock.json)
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "javascript"
+
+  # Python backend (pyproject.toml / requirements.txt)
+  - package-ecosystem: "pip"
+    directory: "/backend"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "python"
+
+  # Keep the CI workflow's pinned actions current
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "dependencies"
+      - "github-actions"
