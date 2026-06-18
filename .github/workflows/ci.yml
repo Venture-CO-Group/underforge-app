@@ -1,0 +1,125 @@
+name: CI
+
+# Minimal-but-real safety net. Blocking gates (fail the build): test,
+# data-model:check, secret-scan, and Semgrep (new findings on the PR diff).
+# lint / typecheck / dependency-audit run as informational (continue-on-error)
+# because the codebase currently has pre-existing lint+type errors and known
+# audit findings; promote them to blocking once that debt is cleared.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    name: Lint / Typecheck / Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # --- informational (non-blocking) until the existing debt is cleared ---
+      - name: Lint (informational)
+        run: npm run lint
+        continue-on-error: true
+
+      - name: Typecheck (informational)
+        run: npm run typecheck
+        continue-on-error: true
+
+      - name: Dependency audit - npm (informational)
+        run: npm audit --audit-level=high
+        continue-on-error: true
+
+      # --- blocking gates ---
+      - name: Test
+        run: npm test
+
+      - name: Data model contract check
+        run: npm run data-model:check
+
+  sast:
+    name: Semgrep (SAST)
+    runs-on: ubuntu-latest
+    container:
+      image: semgrep/semgrep
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # On PRs: only NEW findings vs the base branch fail the build.
+      - name: Semgrep diff scan (PR, blocking)
+        if: github.event_name == 'pull_request'
+        run: >-
+          semgrep ci
+        env:
+          SEMGREP_RULES: >-
+            p/security-audit p/secrets p/javascript p/typescript p/react p/python
+          SEMGREP_BASELINE_REF: ${{ github.event.pull_request.base.sha }}
+
+      # On push to main: full scan, informational (legacy findings expected).
+      - name: Semgrep full scan (push, informational)
+        if: github.event_name == 'push'
+        run: >-
+          semgrep scan
+          --config p/security-audit --config p/secrets
+          --config p/javascript --config p/typescript
+          --config p/react --config p/python
+          --error || true
+
+  secret-scan:
+    name: Secret scan (gitleaks)
+    runs-on: ubuntu-latest
+    # Uses the gitleaks CLI (MIT, no license) via Docker instead of the
+    # gitleaks-action, which requires a paid GITLEAKS_LICENSE for org repos.
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # On PRs: scan only the commits this PR introduces (base..head), so
+      # already-committed files are not re-flagged. Blocking.
+      - name: gitleaks (PR diff, blocking)
+        if: github.event_name == 'pull_request'
+        run: |
+          docker run --rm -v "$PWD:/repo" ghcr.io/gitleaks/gitleaks:latest \
+            git /repo --redact --exit-code 1 \
+            --log-opts="${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }}"
+
+      # On push to main: full working-tree scan, informational.
+      - name: gitleaks (full, informational)
+        if: github.event_name == 'push'
+        run: |
+          docker run --rm -v "$PWD:/repo" ghcr.io/gitleaks/gitleaks:latest \
+            dir /repo --redact --exit-code 1 || true
+
+  pip-audit:
+    name: Dependency audit - Python (informational)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+      - name: Sync backend deps
+        run: uv sync
+        working-directory: backend
+      - name: pip-audit
+        run: uv run --with pip-audit pip-audit
+        working-directory: backend
+        continue-on-error: true
