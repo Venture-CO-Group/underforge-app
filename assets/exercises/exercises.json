@@ -1,0 +1,6688 @@
+{
+  "version": "1.3.1",
+  "lastUpdated": "2026-06-10",
+  "exercises": [
+    {
+      "id": "barbell-bench-press",
+      "name": "Barbell Bench Press",
+      "bodyRegion": "upper",
+      "muscleGroup": "chest",
+      "movementType": "compound",
+      "equipment": [
+        "barbell",
+        "bench"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=SCVCLChPQFY",
+      "instructions": "Lie on bench, grip bar slightly wider than shoulders, lower to chest, press up",
+      "substitutionsRecommended": [
+        "dumbbell-bench-press",
+        "push-up",
+        "machine-chest-press"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=SCVCLChPQFY",
+        "female": "https://www.youtube.com/watch?v=SCVCLChPQFY"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "chest",
+          "level": 3
+        },
+        {
+          "slug": "triceps",
+          "level": 2
+        },
+        {
+          "slug": "deltoids",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "barbell-incline-bench-press",
+      "name": "Barbell Incline Bench Press",
+      "bodyRegion": "upper",
+      "muscleGroup": "chest",
+      "movementType": "compound",
+      "equipment": [
+        "barbell",
+        "incline_bench"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/VXaBbUYMfIs",
+      "instructions": "Set bench to 30-45 degrees, grip bar, lower to upper chest, press up",
+      "substitutionsRecommended": [
+        "dumbbell-bench-press",
+        "push-up",
+        "machine-chest-press"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/VXaBbUYMfIs",
+        "female": "https://www.youtube.com/shorts/VXaBbUYMfIs"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "chest",
+          "level": 3
+        },
+        {
+          "slug": "triceps",
+          "level": 2
+        },
+        {
+          "slug": "deltoids",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "barbell-decline-bench-press",
+      "name": "Barbell Decline Bench Press",
+      "bodyRegion": "upper",
+      "muscleGroup": "chest",
+      "movementType": "compound",
+      "equipment": [
+        "barbell",
+        "decline_bench"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=16yItsCGnsw",
+      "instructions": "Set bench to decline, secure feet, grip bar, lower to lower chest, press up",
+      "substitutionsRecommended": [
+        "dumbbell-bench-press",
+        "push-up",
+        "machine-chest-press"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=16yItsCGnsw",
+        "female": "https://www.youtube.com/watch?v=16yItsCGnsw"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "chest",
+          "level": 3
+        },
+        {
+          "slug": "triceps",
+          "level": 2
+        },
+        {
+          "slug": "deltoids",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "dumbbell-bench-press",
+      "name": "Dumbbell Bench Press",
+      "bodyRegion": "upper",
+      "muscleGroup": "chest",
+      "movementType": "compound",
+      "equipment": [
+        "dumbbell",
+        "bench"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=VmB1G1K7v94",
+      "instructions": "Lie on bench with dumbbells, press up, lower to chest level with control",
+      "substitutionsRecommended": [
+        "barbell-bench-press",
+        "push-up",
+        "machine-chest-press"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=VmB1G1K7v94",
+        "female": "https://www.youtube.com/watch?v=VmB1G1K7v94"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "chest",
+          "level": 3
+        },
+        {
+          "slug": "triceps",
+          "level": 2
+        },
+        {
+          "slug": "deltoids",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "incline-dumbbell-press",
+      "name": "Incline Dumbbell Press",
+      "bodyRegion": "upper",
+      "muscleGroup": "chest",
+      "movementType": "compound",
+      "equipment": [
+        "dumbbell",
+        "incline_bench"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=ZaDlbm8E8Tg",
+      "instructions": "Set bench to 30-45 degrees, press dumbbells up from upper chest, lower with control",
+      "substitutionsRecommended": [
+        "barbell-bench-press",
+        "push-up",
+        "machine-chest-press"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=ZaDlbm8E8Tg",
+        "female": "https://www.youtube.com/watch?v=ZaDlbm8E8Tg"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "chest",
+          "level": 3
+        },
+        {
+          "slug": "triceps",
+          "level": 2
+        },
+        {
+          "slug": "deltoids",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "decline-dumbbell-press",
+      "name": "Decline Dumbbell Press",
+      "bodyRegion": "upper",
+      "muscleGroup": "chest",
+      "movementType": "compound",
+      "equipment": [
+        "dumbbell",
+        "decline_bench"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=2uWdrii0ZG8",
+      "instructions": "Lie on decline bench, press dumbbells up from lower chest, control descent",
+      "substitutionsRecommended": [
+        "barbell-decline-bench-press",
+        "dumbbell-bench-press",
+        "dip"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=2uWdrii0ZG8",
+        "female": "https://www.youtube.com/watch?v=2uWdrii0ZG8"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "chest",
+          "level": 3
+        },
+        {
+          "slug": "triceps",
+          "level": 2
+        },
+        {
+          "slug": "deltoids",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "chest-fly",
+      "name": "Dumbbell Chest Fly",
+      "bodyRegion": "upper",
+      "muscleGroup": "chest",
+      "movementType": "isolation",
+      "equipment": [
+        "dumbbell",
+        "bench"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=Nhvz9EzdJ4U",
+      "instructions": "Lie on bench, arms extended, lower dumbbells in arc motion, squeeze chest to return",
+      "substitutionsRecommended": [
+        "cable-crossover",
+        "pec-deck"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=Nhvz9EzdJ4U",
+        "female": "https://www.youtube.com/watch?v=Nhvz9EzdJ4U"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "chest",
+          "level": 3
+        },
+        {
+          "slug": "deltoids",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "cable-crossover",
+      "name": "Cable Crossover",
+      "bodyRegion": "upper",
+      "muscleGroup": "chest",
+      "movementType": "isolation",
+      "equipment": [
+        "cable_machine"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=taI4XduLpTk",
+      "instructions": "Stand between cables, slight forward lean, bring handles together in front of chest",
+      "substitutionsRecommended": [
+        "chest-fly",
+        "pec-deck"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=taI4XduLpTk",
+        "female": "https://www.youtube.com/watch?v=taI4XduLpTk"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "chest",
+          "level": 3
+        },
+        {
+          "slug": "deltoids",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "dumbbell-pullover",
+      "name": "Dumbbell Pullover",
+      "bodyRegion": "upper",
+      "muscleGroup": "chest",
+      "movementType": "isolation",
+      "equipment": [
+        "dumbbell",
+        "bench"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/Datv2L6t3-4",
+      "instructions": "Lie across bench, hold dumbbell overhead, lower behind head stretching lats/chest, pull back up",
+      "substitutionsRecommended": [
+        "straight-arm-pulldown",
+        "cable-crossover"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/Datv2L6t3-4",
+        "female": "https://www.youtube.com/shorts/Datv2L6t3-4"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "chest",
+          "level": 3
+        },
+        {
+          "slug": "upper-back",
+          "level": 2
+        },
+        {
+          "slug": "triceps",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "dumbbell-fly",
+      "name": "Dumbbell Fly",
+      "bodyRegion": "upper",
+      "muscleGroup": "chest",
+      "movementType": "isolation",
+      "equipment": [
+        "dumbbell",
+        "bench"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=eozdVDA78K0",
+      "instructions": "Lie on bench, arms extended with slight bend, lower dumbbells in arc, squeeze chest to return",
+      "substitutionsRecommended": [
+        "chest-fly",
+        "cable-crossover",
+        "pec-deck"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=eozdVDA78K0",
+        "female": "https://www.youtube.com/watch?v=eozdVDA78K0"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "chest",
+          "level": 3
+        },
+        {
+          "slug": "deltoids",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "push-up",
+      "name": "Push-Up",
+      "bodyRegion": "upper",
+      "muscleGroup": "chest",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=WDIpL0pjun0",
+      "instructions": "Plank position, hands shoulder-width, lower chest to floor, push back up",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=WDIpL0pjun0",
+        "female": "https://www.youtube.com/watch?v=WDIpL0pjun0"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "chest",
+          "level": 3
+        },
+        {
+          "slug": "triceps",
+          "level": 2
+        },
+        {
+          "slug": "deltoids",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "dip",
+      "name": "Chest Dip",
+      "bodyRegion": "upper",
+      "muscleGroup": "chest",
+      "movementType": "compound",
+      "equipment": [
+        "dip_bars"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=4la6BkUBLgo",
+      "instructions": "Grip bars, lean forward slightly, lower body, press back up",
+      "substitutionsRecommended": [
+        "push-up",
+        "barbell-bench-press",
+        "close-grip-bench-press"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=4la6BkUBLgo",
+        "female": "https://www.youtube.com/watch?v=4la6BkUBLgo"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "chest",
+          "level": 3
+        },
+        {
+          "slug": "triceps",
+          "level": 2
+        },
+        {
+          "slug": "deltoids",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "tricep-dip",
+      "name": "Tricep Dip",
+      "bodyRegion": "upper",
+      "muscleGroup": "arms",
+      "movementType": "compound",
+      "equipment": [
+        "dip_bars",
+        "bench"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/4ua3MzaU0QU",
+      "instructions": "Grip bars/bench, lower body by bending elbows, press back up focusing on triceps",
+      "substitutionsRecommended": [
+        "close-grip-bench-press",
+        "tricep-pushdown",
+        "skull-crusher"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/4ua3MzaU0QU",
+        "female": "https://www.youtube.com/shorts/4ua3MzaU0QU"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "triceps",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "cable-tricep-extension",
+      "name": "Cable Tricep Extension",
+      "bodyRegion": "upper",
+      "muscleGroup": "arms",
+      "movementType": "isolation",
+      "equipment": [
+        "cable_machine"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/4NWWB0f0vzQ",
+      "instructions": "Stand at high cable, push bar down, squeeze triceps, return with control",
+      "substitutionsRecommended": [
+        "tricep-pushdown",
+        "rope-pushdown",
+        "skull-crusher"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/4NWWB0f0vzQ",
+        "female": "https://www.youtube.com/shorts/4NWWB0f0vzQ"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "triceps",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "pec-deck",
+      "name": "Pec Deck Machine",
+      "bodyRegion": "upper",
+      "muscleGroup": "chest",
+      "movementType": "isolation",
+      "equipment": [
+        "pec_deck_machine"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=Z57CtFmRMxA",
+      "instructions": "Sit with back flat, grip handles, bring arms together in front of chest",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=Z57CtFmRMxA",
+        "female": "https://www.youtube.com/watch?v=Z57CtFmRMxA"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "chest",
+          "level": 3
+        },
+        {
+          "slug": "deltoids",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "pull-up",
+      "name": "Pull-Up",
+      "bodyRegion": "upper",
+      "muscleGroup": "back",
+      "movementType": "compound",
+      "equipment": [
+        "pull_up_bar"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/9rckBLbVe8c",
+      "instructions": "Hang from bar with overhand grip, pull chin above bar, lower with control",
+      "substitutionsRecommended": [
+        "assisted-pull-up",
+        "lat-pulldown",
+        "chin-up"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/9rckBLbVe8c",
+        "female": "https://www.youtube.com/shorts/9rckBLbVe8c"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "upper-back",
+          "level": 3
+        },
+        {
+          "slug": "biceps",
+          "level": 2
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        },
+        {
+          "slug": "trapezius",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "chin-up",
+      "name": "Chin-Up",
+      "bodyRegion": "upper",
+      "muscleGroup": "back",
+      "movementType": "compound",
+      "equipment": [
+        "pull_up_bar"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=T78xCiw_R6g&t=24s",
+      "instructions": "Hang from bar with underhand grip, pull chin above bar, lower with control",
+      "substitutionsRecommended": [
+        "assisted-pull-up",
+        "lat-pulldown",
+        "pull-up"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=T78xCiw_R6g&t=24s",
+        "female": "https://www.youtube.com/watch?v=T78xCiw_R6g&t=24s"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "upper-back",
+          "level": 3
+        },
+        {
+          "slug": "biceps",
+          "level": 2
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        },
+        {
+          "slug": "trapezius",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "lat-pulldown",
+      "name": "Lat Pulldown",
+      "bodyRegion": "upper",
+      "muscleGroup": "back",
+      "movementType": "compound",
+      "equipment": [
+        "cable_machine"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=JGeRYIZdojU",
+      "instructions": "Grip bar wide, pull down to upper chest, squeeze lats, return with control",
+      "substitutionsRecommended": [
+        "pull-up",
+        "assisted-pull-up",
+        "chin-up"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=JGeRYIZdojU",
+        "female": "https://www.youtube.com/watch?v=JGeRYIZdojU"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "upper-back",
+          "level": 3
+        },
+        {
+          "slug": "biceps",
+          "level": 2
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        },
+        {
+          "slug": "trapezius",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "barbell-row",
+      "name": "Barbell Row",
+      "bodyRegion": "upper",
+      "muscleGroup": "back",
+      "movementType": "compound",
+      "equipment": [
+        "barbell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=9Gf-Ourup_k",
+      "instructions": "Hinge at hips, grip bar, pull to lower chest, squeeze shoulder blades",
+      "substitutionsRecommended": [
+        "dumbbell-row",
+        "seated-cable-row",
+        "t-bar-row",
+        "chest-supported-row"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=9Gf-Ourup_k",
+        "female": "https://www.youtube.com/watch?v=9Gf-Ourup_k"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "upper-back",
+          "level": 3
+        },
+        {
+          "slug": "biceps",
+          "level": 2
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        },
+        {
+          "slug": "trapezius",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "dumbbell-row",
+      "name": "Dumbbell Row",
+      "bodyRegion": "upper",
+      "muscleGroup": "back",
+      "movementType": "compound",
+      "equipment": [
+        "dumbbell",
+        "bench"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=ZRSGpBUVcNw",
+      "instructions": "One hand on bench, row dumbbell to hip, squeeze lat at top",
+      "substitutionsRecommended": [
+        "barbell-row",
+        "seated-cable-row",
+        "chest-supported-row"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=ZRSGpBUVcNw",
+        "female": "https://www.youtube.com/watch?v=ZRSGpBUVcNw"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "upper-back",
+          "level": 3
+        },
+        {
+          "slug": "biceps",
+          "level": 2
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        },
+        {
+          "slug": "trapezius",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "one-arm-dumbbell-row",
+      "name": "One-Arm Dumbbell Row",
+      "bodyRegion": "upper",
+      "muscleGroup": "back",
+      "movementType": "compound",
+      "equipment": [
+        "dumbbell",
+        "bench"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/i9BJwVCK5VQ",
+      "instructions": "One hand on bench, hinge forward, row dumbbell to hip focusing on lat squeeze",
+      "substitutionsRecommended": [
+        "dumbbell-row",
+        "seated-cable-row",
+        "chest-supported-row"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/i9BJwVCK5VQ",
+        "female": "https://www.youtube.com/shorts/i9BJwVCK5VQ"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "upper-back",
+          "level": 3
+        },
+        {
+          "slug": "biceps",
+          "level": 2
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        },
+        {
+          "slug": "trapezius",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "seated-cable-row",
+      "name": "Seated Cable Row",
+      "bodyRegion": "upper",
+      "muscleGroup": "back",
+      "movementType": "compound",
+      "equipment": [
+        "cable_machine"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=UCXxvVItLoM",
+      "instructions": "Sit upright, pull handle to torso, squeeze shoulder blades, return with control",
+      "substitutionsRecommended": [
+        "barbell-row",
+        "dumbbell-row",
+        "t-bar-row"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=UCXxvVItLoM",
+        "female": "https://www.youtube.com/watch?v=UCXxvVItLoM"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "upper-back",
+          "level": 3
+        },
+        {
+          "slug": "biceps",
+          "level": 2
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        },
+        {
+          "slug": "trapezius",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "t-bar-row",
+      "name": "T-Bar Row",
+      "bodyRegion": "upper",
+      "muscleGroup": "back",
+      "movementType": "compound",
+      "equipment": [
+        "t_bar",
+        "barbell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=yPis7nlbqdY",
+      "instructions": "Straddle bar, grip handle, pull to chest, squeeze back muscles",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=yPis7nlbqdY",
+        "female": "https://www.youtube.com/watch?v=yPis7nlbqdY"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "upper-back",
+          "level": 3
+        },
+        {
+          "slug": "biceps",
+          "level": 2
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        },
+        {
+          "slug": "trapezius",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "face-pull",
+      "name": "Face Pull",
+      "bodyRegion": "upper",
+      "muscleGroup": "back",
+      "movementType": "isolation",
+      "equipment": [
+        "cable_machine",
+        "rope"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=eTCBSFlCJ_s",
+      "instructions": "Set cable high, pull rope to face, externally rotate shoulders at end",
+      "substitutionsRecommended": [
+        "reverse-fly",
+        "cable-crossover"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=eTCBSFlCJ_s",
+        "female": "https://www.youtube.com/watch?v=eTCBSFlCJ_s"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "deltoids",
+          "level": 3
+        },
+        {
+          "slug": "trapezius",
+          "level": 2
+        },
+        {
+          "slug": "upper-back",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "straight-arm-pulldown",
+      "name": "Straight Arm Pulldown",
+      "bodyRegion": "upper",
+      "muscleGroup": "back",
+      "movementType": "isolation",
+      "equipment": [
+        "cable_machine"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=ey9Fv3FGrRg",
+      "instructions": "Stand at cable, arms straight, pull bar down to thighs, squeeze lats",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=ey9Fv3FGrRg",
+        "female": "https://www.youtube.com/watch?v=ey9Fv3FGrRg"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "upper-back",
+          "level": 3
+        },
+        {
+          "slug": "triceps",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "barbell-deadlift",
+      "name": "Barbell Deadlift",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "barbell"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/xNwpvDuZJ3k",
+      "instructions": "Feet hip-width, grip bar, drive through heels, stand tall, lower with control",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/xNwpvDuZJ3k",
+        "female": "https://www.youtube.com/shorts/xNwpvDuZJ3k"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "gluteal",
+          "level": 3
+        },
+        {
+          "slug": "hamstring",
+          "level": 3
+        },
+        {
+          "slug": "lower-back",
+          "level": 3
+        },
+        {
+          "slug": "forearm",
+          "level": 2
+        },
+        {
+          "slug": "quadriceps",
+          "level": 2
+        },
+        {
+          "slug": "trapezius",
+          "level": 2
+        },
+        {
+          "slug": "upper-back",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "rack-pull",
+      "name": "Rack Pull",
+      "bodyRegion": "upper",
+      "muscleGroup": "back",
+      "movementType": "compound",
+      "equipment": [
+        "barbell",
+        "power_rack"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=9vYBWV5OeKg",
+      "instructions": "Set bar at knee height, grip and stand, squeeze glutes at top",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=9vYBWV5OeKg",
+        "female": "https://www.youtube.com/watch?v=9vYBWV5OeKg"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "lower-back",
+          "level": 3
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "hamstring",
+          "level": 2
+        },
+        {
+          "slug": "trapezius",
+          "level": 2
+        },
+        {
+          "slug": "upper-back",
+          "level": 2
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "barbell-overhead-press",
+      "name": "Barbell Overhead Press",
+      "bodyRegion": "upper",
+      "muscleGroup": "shoulders",
+      "movementType": "compound",
+      "equipment": [
+        "barbell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=cGnhixvC8uA",
+      "instructions": "Grip bar at shoulders, press overhead, lockout arms, lower with control",
+      "substitutionsRecommended": [
+        "dumbbell-overhead-press",
+        "dumbbell-shoulder-press",
+        "arnold-press"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=cGnhixvC8uA",
+        "female": "https://www.youtube.com/watch?v=cGnhixvC8uA"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "deltoids",
+          "level": 3
+        },
+        {
+          "slug": "triceps",
+          "level": 2
+        },
+        {
+          "slug": "trapezius",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "dumbbell-shoulder-press",
+      "name": "Dumbbell Shoulder Press",
+      "bodyRegion": "upper",
+      "muscleGroup": "shoulders",
+      "movementType": "compound",
+      "equipment": [
+        "dumbbell"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/k6tzKisR3NY",
+      "instructions": "Sit or stand, dumbbells at shoulders, press overhead, lower with control",
+      "substitutionsRecommended": [
+        "barbell-overhead-press",
+        "arnold-press"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/k6tzKisR3NY",
+        "female": "https://www.youtube.com/shorts/k6tzKisR3NY"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "deltoids",
+          "level": 3
+        },
+        {
+          "slug": "triceps",
+          "level": 2
+        },
+        {
+          "slug": "trapezius",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "arnold-press",
+      "name": "Arnold Press",
+      "bodyRegion": "upper",
+      "muscleGroup": "shoulders",
+      "movementType": "compound",
+      "equipment": [
+        "dumbbell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=jeJttN2EWCo",
+      "instructions": "Start with palms facing you, rotate as you press up, reverse on way down",
+      "substitutionsRecommended": [
+        "dumbbell-shoulder-press",
+        "dumbbell-overhead-press",
+        "barbell-overhead-press"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=jeJttN2EWCo",
+        "female": "https://www.youtube.com/watch?v=jeJttN2EWCo"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "deltoids",
+          "level": 3
+        },
+        {
+          "slug": "triceps",
+          "level": 2
+        },
+        {
+          "slug": "trapezius",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "lateral-raise",
+      "name": "Lateral Raise",
+      "bodyRegion": "upper",
+      "muscleGroup": "shoulders",
+      "movementType": "isolation",
+      "equipment": [
+        "dumbbell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=XPPfnSEATJA",
+      "instructions": "Stand with dumbbells at sides, raise arms to shoulder height, lower slowly",
+      "substitutionsRecommended": [
+        "cable-curl",
+        "front-raise"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=XPPfnSEATJA",
+        "female": "https://www.youtube.com/watch?v=XPPfnSEATJA"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "deltoids",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "cable-lateral-raise",
+      "name": "Cable Lateral Raise",
+      "bodyRegion": "upper",
+      "muscleGroup": "shoulders",
+      "movementType": "isolation",
+      "equipment": [
+        "cable_machine"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/f_OGBg2KxgY",
+      "instructions": "Stand sideways to low cable, raise handle out to shoulder height, lower slowly",
+      "substitutionsRecommended": [
+        "lateral-raise",
+        "dumbbell-shoulder-press"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/f_OGBg2KxgY",
+        "female": "https://www.youtube.com/shorts/f_OGBg2KxgY"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "deltoids",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "front-raise",
+      "name": "Front Raise",
+      "bodyRegion": "upper",
+      "muscleGroup": "shoulders",
+      "movementType": "isolation",
+      "equipment": [
+        "dumbbell"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/ho8gQ8SdhJY",
+      "instructions": "Stand with dumbbells in front of thighs, raise arms to shoulder height",
+      "substitutionsRecommended": [
+        "lateral-raise",
+        "barbell-overhead-press"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/ho8gQ8SdhJY",
+        "female": "https://www.youtube.com/shorts/ho8gQ8SdhJY"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "deltoids",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "reverse-fly",
+      "name": "Reverse Fly",
+      "bodyRegion": "upper",
+      "muscleGroup": "shoulders",
+      "movementType": "isolation",
+      "equipment": [
+        "dumbbell"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/4eSyt7pEK8Q",
+      "instructions": "Bend forward, dumbbells hanging, raise arms out to sides, squeeze rear delts",
+      "substitutionsRecommended": [
+        "face-pull"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/4eSyt7pEK8Q",
+        "female": "https://www.youtube.com/shorts/4eSyt7pEK8Q"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "deltoids",
+          "level": 3
+        },
+        {
+          "slug": "upper-back",
+          "level": 2
+        },
+        {
+          "slug": "trapezius",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "upright-row",
+      "name": "Upright Row",
+      "bodyRegion": "upper",
+      "muscleGroup": "shoulders",
+      "movementType": "compound",
+      "equipment": [
+        "barbell",
+        "dumbbell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=U629w1olWcs",
+      "instructions": "Grip bar narrow, pull up along body to chin, elbows high, lower slowly",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=U629w1olWcs",
+        "female": "https://www.youtube.com/watch?v=U629w1olWcs"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "deltoids",
+          "level": 3
+        },
+        {
+          "slug": "trapezius",
+          "level": 2
+        },
+        {
+          "slug": "biceps",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "barbell-shrug",
+      "name": "Barbell Shrug",
+      "bodyRegion": "upper",
+      "muscleGroup": "shoulders",
+      "movementType": "isolation",
+      "equipment": [
+        "barbell",
+        "dumbbell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=_t3lrPI6Ns4",
+      "instructions": "Hold bar at thighs, shrug shoulders up toward ears, hold, lower slowly",
+      "substitutionsRecommended": [
+        "dumbbell-shrug"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=_t3lrPI6Ns4",
+        "female": "https://www.youtube.com/watch?v=_t3lrPI6Ns4"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "trapezius",
+          "level": 3
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "barbell-curl",
+      "name": "Barbell Curl",
+      "bodyRegion": "upper",
+      "muscleGroup": "arms",
+      "movementType": "isolation",
+      "equipment": [
+        "barbell"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/ez3YoWf62Eg",
+      "instructions": "Stand with barbell, curl up keeping elbows stationary, lower with control",
+      "substitutionsRecommended": [
+        "dumbbell-curl",
+        "hammer-curl",
+        "cable-curl"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/ez3YoWf62Eg",
+        "female": "https://www.youtube.com/shorts/ez3YoWf62Eg"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "biceps",
+          "level": 3
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "dumbbell-curl",
+      "name": "Dumbbell Curl",
+      "bodyRegion": "upper",
+      "muscleGroup": "arms",
+      "movementType": "isolation",
+      "equipment": [
+        "dumbbell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=av7-8igSXTs",
+      "instructions": "Stand with dumbbells, curl up alternating or together, lower slowly",
+      "substitutionsRecommended": [
+        "barbell-curl",
+        "hammer-curl",
+        "cable-curl"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=av7-8igSXTs",
+        "female": "https://www.youtube.com/watch?v=av7-8igSXTs"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "biceps",
+          "level": 3
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "hammer-curl",
+      "name": "Hammer Curl",
+      "bodyRegion": "upper",
+      "muscleGroup": "arms",
+      "movementType": "isolation",
+      "equipment": [
+        "dumbbell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=CFBZ4jN1CMI",
+      "instructions": "Palms facing each other, curl up, squeeze at top, lower with control",
+      "substitutionsRecommended": [
+        "dumbbell-curl",
+        "barbell-curl",
+        "cable-curl"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=CFBZ4jN1CMI",
+        "female": "https://www.youtube.com/watch?v=CFBZ4jN1CMI"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "biceps",
+          "level": 3
+        },
+        {
+          "slug": "forearm",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "preacher-curl",
+      "name": "Preacher Curl",
+      "bodyRegion": "upper",
+      "muscleGroup": "arms",
+      "movementType": "isolation",
+      "equipment": [
+        "ez_bar",
+        "preacher_bench"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=sxA__DoLsgo",
+      "instructions": "Rest arms on pad, curl bar up, squeeze biceps, lower with control",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=sxA__DoLsgo",
+        "female": "https://www.youtube.com/watch?v=sxA__DoLsgo"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "biceps",
+          "level": 3
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "ez-bar-curl",
+      "name": "EZ Bar Curl",
+      "bodyRegion": "upper",
+      "muscleGroup": "arms",
+      "movementType": "isolation",
+      "equipment": [
+        "ez_bar"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=kwG2ipFRgfo",
+      "instructions": "Stand with EZ bar, curl up keeping elbows stationary, lower with control",
+      "substitutionsRecommended": [
+        "barbell-curl",
+        "dumbbell-curl",
+        "preacher-curl"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=kwG2ipFRgfo",
+        "female": "https://www.youtube.com/watch?v=kwG2ipFRgfo"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "biceps",
+          "level": 3
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "concentration-curl",
+      "name": "Concentration Curl",
+      "bodyRegion": "upper",
+      "muscleGroup": "arms",
+      "movementType": "isolation",
+      "equipment": [
+        "dumbbell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=ZcU2hN76UyA",
+      "instructions": "Sit, elbow against inner thigh, curl dumbbell up, squeeze at top",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=ZcU2hN76UyA",
+        "female": "https://www.youtube.com/watch?v=ZcU2hN76UyA"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "biceps",
+          "level": 3
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "seated-dumbbell-curl",
+      "name": "Seated Dumbbell Curl",
+      "bodyRegion": "upper",
+      "muscleGroup": "arms",
+      "movementType": "isolation",
+      "equipment": [
+        "dumbbell",
+        "bench"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=sAq_ocpRh_I",
+      "instructions": "Sit on bench, curl dumbbells up keeping elbows stationary, squeeze biceps at top",
+      "substitutionsRecommended": [
+        "dumbbell-curl",
+        "incline-dumbbell-curl",
+        "preacher-curl"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=sAq_ocpRh_I",
+        "female": "https://www.youtube.com/watch?v=sAq_ocpRh_I"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "biceps",
+          "level": 3
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "incline-dumbbell-curl",
+      "name": "Incline Dumbbell Curl",
+      "bodyRegion": "upper",
+      "muscleGroup": "arms",
+      "movementType": "isolation",
+      "equipment": [
+        "dumbbell",
+        "incline_bench"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=soxrZlIl35U",
+      "instructions": "Recline on incline bench, let arms hang, curl dumbbells up with full stretch at bottom",
+      "substitutionsRecommended": [
+        "seated-dumbbell-curl",
+        "dumbbell-curl",
+        "hammer-curl"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=soxrZlIl35U",
+        "female": "https://www.youtube.com/watch?v=soxrZlIl35U"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "biceps",
+          "level": 3
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "cable-curl",
+      "name": "Cable Curl",
+      "bodyRegion": "upper",
+      "muscleGroup": "arms",
+      "movementType": "isolation",
+      "equipment": [
+        "cable_machine"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/vl877rqc3cY",
+      "instructions": "Stand at low cable, curl handle up, squeeze biceps, lower slowly",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/vl877rqc3cY",
+        "female": "https://www.youtube.com/shorts/vl877rqc3cY"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "biceps",
+          "level": 3
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "tricep-pushdown",
+      "name": "Tricep Pushdown",
+      "bodyRegion": "upper",
+      "muscleGroup": "arms",
+      "movementType": "isolation",
+      "equipment": [
+        "cable_machine"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=LXkCrxn3caQ",
+      "instructions": "Stand at high cable, push bar down, squeeze triceps, return with control",
+      "substitutionsRecommended": [
+        "rope-pushdown",
+        "overhead-tricep-extension",
+        "cable-tricep-extension"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=LXkCrxn3caQ",
+        "female": "https://www.youtube.com/watch?v=LXkCrxn3caQ"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "triceps",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "rope-pushdown",
+      "name": "Rope Tricep Pushdown",
+      "bodyRegion": "upper",
+      "muscleGroup": "arms",
+      "movementType": "isolation",
+      "equipment": [
+        "cable_machine",
+        "rope"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=-xa-6cQaZKY",
+      "instructions": "Push rope down, spread ends at bottom, squeeze triceps",
+      "substitutionsRecommended": [
+        "overhead-tricep-extension",
+        "cable-tricep-extension"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=-xa-6cQaZKY",
+        "female": "https://www.youtube.com/watch?v=-xa-6cQaZKY"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "triceps",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "overhead-tricep-extension",
+      "name": "Overhead Tricep Extension",
+      "bodyRegion": "upper",
+      "muscleGroup": "arms",
+      "movementType": "isolation",
+      "equipment": [
+        "dumbbell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=9wxRhONFsRA",
+      "instructions": "Hold dumbbell overhead, lower behind head, extend arms, squeeze triceps",
+      "substitutionsRecommended": [
+        "tricep-pushdown",
+        "rope-pushdown",
+        "skull-crusher"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=9wxRhONFsRA",
+        "female": "https://www.youtube.com/watch?v=9wxRhONFsRA"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "triceps",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "lying-tricep-extension",
+      "name": "Lying Tricep Extension",
+      "bodyRegion": "upper",
+      "muscleGroup": "arms",
+      "movementType": "isolation",
+      "equipment": [
+        "ez_bar",
+        "dumbbell",
+        "bench"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=d_KZxkY_0cM",
+      "instructions": "Lie on bench, extend arms overhead, lower weight behind head by bending elbows, extend back up",
+      "substitutionsRecommended": [
+        "skull-crusher",
+        "overhead-tricep-extension",
+        "tricep-pushdown"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=d_KZxkY_0cM",
+        "female": "https://www.youtube.com/watch?v=d_KZxkY_0cM"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "triceps",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "skull-crusher",
+      "name": "Skull Crusher",
+      "bodyRegion": "upper",
+      "muscleGroup": "arms",
+      "movementType": "isolation",
+      "equipment": [
+        "ez_bar",
+        "bench"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=jO2Jl9eZpXk",
+      "instructions": "Lie on bench, lower bar to forehead, extend arms, keep elbows in",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=jO2Jl9eZpXk",
+        "female": "https://www.youtube.com/watch?v=jO2Jl9eZpXk"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "triceps",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "close-grip-bench-press",
+      "name": "Close Grip Bench Press",
+      "bodyRegion": "upper",
+      "muscleGroup": "arms",
+      "movementType": "compound",
+      "equipment": [
+        "barbell",
+        "bench"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=XEFDMwmrLAM",
+      "instructions": "Grip bar narrow, lower to chest, press up focusing on triceps",
+      "substitutionsRecommended": [
+        "tricep-dip",
+        "skull-crusher",
+        "tricep-pushdown"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=XEFDMwmrLAM",
+        "female": "https://www.youtube.com/watch?v=XEFDMwmrLAM"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "triceps",
+          "level": 3
+        },
+        {
+          "slug": "chest",
+          "level": 2
+        },
+        {
+          "slug": "deltoids",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "wrist-curl",
+      "name": "Wrist Curl",
+      "bodyRegion": "upper",
+      "muscleGroup": "arms",
+      "movementType": "isolation",
+      "equipment": [
+        "barbell",
+        "dumbbell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=3VLTzIrnb5g",
+      "instructions": "Rest forearms on bench, curl wrists up, lower slowly",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=3VLTzIrnb5g",
+        "female": "https://www.youtube.com/watch?v=3VLTzIrnb5g"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "forearm",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "reverse-wrist-curl",
+      "name": "Reverse Wrist Curl",
+      "bodyRegion": "upper",
+      "muscleGroup": "arms",
+      "movementType": "isolation",
+      "equipment": [
+        "barbell",
+        "dumbbell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=osYPwlBiCRM",
+      "instructions": "Rest forearms on bench palms down, curl wrists up",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=osYPwlBiCRM",
+        "female": "https://www.youtube.com/watch?v=osYPwlBiCRM"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "forearm",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "barbell-front-squat",
+      "name": "Barbell Front Squat",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "barbell",
+        "squat_rack"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/_qv0m3tPd3s",
+      "instructions": "Bar on front delts, elbows high, squat down, drive up keeping torso upright",
+      "substitutionsRecommended": [
+        "dumbbell-front-squat",
+        "goblet-squat",
+        "barbell-back-squat"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/_qv0m3tPd3s",
+        "female": "https://www.youtube.com/shorts/_qv0m3tPd3s"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "adductors",
+          "level": 1
+        },
+        {
+          "slug": "hamstring",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "goblet-squat",
+      "name": "Goblet Squat",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "dumbbell",
+        "kettlebell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=pEGfGwp6IEA",
+      "instructions": "Hold weight at chest, squat down between legs, drive up",
+      "substitutionsRecommended": [
+        "dumbbell-front-squat",
+        "barbell-front-squat",
+        "kettlebell-front-squat-single"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=pEGfGwp6IEA",
+        "female": "https://www.youtube.com/watch?v=pEGfGwp6IEA"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "adductors",
+          "level": 1
+        },
+        {
+          "slug": "hamstring",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "leg-press",
+      "name": "Leg Press",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "leg_press_machine"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=qCR9bN3G1t4",
+      "instructions": "Feet shoulder-width on platform, lower weight, press back up",
+      "substitutionsRecommended": [
+        "barbell-back-squat",
+        "barbell-front-squat",
+        "hack-squat"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=qCR9bN3G1t4",
+        "female": "https://www.youtube.com/watch?v=qCR9bN3G1t4"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "adductors",
+          "level": 1
+        },
+        {
+          "slug": "hamstring",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "hack-squat",
+      "name": "Hack Squat",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "hack_squat_machine"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=scs5XcsZuc8",
+      "instructions": "Position under pads, squat down, drive up through heels",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=scs5XcsZuc8",
+        "female": "https://www.youtube.com/watch?v=scs5XcsZuc8"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "adductors",
+          "level": 1
+        },
+        {
+          "slug": "hamstring",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "reverse-lunge",
+      "name": "Reverse Lunge",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight",
+        "dumbbell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=xrPteyQLGAo",
+      "instructions": "Step backward, lower back knee toward ground, return to standing",
+      "substitutionsRecommended": [
+        "walking-lunge",
+        "bulgarian-split-squat",
+        "step-up"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=xrPteyQLGAo",
+        "female": "https://www.youtube.com/watch?v=xrPteyQLGAo"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "adductors",
+          "level": 1
+        },
+        {
+          "slug": "hamstring",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "bulgarian-split-squat",
+      "name": "Bulgarian Split Squat",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "bench",
+        "dumbbell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=Fmjj7wFJWRE",
+      "instructions": "Rear foot on bench, lower into lunge, drive up through front heel",
+      "substitutionsRecommended": [
+        "reverse-lunge",
+        "walking-lunge",
+        "step-up"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=Fmjj7wFJWRE",
+        "female": "https://www.youtube.com/watch?v=Fmjj7wFJWRE"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "adductors",
+          "level": 1
+        },
+        {
+          "slug": "hamstring",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "lateral-squat",
+      "name": "Lateral Squat (Crab Squat)",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight",
+        "dumbbell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=dI6J5Bwyo5M",
+      "instructions": "Step wide to side, shift weight to that leg, squat down, return to center, alternate sides",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=dI6J5Bwyo5M",
+        "female": "https://www.youtube.com/watch?v=dI6J5Bwyo5M"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "adductors",
+          "level": 3
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "quadriceps",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "sumo-squat",
+      "name": "Sumo Squat",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight",
+        "dumbbell",
+        "kettlebell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=qiQAsB0x-7k",
+      "instructions": "Wide stance with toes out, squat down keeping torso upright, drive up",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=qiQAsB0x-7k",
+        "female": "https://www.youtube.com/watch?v=qiQAsB0x-7k"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "gluteal",
+          "level": 3
+        },
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "adductors",
+          "level": 2
+        },
+        {
+          "slug": "hamstring",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "pistol-squat",
+      "name": "Pistol Squat",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=qDcniqddTeE",
+      "instructions": "Balance on one leg, extend other leg forward, squat down, drive up",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=qDcniqddTeE",
+        "female": "https://www.youtube.com/watch?v=qDcniqddTeE"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "adductors",
+          "level": 1
+        },
+        {
+          "slug": "hamstring",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "box-squat",
+      "name": "Box Squat",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "box",
+        "barbell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=ktMbRDQ_7fc",
+      "instructions": "Squat down to box, pause briefly sitting on box, explode up",
+      "substitutionsRecommended": [
+        "barbell-back-squat",
+        "barbell-front-squat"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=ktMbRDQ_7fc",
+        "female": "https://www.youtube.com/watch?v=ktMbRDQ_7fc"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "calves",
+          "level": 2
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "hamstring",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "sissy-squat",
+      "name": "Sissy Squat",
+      "bodyRegion": "lower",
+      "muscleGroup": "quads",
+      "movementType": "isolation",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=FTmbNjUu7CI",
+      "instructions": "Lean back while bending knees, lower body keeping torso straight, return to start",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=FTmbNjUu7CI",
+        "female": "https://www.youtube.com/watch?v=FTmbNjUu7CI"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "adductors",
+          "level": 1
+        },
+        {
+          "slug": "hamstring",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "step-up",
+      "name": "Step-Up",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "box",
+        "dumbbell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=37tVohr7LcE",
+      "instructions": "Step onto box with one leg, drive up, lower with control",
+      "substitutionsRecommended": [
+        "walking-lunge",
+        "bulgarian-split-squat",
+        "reverse-lunge"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=37tVohr7LcE",
+        "female": "https://www.youtube.com/watch?v=37tVohr7LcE"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "adductors",
+          "level": 1
+        },
+        {
+          "slug": "hamstring",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "leg-extension",
+      "name": "Leg Extension",
+      "bodyRegion": "lower",
+      "muscleGroup": "quads",
+      "movementType": "isolation",
+      "equipment": [
+        "leg_extension_machine"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=MpEydcQ1oDw",
+      "instructions": "Sit in machine, extend legs, squeeze quads at top, lower slowly",
+      "substitutionsRecommended": [
+        "barbell-back-squat",
+        "leg-press"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=MpEydcQ1oDw",
+        "female": "https://www.youtube.com/watch?v=MpEydcQ1oDw"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "leg-curl",
+      "name": "Lying Leg Curl",
+      "bodyRegion": "lower",
+      "muscleGroup": "hamstrings",
+      "movementType": "isolation",
+      "equipment": [
+        "leg_curl_machine"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=SiwJ_T62l9c",
+      "instructions": "Lie face down, curl weight up, squeeze hamstrings, lower slowly",
+      "substitutionsRecommended": [
+        "romanian-deadlift",
+        "seated-leg-curl",
+        "nordic-hamstring-curl"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=SiwJ_T62l9c",
+        "female": "https://www.youtube.com/watch?v=SiwJ_T62l9c"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "hamstring",
+          "level": 3
+        },
+        {
+          "slug": "gluteal",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "seated-leg-curl",
+      "name": "Seated Leg Curl",
+      "bodyRegion": "lower",
+      "muscleGroup": "hamstrings",
+      "movementType": "isolation",
+      "equipment": [
+        "seated_leg_curl_machine"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=WGih6WFr3uI",
+      "instructions": "Sit in machine, curl legs down, squeeze hamstrings",
+      "substitutionsRecommended": [
+        "romanian-deadlift",
+        "leg-curl",
+        "nordic-hamstring-curl"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=WGih6WFr3uI",
+        "female": "https://www.youtube.com/watch?v=WGih6WFr3uI"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "hamstring",
+          "level": 3
+        },
+        {
+          "slug": "gluteal",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "romanian-deadlift",
+      "name": "Romanian Deadlift",
+      "bodyRegion": "lower",
+      "muscleGroup": "hamstrings",
+      "movementType": "compound",
+      "equipment": [
+        "barbell",
+        "dumbbell"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/g5u75sgpn04",
+      "instructions": "Hinge at hips, lower weight along legs, feel hamstring stretch, return",
+      "substitutionsRecommended": [
+        "barbell-deadlift",
+        "stiff-leg-deadlift",
+        "good-morning"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/g5u75sgpn04",
+        "female": "https://www.youtube.com/shorts/g5u75sgpn04"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "gluteal",
+          "level": 3
+        },
+        {
+          "slug": "hamstring",
+          "level": 3
+        },
+        {
+          "slug": "lower-back",
+          "level": 2
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "stiff-leg-deadlift",
+      "name": "Stiff Leg Deadlift",
+      "bodyRegion": "lower",
+      "muscleGroup": "hamstrings",
+      "movementType": "compound",
+      "equipment": [
+        "barbell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=CN_7cz3P-1U",
+      "instructions": "Legs straighter than RDL, hinge forward, feel deep hamstring stretch",
+      "substitutionsRecommended": [
+        "romanian-deadlift",
+        "barbell-deadlift",
+        "good-morning"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=CN_7cz3P-1U",
+        "female": "https://www.youtube.com/watch?v=CN_7cz3P-1U"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "hamstring",
+          "level": 3
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "lower-back",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "good-morning",
+      "name": "Good Morning",
+      "bodyRegion": "upper",
+      "muscleGroup": "back",
+      "movementType": "compound",
+      "equipment": [
+        "barbell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=nWyx81AfTos",
+      "instructions": "Bar on back, hinge forward at hips, return to standing",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=nWyx81AfTos",
+        "female": "https://www.youtube.com/watch?v=nWyx81AfTos"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "hamstring",
+          "level": 3
+        },
+        {
+          "slug": "lower-back",
+          "level": 3
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "hip-thrust",
+      "name": "Hip Thrust",
+      "bodyRegion": "lower",
+      "muscleGroup": "glutes",
+      "movementType": "compound",
+      "equipment": [
+        "barbell",
+        "bench"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=pUdIL5x0fWg",
+      "instructions": "Upper back on bench, bar on hips, drive hips up, squeeze glutes",
+      "substitutionsRecommended": [
+        "glute-bridge",
+        "romanian-deadlift",
+        "sumo-deadlift"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=pUdIL5x0fWg",
+        "female": "https://www.youtube.com/watch?v=pUdIL5x0fWg"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "gluteal",
+          "level": 3
+        },
+        {
+          "slug": "hamstring",
+          "level": 2
+        },
+        {
+          "slug": "quadriceps",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "glute-bridge",
+      "name": "Glute Bridge",
+      "bodyRegion": "lower",
+      "muscleGroup": "glutes",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight",
+        "barbell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=Xp33YgPZgns",
+      "instructions": "Lie on back, feet flat, drive hips up, squeeze glutes at top",
+      "substitutionsRecommended": [
+        "hip-thrust",
+        "sumo-deadlift"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=Xp33YgPZgns",
+        "female": "https://www.youtube.com/watch?v=Xp33YgPZgns"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "gluteal",
+          "level": 3
+        },
+        {
+          "slug": "hamstring",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "cable-kickback",
+      "name": "Cable Kickback",
+      "bodyRegion": "lower",
+      "muscleGroup": "glutes",
+      "movementType": "isolation",
+      "equipment": [
+        "cable_machine",
+        "ankle_strap"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=SqO-VUEak2M",
+      "instructions": "Attach ankle strap, kick leg back, squeeze glute, return with control",
+      "substitutionsRecommended": [
+        "glute-kickback",
+        "donkey-kick",
+        "hip-abduction"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=SqO-VUEak2M",
+        "female": "https://www.youtube.com/watch?v=SqO-VUEak2M"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "gluteal",
+          "level": 3
+        },
+        {
+          "slug": "hamstring",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "glute-kickback",
+      "name": "Glute Kickback Machine",
+      "bodyRegion": "lower",
+      "muscleGroup": "glutes",
+      "movementType": "isolation",
+      "equipment": [
+        "glute_kickback_machine"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/n-cgsNePyFo",
+      "instructions": "Position on machine, kick leg back against pad, squeeze glute",
+      "substitutionsRecommended": [
+        "cable-kickback",
+        "donkey-kick",
+        "hip-abduction"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/n-cgsNePyFo",
+        "female": "https://www.youtube.com/shorts/n-cgsNePyFo"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "gluteal",
+          "level": 3
+        },
+        {
+          "slug": "hamstring",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "sumo-deadlift",
+      "name": "Sumo Deadlift",
+      "bodyRegion": "lower",
+      "muscleGroup": "glutes",
+      "movementType": "compound",
+      "equipment": [
+        "barbell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=OKMDYjnK8m8",
+      "instructions": "Wide stance, grip inside legs, drive through heels, stand tall",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=OKMDYjnK8m8",
+        "female": "https://www.youtube.com/watch?v=OKMDYjnK8m8"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "gluteal",
+          "level": 3
+        },
+        {
+          "slug": "adductors",
+          "level": 2
+        },
+        {
+          "slug": "hamstring",
+          "level": 2
+        },
+        {
+          "slug": "lower-back",
+          "level": 2
+        },
+        {
+          "slug": "quadriceps",
+          "level": 2
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        },
+        {
+          "slug": "trapezius",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "cable-pull-through",
+      "name": "Cable Pull Through",
+      "bodyRegion": "lower",
+      "muscleGroup": "glutes",
+      "movementType": "compound",
+      "equipment": [
+        "cable_machine",
+        "rope"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=pv8e6OSyETE",
+      "instructions": "Face away from low cable, hinge forward, drive hips through",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=pv8e6OSyETE",
+        "female": "https://www.youtube.com/watch?v=pv8e6OSyETE"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "gluteal",
+          "level": 3
+        },
+        {
+          "slug": "hamstring",
+          "level": 2
+        },
+        {
+          "slug": "lower-back",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "hip-abduction",
+      "name": "Hip Abduction Machine",
+      "bodyRegion": "lower",
+      "muscleGroup": "glutes",
+      "movementType": "isolation",
+      "equipment": [
+        "hip_abduction_machine"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=H98IP8rARy4",
+      "instructions": "Sit in machine, push legs apart against pads, return slowly",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=H98IP8rARy4",
+        "female": "https://www.youtube.com/watch?v=H98IP8rARy4"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "gluteal",
+          "level": 3
+        },
+        {
+          "slug": "adductors",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "clamshell",
+      "name": "Clamshell",
+      "bodyRegion": "lower",
+      "muscleGroup": "glutes",
+      "movementType": "isolation",
+      "equipment": [
+        "resistance_band",
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/Hj-2r7OlXuE",
+      "instructions": "Lie on side, knees bent, open top knee like clamshell, lower slowly",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/Hj-2r7OlXuE",
+        "female": "https://www.youtube.com/shorts/Hj-2r7OlXuE"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "gluteal",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "standing-calf-raise",
+      "name": "Standing Calf Raise",
+      "bodyRegion": "lower",
+      "muscleGroup": "calves",
+      "movementType": "isolation",
+      "equipment": [
+        "calf_raise_machine",
+        "smith_machine"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/95itLfMBG40",
+      "instructions": "Stand on edge of platform, raise heels high, lower with control",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/95itLfMBG40",
+        "female": "https://www.youtube.com/shorts/95itLfMBG40"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "calves",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "seated-calf-raise",
+      "name": "Seated Calf Raise",
+      "bodyRegion": "lower",
+      "muscleGroup": "calves",
+      "movementType": "isolation",
+      "equipment": [
+        "seated_calf_raise_machine"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/NwA1N_EFTtk",
+      "instructions": "Sit with pad on knees, raise heels, squeeze calves, lower slowly",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/NwA1N_EFTtk",
+        "female": "https://www.youtube.com/shorts/NwA1N_EFTtk"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "calves",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "donkey-calf-raise",
+      "name": "Donkey Calf Raise",
+      "bodyRegion": "lower",
+      "muscleGroup": "calves",
+      "movementType": "isolation",
+      "equipment": [
+        "donkey_calf_machine",
+        "belt"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/watMaxAQBCU",
+      "instructions": "Bend at hips, weight on lower back, raise heels, lower slowly",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/watMaxAQBCU",
+        "female": "https://www.youtube.com/shorts/watMaxAQBCU"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "calves",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "single-leg-calf-raise",
+      "name": "Single Leg Calf Raise",
+      "bodyRegion": "lower",
+      "muscleGroup": "calves",
+      "movementType": "isolation",
+      "equipment": [
+        "bodyweight",
+        "dumbbell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=KcTEGifMTDY",
+      "instructions": "Stand on one leg on edge, raise heel high, lower with control",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=KcTEGifMTDY",
+        "female": "https://www.youtube.com/watch?v=KcTEGifMTDY"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "calves",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "calf-raise",
+      "name": "Calf Raises",
+      "bodyRegion": "lower",
+      "muscleGroup": "calves",
+      "movementType": "isolation",
+      "equipment": [
+        "calf_raise_machine",
+        "smith_machine",
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=Wr6Bik6Lrp4",
+      "instructions": "Stand on edge with heels hanging, raise heels as high as possible, squeeze calves, lower slowly",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=Wr6Bik6Lrp4",
+        "female": "https://www.youtube.com/watch?v=Wr6Bik6Lrp4"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "calves",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "barbell-back-squat",
+      "name": "Barbell Back Squats",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "barbell",
+        "squat_rack"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=QmZAiBqPvZw",
+      "instructions": "Bar on upper back, squat down until thighs parallel, drive up through heels",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=QmZAiBqPvZw",
+        "female": "https://www.youtube.com/watch?v=QmZAiBqPvZw"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "adductors",
+          "level": 1
+        },
+        {
+          "slug": "hamstring",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "crunch",
+      "name": "Crunch",
+      "bodyRegion": "core",
+      "muscleGroup": "abs",
+      "movementType": "isolation",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=YuTE_kKEH5A",
+      "instructions": "Lie on back, hands behind head, curl shoulders off floor, lower slowly",
+      "substitutionsRecommended": [
+        "sit-up",
+        "leg-raise",
+        "cable-crunch"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=YuTE_kKEH5A",
+        "female": "https://www.youtube.com/watch?v=YuTE_kKEH5A"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "abs",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "sit-up",
+      "name": "Sit-Up",
+      "bodyRegion": "core",
+      "muscleGroup": "abs",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=7AOLLglx_R0",
+      "instructions": "Lie on back, sit up fully, touch toes or knees, lower with control",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=7AOLLglx_R0",
+        "female": "https://www.youtube.com/watch?v=7AOLLglx_R0"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "abs",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "leg-raise",
+      "name": "Lying Leg Raise",
+      "bodyRegion": "core",
+      "muscleGroup": "abs",
+      "movementType": "isolation",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/FijNSgahpz0",
+      "instructions": "Lie on back, raise straight legs to vertical, lower without touching floor",
+      "substitutionsRecommended": [
+        "hanging-leg-raise",
+        "crunch",
+        "v-up"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/FijNSgahpz0",
+        "female": "https://www.youtube.com/shorts/FijNSgahpz0"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "abs",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "hanging-leg-raise",
+      "name": "Hanging Leg Raise",
+      "bodyRegion": "core",
+      "muscleGroup": "abs",
+      "movementType": "compound",
+      "equipment": [
+        "pull_up_bar"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=7FwGZ8qY5OU",
+      "instructions": "Hang from bar, raise legs to parallel or higher, lower with control",
+      "substitutionsRecommended": [
+        "crunch",
+        "v-up"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=7FwGZ8qY5OU",
+        "female": "https://www.youtube.com/watch?v=7FwGZ8qY5OU"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "abs",
+          "level": 3
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "cable-crunch",
+      "name": "Cable Crunch",
+      "bodyRegion": "core",
+      "muscleGroup": "abs",
+      "movementType": "isolation",
+      "equipment": [
+        "cable_machine",
+        "rope"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=b9FJ4hIK3pI",
+      "instructions": "Kneel at high cable, crunch down bringing elbows to knees",
+      "substitutionsRecommended": [
+        "sit-up",
+        "leg-raise"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=b9FJ4hIK3pI",
+        "female": "https://www.youtube.com/watch?v=b9FJ4hIK3pI"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "abs",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "ab-rollout",
+      "name": "Ab Rollout",
+      "bodyRegion": "core",
+      "muscleGroup": "abs",
+      "movementType": "compound",
+      "equipment": [
+        "ab_wheel",
+        "barbell"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/MinlHnG7j4k",
+      "instructions": "Kneel, grip wheel, roll forward extending body, pull back with abs",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/MinlHnG7j4k",
+        "female": "https://www.youtube.com/shorts/MinlHnG7j4k"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "abs",
+          "level": 3
+        },
+        {
+          "slug": "lower-back",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "plank",
+      "name": "Plank",
+      "bodyRegion": "core",
+      "muscleGroup": "abs",
+      "movementType": "compound",
+      "loggingUnit": "seconds",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=VC6h5Yoo9Wg",
+      "instructions": "Hold push-up position on forearms, keep body straight, engage core",
+      "substitutionsRecommended": [
+        "dead-bug",
+        "hollow-body-hold",
+        "ab-rollout"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=VC6h5Yoo9Wg",
+        "female": "https://www.youtube.com/watch?v=VC6h5Yoo9Wg"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "abs",
+          "level": 3
+        },
+        {
+          "slug": "obliques",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "dead-bug",
+      "name": "Dead Bug",
+      "bodyRegion": "core",
+      "muscleGroup": "abs",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=jbWmbhElf3Q",
+      "instructions": "Lie on back, arms up, alternate lowering opposite arm and leg",
+      "substitutionsRecommended": [
+        "plank",
+        "hollow-body-hold",
+        "bird-dog"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=jbWmbhElf3Q",
+        "female": "https://www.youtube.com/watch?v=jbWmbhElf3Q"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "abs",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "hollow-body-hold",
+      "name": "Hollow Body Hold",
+      "bodyRegion": "core",
+      "muscleGroup": "abs",
+      "movementType": "compound",
+      "loggingUnit": "seconds",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=LlDNef_Ztsc",
+      "instructions": "Lie on back, lift arms and legs off floor, press lower back down",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=LlDNef_Ztsc",
+        "female": "https://www.youtube.com/watch?v=LlDNef_Ztsc"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "abs",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "mountain-climber",
+      "name": "Mountain Climber",
+      "bodyRegion": "core",
+      "muscleGroup": "abs",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=nmwgirgXLYM",
+      "instructions": "Push-up position, alternate driving knees toward chest quickly",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=nmwgirgXLYM",
+        "female": "https://www.youtube.com/watch?v=nmwgirgXLYM"
+      },
+      "category": "conditioning",
+      "muscleActivation": [
+        {
+          "slug": "abs",
+          "level": 3
+        },
+        {
+          "slug": "quadriceps",
+          "level": 2
+        },
+        {
+          "slug": "deltoids",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "v-up",
+      "name": "V-Up",
+      "bodyRegion": "core",
+      "muscleGroup": "abs",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=iP2fjvG0g3w",
+      "instructions": "Lie flat, simultaneously lift legs and torso to touch toes",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=iP2fjvG0g3w",
+        "female": "https://www.youtube.com/watch?v=iP2fjvG0g3w"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "abs",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "russian-twist",
+      "name": "Russian Twist",
+      "bodyRegion": "core",
+      "muscleGroup": "obliques",
+      "movementType": "isolation",
+      "equipment": [
+        "bodyweight",
+        "medicine_ball"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=wkD8rjkodUI",
+      "instructions": "Sit with knees bent, lean back, rotate torso side to side",
+      "substitutionsRecommended": [
+        "bicycle-crunch",
+        "oblique-crunch",
+        "woodchop"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=wkD8rjkodUI",
+        "female": "https://www.youtube.com/watch?v=wkD8rjkodUI"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "obliques",
+          "level": 3
+        },
+        {
+          "slug": "abs",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "bicycle-crunch",
+      "name": "Bicycle Crunch",
+      "bodyRegion": "core",
+      "muscleGroup": "obliques",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=9FGilxCbdz8",
+      "instructions": "Lie on back, alternate bringing elbow to opposite knee",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=9FGilxCbdz8",
+        "female": "https://www.youtube.com/watch?v=9FGilxCbdz8"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "abs",
+          "level": 3
+        },
+        {
+          "slug": "obliques",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "side-plank",
+      "name": "Side Plank",
+      "bodyRegion": "core",
+      "muscleGroup": "obliques",
+      "movementType": "compound",
+      "loggingUnit": "seconds",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=K2VljzCC16g",
+      "instructions": "Lie on side, prop on forearm, lift hips, hold body straight",
+      "substitutionsRecommended": [
+        "side-plank-knees-bent",
+        "oblique-crunch"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=K2VljzCC16g",
+        "female": "https://www.youtube.com/watch?v=K2VljzCC16g"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "obliques",
+          "level": 3
+        },
+        {
+          "slug": "abs",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "woodchop",
+      "name": "Cable Woodchop",
+      "bodyRegion": "core",
+      "muscleGroup": "obliques",
+      "movementType": "compound",
+      "equipment": [
+        "cable_machine"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/90Qh5XG6mqs",
+      "instructions": "High to low or low to high diagonal pull across body",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/90Qh5XG6mqs",
+        "female": "https://www.youtube.com/shorts/90Qh5XG6mqs"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "obliques",
+          "level": 3
+        },
+        {
+          "slug": "abs",
+          "level": 1
+        },
+        {
+          "slug": "deltoids",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "pallof-press",
+      "name": "Pallof Press",
+      "bodyRegion": "core",
+      "muscleGroup": "obliques",
+      "movementType": "compound",
+      "equipment": [
+        "cable_machine",
+        "resistance_band"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=AH_QZLm_0-s",
+      "instructions": "Stand sideways to cable, press handle straight out, resist rotation",
+      "substitutionsRecommended": [
+        "standing-pallof-hold",
+        "woodchop",
+        "russian-twist"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=AH_QZLm_0-s",
+        "female": "https://www.youtube.com/watch?v=AH_QZLm_0-s"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "obliques",
+          "level": 3
+        },
+        {
+          "slug": "abs",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "oblique-crunch",
+      "name": "Oblique Crunch",
+      "bodyRegion": "core",
+      "muscleGroup": "obliques",
+      "movementType": "isolation",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/Hh9DTupf1vc",
+      "instructions": "Lie on side, crunch up bringing shoulder toward hip",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/Hh9DTupf1vc",
+        "female": "https://www.youtube.com/shorts/Hh9DTupf1vc"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "obliques",
+          "level": 3
+        },
+        {
+          "slug": "abs",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "burpee",
+      "name": "Burpee",
+      "bodyRegion": "core",
+      "muscleGroup": "abs",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://youtu.be/dZgVxmf6jkA?si=VtUYPFcRbdfN9wkb&t=13",
+      "instructions": "Drop to floor, chest down, push up, jump with arms overhead",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://youtu.be/dZgVxmf6jkA?si=VtUYPFcRbdfN9wkb&t=13",
+        "female": "https://youtu.be/dZgVxmf6jkA?si=VtUYPFcRbdfN9wkb&t=13"
+      },
+      "category": "conditioning",
+      "muscleActivation": [
+        {
+          "slug": "abs",
+          "level": 2
+        },
+        {
+          "slug": "chest",
+          "level": 2
+        },
+        {
+          "slug": "quadriceps",
+          "level": 2
+        },
+        {
+          "slug": "deltoids",
+          "level": 1
+        },
+        {
+          "slug": "triceps",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "kettlebell-swing",
+      "name": "Kettlebell Swing",
+      "bodyRegion": "lower",
+      "muscleGroup": "glutes",
+      "movementType": "compound",
+      "equipment": [
+        "kettlebell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=YSxHifyI6s8",
+      "instructions": "Hinge at hips, swing kettlebell between legs, drive hips to swing up",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=YSxHifyI6s8",
+        "female": "https://www.youtube.com/watch?v=YSxHifyI6s8"
+      },
+      "category": "power",
+      "muscleActivation": [
+        {
+          "slug": "gluteal",
+          "level": 3
+        },
+        {
+          "slug": "hamstring",
+          "level": 2
+        },
+        {
+          "slug": "lower-back",
+          "level": 2
+        },
+        {
+          "slug": "deltoids",
+          "level": 1
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        },
+        {
+          "slug": "quadriceps",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "clean-and-press",
+      "name": "Clean and Press",
+      "bodyRegion": "upper",
+      "muscleGroup": "shoulders",
+      "movementType": "compound",
+      "equipment": [
+        "barbell",
+        "dumbbell"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/28zdhfuPcGA",
+      "instructions": "Clean weight to shoulders, press overhead, lower with control",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/28zdhfuPcGA",
+        "female": "https://www.youtube.com/shorts/28zdhfuPcGA"
+      },
+      "category": "power",
+      "muscleActivation": [
+        {
+          "slug": "deltoids",
+          "level": 3
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "quadriceps",
+          "level": 2
+        },
+        {
+          "slug": "trapezius",
+          "level": 2
+        },
+        {
+          "slug": "lower-back",
+          "level": 1
+        },
+        {
+          "slug": "triceps",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "thruster",
+      "name": "Thruster",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "barbell",
+        "dumbbell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=kajLFpGcFHM",
+      "instructions": "Front squat into overhead press in one fluid motion",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=kajLFpGcFHM",
+        "female": "https://www.youtube.com/watch?v=kajLFpGcFHM"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "calves",
+          "level": 2
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "hamstring",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "box-jump",
+      "name": "Box Jump",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "plyo_box"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=52r_Ul5k03g",
+      "instructions": "Stand before box, jump up landing softly, step down",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=52r_Ul5k03g",
+        "female": "https://www.youtube.com/watch?v=52r_Ul5k03g"
+      },
+      "category": "power",
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "calves",
+          "level": 2
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "hamstring",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "jump-squat",
+      "name": "Jump Squat",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=A-cFYWvaHr0",
+      "instructions": "Squat down, explode up jumping, land softly, repeat",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=A-cFYWvaHr0",
+        "female": "https://www.youtube.com/watch?v=A-cFYWvaHr0"
+      },
+      "category": "power",
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "calves",
+          "level": 2
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "hamstring",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "battle-rope",
+      "name": "Battle Rope Waves",
+      "bodyRegion": "upper",
+      "muscleGroup": "shoulders",
+      "movementType": "compound",
+      "loggingUnit": "seconds",
+      "equipment": [
+        "battle_rope"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/X5g7P_M8Wo4",
+      "instructions": "Hold rope ends, create alternating or simultaneous waves",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/X5g7P_M8Wo4",
+        "female": "https://www.youtube.com/shorts/X5g7P_M8Wo4"
+      },
+      "category": "conditioning",
+      "muscleActivation": [
+        {
+          "slug": "deltoids",
+          "level": 3
+        },
+        {
+          "slug": "abs",
+          "level": 2
+        },
+        {
+          "slug": "forearm",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "farmers-walk",
+      "name": "Farmer's Walk",
+      "bodyRegion": "core",
+      "muscleGroup": "abs",
+      "movementType": "compound",
+      "loggingUnit": "seconds",
+      "equipment": [
+        "dumbbell",
+        "kettlebell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=Fkzk_RqlYig",
+      "instructions": "Hold heavy weights at sides, walk with good posture",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=Fkzk_RqlYig",
+        "female": "https://www.youtube.com/watch?v=Fkzk_RqlYig"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "forearm",
+          "level": 3
+        },
+        {
+          "slug": "abs",
+          "level": 2
+        },
+        {
+          "slug": "trapezius",
+          "level": 2
+        },
+        {
+          "slug": "gluteal",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "sled-push",
+      "name": "Sled Push",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "loggingUnit": "seconds",
+      "equipment": [
+        "sled"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=m2bw9a9GMqs",
+      "instructions": "Grip handles, lean forward, drive with legs to push sled",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=m2bw9a9GMqs",
+        "female": "https://www.youtube.com/watch?v=m2bw9a9GMqs"
+      },
+      "category": "conditioning",
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "adductors",
+          "level": 1
+        },
+        {
+          "slug": "hamstring",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "swimming",
+      "name": "Swimming",
+      "bodyRegion": "upper",
+      "muscleGroup": "back",
+      "movementType": "compound",
+      "loggingUnit": "seconds",
+      "equipment": [
+        "pool"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=gh5mAtmeR3Y",
+      "instructions": "Full body cardio exercise in water using various strokes",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=gh5mAtmeR3Y",
+        "female": "https://www.youtube.com/watch?v=gh5mAtmeR3Y"
+      },
+      "category": "endurance",
+      "muscleActivation": [
+        {
+          "slug": "upper-back",
+          "level": 3
+        },
+        {
+          "slug": "deltoids",
+          "level": 2
+        },
+        {
+          "slug": "chest",
+          "level": 1
+        },
+        {
+          "slug": "triceps",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "rowing-machine",
+      "name": "Rowing Machine",
+      "bodyRegion": "upper",
+      "muscleGroup": "back",
+      "movementType": "compound",
+      "loggingUnit": "seconds",
+      "equipment": [
+        "rowing_machine"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/A-35F9TR0OA",
+      "instructions": "Drive with legs, pull handle to chest, return with control",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/A-35F9TR0OA",
+        "female": "https://www.youtube.com/shorts/A-35F9TR0OA"
+      },
+      "category": "endurance",
+      "muscleActivation": [
+        {
+          "slug": "upper-back",
+          "level": 3
+        },
+        {
+          "slug": "quadriceps",
+          "level": 2
+        },
+        {
+          "slug": "biceps",
+          "level": 1
+        },
+        {
+          "slug": "lower-back",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "cycling",
+      "name": "Cycling",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "loggingUnit": "seconds",
+      "equipment": [
+        "bike",
+        "stationary_bike"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=qJb-FOTPT4Q",
+      "instructions": "Pedal with smooth cadence, adjust resistance as needed",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=qJb-FOTPT4Q",
+        "female": "https://www.youtube.com/watch?v=qJb-FOTPT4Q"
+      },
+      "category": "endurance",
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "calves",
+          "level": 2
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "hamstring",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "running",
+      "name": "Running",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "loggingUnit": "seconds",
+      "equipment": [
+        "treadmill",
+        "outdoor"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=brFHyOtTwH4",
+      "instructions": "Maintain good posture, land midfoot, keep steady pace",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=brFHyOtTwH4",
+        "female": "https://www.youtube.com/watch?v=brFHyOtTwH4"
+      },
+      "category": "endurance",
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "calves",
+          "level": 2
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "hamstring",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "elliptical",
+      "name": "Elliptical",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "loggingUnit": "seconds",
+      "equipment": [
+        "elliptical_machine"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/UYC3ldfznS0",
+      "instructions": "Low impact cardio, push and pull handles while striding",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/UYC3ldfznS0",
+        "female": "https://www.youtube.com/shorts/UYC3ldfznS0"
+      },
+      "category": "endurance",
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "calves",
+          "level": 2
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "hamstring",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "stair-climber",
+      "name": "Stair Climber",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "loggingUnit": "seconds",
+      "equipment": [
+        "stair_climber_machine"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=9sufkwi-M_k",
+      "instructions": "Step continuously on rotating stairs, adjust speed",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=9sufkwi-M_k",
+        "female": "https://www.youtube.com/watch?v=9sufkwi-M_k"
+      },
+      "category": "endurance",
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "calves",
+          "level": 2
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "hamstring",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "jumping-jack",
+      "name": "Jumping Jack",
+      "bodyRegion": "core",
+      "muscleGroup": "abs",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=c4DAnQ6DtF8",
+      "instructions": "Jump feet out while raising arms overhead, return to start",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=c4DAnQ6DtF8",
+        "female": "https://www.youtube.com/watch?v=c4DAnQ6DtF8"
+      },
+      "category": "conditioning",
+      "muscleActivation": [
+        {
+          "slug": "calves",
+          "level": 2
+        },
+        {
+          "slug": "deltoids",
+          "level": 2
+        },
+        {
+          "slug": "quadriceps",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "high-knees",
+      "name": "High Knees",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=PLY17hW8HvU",
+      "instructions": "Run in place bringing knees high toward chest",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=PLY17hW8HvU",
+        "female": "https://www.youtube.com/watch?v=PLY17hW8HvU"
+      },
+      "category": "conditioning",
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "adductors",
+          "level": 1
+        },
+        {
+          "slug": "hamstring",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "jump-rope",
+      "name": "Jump Rope",
+      "bodyRegion": "lower",
+      "muscleGroup": "calves",
+      "movementType": "compound",
+      "loggingUnit": "seconds",
+      "equipment": [
+        "jump_rope"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=u3zgHI8QnqE",
+      "instructions": "Jump over rope with small bounces, wrists turn rope",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=u3zgHI8QnqE",
+        "female": "https://www.youtube.com/watch?v=u3zgHI8QnqE"
+      },
+      "category": "endurance",
+      "muscleActivation": [
+        {
+          "slug": "calves",
+          "level": 3
+        },
+        {
+          "slug": "quadriceps",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "handstand-push-up",
+      "name": "Handstand Push-Up",
+      "bodyRegion": "upper",
+      "muscleGroup": "shoulders",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=4IdSswx8WLg",
+      "instructions": "Kick up into handstand against wall, lower head to floor by bending elbows, push back up",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=4IdSswx8WLg",
+        "female": "https://www.youtube.com/watch?v=4IdSswx8WLg"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "deltoids",
+          "level": 3
+        },
+        {
+          "slug": "triceps",
+          "level": 2
+        },
+        {
+          "slug": "abs",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "l-sit",
+      "name": "L-Sit",
+      "bodyRegion": "core",
+      "muscleGroup": "abs",
+      "movementType": "isolation",
+      "loggingUnit": "seconds",
+      "equipment": [
+        "bodyweight",
+        "parallettes"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/BhS62ZdQwco",
+      "instructions": "Sit on floor with legs straight, place hands beside hips, lift body off floor keeping legs straight",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/BhS62ZdQwco",
+        "female": "https://www.youtube.com/shorts/BhS62ZdQwco"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "abs",
+          "level": 3
+        },
+        {
+          "slug": "quadriceps",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "muscle-up",
+      "name": "Muscle-Up",
+      "bodyRegion": "upper",
+      "muscleGroup": "back",
+      "movementType": "compound",
+      "equipment": [
+        "pull_up_bar"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/JMf9uXBdebA",
+      "instructions": "Start from dead hang, pull explosively transitioning to dip position, push up and over bar",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/JMf9uXBdebA",
+        "female": "https://www.youtube.com/shorts/JMf9uXBdebA"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "upper-back",
+          "level": 3
+        },
+        {
+          "slug": "biceps",
+          "level": 2
+        },
+        {
+          "slug": "triceps",
+          "level": 2
+        },
+        {
+          "slug": "chest",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "toes-to-bar",
+      "name": "Toes-to-Bar",
+      "bodyRegion": "core",
+      "muscleGroup": "abs",
+      "movementType": "isolation",
+      "equipment": [
+        "pull_up_bar"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=8nM4pLRRqxU",
+      "instructions": "Hang from bar, raise legs and touch toes to bar, lower with control",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=8nM4pLRRqxU",
+        "female": "https://www.youtube.com/watch?v=8nM4pLRRqxU"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "abs",
+          "level": 3
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        },
+        {
+          "slug": "upper-back",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "diamond-push-up",
+      "name": "Diamond Push-Up",
+      "bodyRegion": "upper",
+      "muscleGroup": "chest",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=J0DnG1_S92I",
+      "instructions": "Hands in diamond shape under chest, lower body until chest touches hands, push back up",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=J0DnG1_S92I",
+        "female": "https://www.youtube.com/watch?v=J0DnG1_S92I"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "triceps",
+          "level": 3
+        },
+        {
+          "slug": "chest",
+          "level": 2
+        },
+        {
+          "slug": "deltoids",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "clap-push-up",
+      "name": "Clap Push-Up",
+      "bodyRegion": "upper",
+      "muscleGroup": "chest",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/Wu6xhEcXhvA",
+      "instructions": "Perform push-up explosively, clap hands while in air, land and immediately go into next rep",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/Wu6xhEcXhvA",
+        "female": "https://www.youtube.com/shorts/Wu6xhEcXhvA"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "chest",
+          "level": 3
+        },
+        {
+          "slug": "triceps",
+          "level": 2
+        },
+        {
+          "slug": "deltoids",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "archer-push-up",
+      "name": "Archer Push-Up",
+      "bodyRegion": "upper",
+      "muscleGroup": "chest",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/Gdej5nhhb38",
+      "instructions": "Wide hand position, shift weight to one side, lower to that side while keeping other arm straight, push back up",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/Gdej5nhhb38",
+        "female": "https://www.youtube.com/shorts/Gdej5nhhb38"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "chest",
+          "level": 3
+        },
+        {
+          "slug": "triceps",
+          "level": 2
+        },
+        {
+          "slug": "deltoids",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "wall-sit",
+      "name": "Wall Sit",
+      "bodyRegion": "lower",
+      "muscleGroup": "quads",
+      "movementType": "isolation",
+      "loggingUnit": "seconds",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=y-wV4Venusw",
+      "instructions": "Lean against wall, slide down until thighs are parallel to floor, knees at 90 degrees, hold position",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=y-wV4Venusw",
+        "female": "https://www.youtube.com/watch?v=y-wV4Venusw"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "shrimp-squat",
+      "name": "Shrimp Squat",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=rYJCXvXzlMA",
+      "instructions": "Stand on one leg, grab opposite foot behind back, squat down while keeping grabbed leg straight, stand up",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=rYJCXvXzlMA",
+        "female": "https://www.youtube.com/watch?v=rYJCXvXzlMA"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "adductors",
+          "level": 1
+        },
+        {
+          "slug": "hamstring",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "nordic-hamstring-curl",
+      "name": "Nordic Hamstring Curl",
+      "bodyRegion": "lower",
+      "muscleGroup": "hamstrings",
+      "movementType": "isolation",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/GzxNzNRy9T0",
+      "instructions": "Kneel with partner holding ankles or anchor feet, slowly lower torso forward keeping back straight, catch with hands",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/GzxNzNRy9T0",
+        "female": "https://www.youtube.com/shorts/GzxNzNRy9T0"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "hamstring",
+          "level": 3
+        },
+        {
+          "slug": "gluteal",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "tuck-front-lever",
+      "name": "Tuck Front Lever",
+      "bodyRegion": "upper",
+      "muscleGroup": "back",
+      "movementType": "isolation",
+      "loggingUnit": "seconds",
+      "equipment": [
+        "pull_up_bar"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=NHsgESsO3kA",
+      "instructions": "Hang from bar, tuck knees to chest, lift body parallel to floor, hold horizontal position",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=NHsgESsO3kA",
+        "female": "https://www.youtube.com/watch?v=NHsgESsO3kA"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "upper-back",
+          "level": 3
+        },
+        {
+          "slug": "abs",
+          "level": 2
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "front-lever",
+      "name": "Front Lever",
+      "bodyRegion": "upper",
+      "muscleGroup": "back",
+      "movementType": "isolation",
+      "loggingUnit": "seconds",
+      "equipment": [
+        "pull_up_bar"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=NHsgESsO3kA",
+      "instructions": "Hang from bar, engage core and lats, lift body to horizontal position with legs straight, hold static position",
+      "substitutionsRecommended": [
+        "tuck-front-lever"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=NHsgESsO3kA",
+        "female": "https://www.youtube.com/watch?v=NHsgESsO3kA"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "upper-back",
+          "level": 3
+        },
+        {
+          "slug": "abs",
+          "level": 2
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "back-lever",
+      "name": "Back Lever",
+      "bodyRegion": "upper",
+      "muscleGroup": "back",
+      "movementType": "isolation",
+      "loggingUnit": "seconds",
+      "equipment": [
+        "pull_up_bar",
+        "rings"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/0CD5Pqs5FCw",
+      "instructions": "Start inverted on bar, slowly lower body backward to horizontal position, arms straight, hold with shoulders engaged",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/0CD5Pqs5FCw",
+        "female": "https://www.youtube.com/shorts/0CD5Pqs5FCw"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "upper-back",
+          "level": 3
+        },
+        {
+          "slug": "chest",
+          "level": 1
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "skin-the-cat",
+      "name": "Skin the Cat",
+      "bodyRegion": "upper",
+      "muscleGroup": "shoulders",
+      "movementType": "isolation",
+      "equipment": [
+        "pull_up_bar",
+        "rings"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=PMsXqamLzwU",
+      "instructions": "Hang from bar, tuck knees and rotate backward through arms into German hang, reverse motion to return",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=PMsXqamLzwU",
+        "female": "https://www.youtube.com/watch?v=PMsXqamLzwU"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "deltoids",
+          "level": 2
+        },
+        {
+          "slug": "upper-back",
+          "level": 2
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "human-flag",
+      "name": "Human Flag",
+      "bodyRegion": "upper",
+      "muscleGroup": "back",
+      "movementType": "isolation",
+      "loggingUnit": "seconds",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/7EBd-Z3SYZ4",
+      "instructions": "Hang from pole with both hands, raise body parallel to pole, hold horizontal flag position",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/7EBd-Z3SYZ4",
+        "female": "https://www.youtube.com/shorts/7EBd-Z3SYZ4"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "obliques",
+          "level": 3
+        },
+        {
+          "slug": "upper-back",
+          "level": 3
+        },
+        {
+          "slug": "deltoids",
+          "level": 2
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "inverted-row",
+      "name": "Inverted Row",
+      "bodyRegion": "upper",
+      "muscleGroup": "back",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight",
+        "barbell",
+        "smith_machine"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=hXTc1mDnZCw",
+      "instructions": "Position under bar at waist height, grip bar with arms extended, pull chest to bar, lower with control",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=hXTc1mDnZCw",
+        "female": "https://www.youtube.com/watch?v=hXTc1mDnZCw"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "upper-back",
+          "level": 3
+        },
+        {
+          "slug": "biceps",
+          "level": 2
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        },
+        {
+          "slug": "trapezius",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "walking-lunge",
+      "name": "Walking Lunge",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight",
+        "dumbbell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=L8fvypPrzzs",
+      "instructions": "Step forward, lower back knee toward ground, push through front heel",
+      "substitutionsRecommended": [
+        "reverse-lunge",
+        "bulgarian-split-squat",
+        "step-up"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=L8fvypPrzzs",
+        "female": "https://www.youtube.com/watch?v=L8fvypPrzzs"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "calves",
+          "level": 2
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "hamstring",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "side-plank-knees-bent",
+      "name": "Side Plank (Knees Bent)",
+      "bodyRegion": "core",
+      "muscleGroup": "obliques",
+      "movementType": "compound",
+      "loggingUnit": "seconds",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=K2VljzCC16g",
+      "instructions": "Lie on side, prop on forearm with knees bent, lift hips and hold body straight from shoulders to knees",
+      "substitutionsRecommended": [
+        "side-plank",
+        "oblique-crunch"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=K2VljzCC16g",
+        "female": "https://www.youtube.com/watch?v=K2VljzCC16g"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "obliques",
+          "level": 3
+        },
+        {
+          "slug": "abs",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "chest-supported-row",
+      "name": "Chest-Supported Row",
+      "bodyRegion": "upper",
+      "muscleGroup": "back",
+      "movementType": "compound",
+      "equipment": [
+        "bench",
+        "dumbbell",
+        "barbell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=0UBRfiO4zDs",
+      "instructions": "Lie chest on an incline bench, let arms hang, pull handles or dumbbells to ribs while squeezing shoulder blades",
+      "substitutionsRecommended": [
+        "dumbbell-row",
+        "barbell-row",
+        "seated-cable-row"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=0UBRfiO4zDs",
+        "female": "https://www.youtube.com/watch?v=0UBRfiO4zDs"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "upper-back",
+          "level": 3
+        },
+        {
+          "slug": "biceps",
+          "level": 2
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        },
+        {
+          "slug": "trapezius",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "back-extension",
+      "name": "Back Extension (Neutral Spine)",
+      "bodyRegion": "upper",
+      "muscleGroup": "back",
+      "movementType": "isolation",
+      "equipment": [
+        "roman_chair",
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=ph3pddpKzzw",
+      "instructions": "Anchor feet, hinge at hips keeping a neutral spine, lift torso to align with legs, lower with control",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=ph3pddpKzzw",
+        "female": "https://www.youtube.com/watch?v=ph3pddpKzzw"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "lower-back",
+          "level": 3
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "hamstring",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "bird-dog",
+      "name": "Bird Dog",
+      "bodyRegion": "upper",
+      "muscleGroup": "back",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/vtwhC3tfVow",
+      "instructions": "On hands and knees, extend opposite arm and leg while keeping spine neutral, return and alternate",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/vtwhC3tfVow",
+        "female": "https://www.youtube.com/shorts/vtwhC3tfVow"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "abs",
+          "level": 2
+        },
+        {
+          "slug": "lower-back",
+          "level": 2
+        },
+        {
+          "slug": "gluteal",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "standing-pallof-hold",
+      "name": "Standing Pallof Hold",
+      "bodyRegion": "core",
+      "muscleGroup": "obliques",
+      "movementType": "isolation",
+      "loggingUnit": "seconds",
+      "equipment": [
+        "cable_machine",
+        "resistance_band"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=AH_QZLm_0-s",
+      "instructions": "Stand sideways to anchor, hold handle or band at chest and resist rotation while maintaining braced core",
+      "substitutionsRecommended": [
+        "pallof-press",
+        "woodchop",
+        "russian-twist"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=AH_QZLm_0-s",
+        "female": "https://www.youtube.com/watch?v=AH_QZLm_0-s"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "obliques",
+          "level": 3
+        },
+        {
+          "slug": "abs",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "assisted-pull-up",
+      "name": "Assisted Pull-Up (Band or Machine)",
+      "bodyRegion": "upper",
+      "muscleGroup": "back",
+      "movementType": "compound",
+      "equipment": [
+        "pull_up_bar",
+        "assistance_band",
+        "assisted_pullup_machine"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/WLzut1ZxxTY",
+      "instructions": "Use band or machine to reduce load, focus on scapular retraction then pull chin over bar with controlled descent",
+      "substitutionsRecommended": [
+        "lat-pulldown",
+        "chin-up",
+        "pull-up"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/WLzut1ZxxTY",
+        "female": "https://www.youtube.com/shorts/WLzut1ZxxTY"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "upper-back",
+          "level": 3
+        },
+        {
+          "slug": "biceps",
+          "level": 2
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        },
+        {
+          "slug": "trapezius",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "machine-chest-press",
+      "name": "Machine Chest Press",
+      "bodyRegion": "upper",
+      "muscleGroup": "chest",
+      "movementType": "compound",
+      "equipment": [
+        "machine_chest_press"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/E7fl51PkEn4",
+      "instructions": "Seat upright, grip handles at chest height, press forward until arms nearly extended, control return",
+      "substitutionsRecommended": [
+        "dumbbell-bench-press",
+        "barbell-bench-press",
+        "push-up"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/E7fl51PkEn4",
+        "female": "https://www.youtube.com/shorts/E7fl51PkEn4"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "chest",
+          "level": 3
+        },
+        {
+          "slug": "triceps",
+          "level": 2
+        },
+        {
+          "slug": "deltoids",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "half-kneeling-single-arm-db-press",
+      "name": "Half-Kneeling Single-Arm Dumbbell Press",
+      "bodyRegion": "upper",
+      "muscleGroup": "shoulders",
+      "movementType": "compound",
+      "equipment": [
+        "dumbbell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=4DUIY95jX6Y",
+      "instructions": "Kneel with one knee on ground, hold dumbbell at shoulder, press overhead while keeping torso upright and core braced",
+      "substitutionsRecommended": [
+        "barbell-overhead-press",
+        "arnold-press",
+        "dumbbell-shoulder-press"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=4DUIY95jX6Y",
+        "female": "https://www.youtube.com/watch?v=4DUIY95jX6Y"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "deltoids",
+          "level": 3
+        },
+        {
+          "slug": "triceps",
+          "level": 2
+        },
+        {
+          "slug": "trapezius",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "prone-y-t-raises",
+      "name": "Prone Y-T Raises",
+      "bodyRegion": "upper",
+      "muscleGroup": "shoulders",
+      "movementType": "isolation",
+      "equipment": [
+        "bodyweight",
+        "light_dumbbells"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=aFtzZl4ySMo",
+      "instructions": "Lie prone on bench, raise arms into Y and T positions focusing on scapular control and posterior delts",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=aFtzZl4ySMo",
+        "female": "https://www.youtube.com/watch?v=aFtzZl4ySMo"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "deltoids",
+          "level": 2
+        },
+        {
+          "slug": "trapezius",
+          "level": 2
+        },
+        {
+          "slug": "upper-back",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "dumbbell-overhead-press",
+      "name": "Dumbbell Overhead Press",
+      "bodyRegion": "upper",
+      "muscleGroup": "shoulders",
+      "movementType": "compound",
+      "equipment": [
+        "dumbbell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=B-aVuyhvLHU",
+      "instructions": "Sit or stand, dumbbells at shoulders, press overhead, lockout arms, lower with control",
+      "substitutionsRecommended": [
+        "barbell-overhead-press",
+        "arnold-press",
+        "dumbbell-shoulder-press"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=B-aVuyhvLHU",
+        "female": "https://www.youtube.com/watch?v=B-aVuyhvLHU"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "deltoids",
+          "level": 3
+        },
+        {
+          "slug": "triceps",
+          "level": 2
+        },
+        {
+          "slug": "trapezius",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "seated-overhead-press",
+      "name": "Seated Overhead Press",
+      "bodyRegion": "upper",
+      "muscleGroup": "shoulders",
+      "movementType": "compound",
+      "equipment": [
+        "barbell",
+        "bench"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=lXZ4IMCa7b4",
+      "instructions": "Sit on bench with back support, press barbell overhead from shoulders, lower with control",
+      "substitutionsRecommended": [
+        "barbell-overhead-press",
+        "dumbbell-shoulder-press"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=lXZ4IMCa7b4",
+        "female": "https://www.youtube.com/watch?v=lXZ4IMCa7b4"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "deltoids",
+          "level": 3
+        },
+        {
+          "slug": "triceps",
+          "level": 2
+        },
+        {
+          "slug": "trapezius",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "dumbbell-deadlift",
+      "name": "Dumbbell Deadlift",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "dumbbell"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/hu3jRvTc_po",
+      "instructions": "Hold dumbbells at sides, hinge at hips, lower dumbbells along legs, drive through heels to stand",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/hu3jRvTc_po",
+        "female": "https://www.youtube.com/shorts/hu3jRvTc_po"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "gluteal",
+          "level": 3
+        },
+        {
+          "slug": "hamstring",
+          "level": 3
+        },
+        {
+          "slug": "forearm",
+          "level": 2
+        },
+        {
+          "slug": "lower-back",
+          "level": 2
+        },
+        {
+          "slug": "quadriceps",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "dumbbell-front-squat",
+      "name": "Dumbbell Front Squat",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "dumbbell"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/4z0XTkHN7V0",
+      "instructions": "Hold dumbbells at shoulders, squat down keeping torso upright, drive up through heels",
+      "substitutionsRecommended": [
+        "barbell-front-squat",
+        "goblet-squat",
+        "kettlebell-front-squat-single"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/4z0XTkHN7V0",
+        "female": "https://www.youtube.com/shorts/4z0XTkHN7V0"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "adductors",
+          "level": 1
+        },
+        {
+          "slug": "hamstring",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "kettlebell-front-squat-single",
+      "name": "Single Kettlebell Front Squat",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "kettlebell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=AgD7XRyH05o",
+      "instructions": "Hold single kettlebell at chest (goblet style), squat down, drive up keeping torso upright",
+      "substitutionsRecommended": [
+        "goblet-squat",
+        "dumbbell-front-squat",
+        "barbell-front-squat"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=AgD7XRyH05o",
+        "female": "https://www.youtube.com/watch?v=AgD7XRyH05o"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "adductors",
+          "level": 1
+        },
+        {
+          "slug": "hamstring",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "kettlebell-front-squat-double",
+      "name": "Double Kettlebell Front Squat",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "kettlebell"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/e7y8jEUbQiQ",
+      "instructions": "Hold two kettlebells at shoulders (rack position), squat down, drive up keeping torso upright",
+      "substitutionsRecommended": [
+        "goblet-squat",
+        "dumbbell-front-squat",
+        "barbell-front-squat"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/e7y8jEUbQiQ",
+        "female": "https://www.youtube.com/shorts/e7y8jEUbQiQ"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "adductors",
+          "level": 1
+        },
+        {
+          "slug": "hamstring",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "dumbbell-shrug",
+      "name": "Dumbbell Shrug",
+      "bodyRegion": "upper",
+      "muscleGroup": "shoulders",
+      "movementType": "isolation",
+      "equipment": [
+        "dumbbell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=cJRVVxmytaM",
+      "instructions": "Hold dumbbells at sides, shrug shoulders up toward ears, hold, lower slowly",
+      "substitutionsRecommended": [
+        "barbell-shrug"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=cJRVVxmytaM",
+        "female": "https://www.youtube.com/watch?v=cJRVVxmytaM"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "trapezius",
+          "level": 3
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "incline-push-up",
+      "name": "Incline Push-Up",
+      "bodyRegion": "upper",
+      "muscleGroup": "chest",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight",
+        "bench"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/7f8JOu0i1cQ",
+      "instructions": "Hands on elevated surface (bench/box), body straight, lower chest to surface, push back up",
+      "substitutionsRecommended": [],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/7f8JOu0i1cQ",
+        "female": "https://www.youtube.com/shorts/7f8JOu0i1cQ"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "chest",
+          "level": 3
+        },
+        {
+          "slug": "triceps",
+          "level": 2
+        },
+        {
+          "slug": "deltoids",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "donkey-kick",
+      "name": "Donkey Kick",
+      "bodyRegion": "lower",
+      "muscleGroup": "glutes",
+      "movementType": "isolation",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/sN-RNP_jvRY",
+      "instructions": "On hands and knees, kick one leg back and up while keeping knee bent, squeeze glute at top",
+      "substitutionsRecommended": [
+        "cable-kickback",
+        "glute-kickback",
+        "hip-abduction"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/sN-RNP_jvRY",
+        "female": "https://www.youtube.com/shorts/sN-RNP_jvRY"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "gluteal",
+          "level": 3
+        },
+        {
+          "slug": "hamstring",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "walking",
+      "name": "Walking",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "outdoor",
+        "treadmill"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=-fD2TSL2s7I",
+      "instructions": "Walk at a steady pace with upright posture, relaxed shoulders, and an even stride",
+      "substitutionsRecommended": [
+        "incline-walking",
+        "hiking",
+        "elliptical"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=-fD2TSL2s7I",
+        "female": "https://www.youtube.com/watch?v=-fD2TSL2s7I"
+      },
+      "category": "endurance",
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "calves",
+          "level": 2
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "hamstring",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "incline-walking",
+      "name": "Incline Walking",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "treadmill"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=Ii71nAaRc_8",
+      "instructions": "Walk on a treadmill incline with tall posture, controlled stride, and minimal support from the handrails",
+      "substitutionsRecommended": [
+        "walking",
+        "hiking",
+        "stair-climber"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=Ii71nAaRc_8",
+        "female": "https://www.youtube.com/watch?v=Ii71nAaRc_8"
+      },
+      "category": "endurance",
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "calves",
+          "level": 2
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "hamstring",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "hiking",
+      "name": "Hiking",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "outdoor"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=qHO8m0tQ0j0",
+      "instructions": "Walk on varied terrain with steady pacing, upright posture, and controlled steps on climbs and descents",
+      "substitutionsRecommended": [
+        "walking",
+        "incline-walking",
+        "stair-climber"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=qHO8m0tQ0j0",
+        "female": "https://www.youtube.com/watch?v=qHO8m0tQ0j0"
+      },
+      "category": "endurance",
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "calves",
+          "level": 2
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "hamstring",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "trap-bar-deadlift",
+      "name": "Trap / Hex Bar Deadlift",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "trap_bar"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=tpUKFfIFG24",
+      "instructions": "Stand inside trap bar, hinge and bend knees to grip handles, brace, then drive through the floor to stand tall",
+      "substitutionsRecommended": [
+        "barbell-deadlift",
+        "dumbbell-deadlift",
+        "sumo-deadlift"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=tpUKFfIFG24",
+        "female": "https://www.youtube.com/watch?v=tpUKFfIFG24"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "gluteal",
+          "level": 3
+        },
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "forearm",
+          "level": 2
+        },
+        {
+          "slug": "hamstring",
+          "level": 2
+        },
+        {
+          "slug": "lower-back",
+          "level": 2
+        },
+        {
+          "slug": "trapezius",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "single-leg-romanian-deadlift",
+      "name": "Single-Leg Romanian Deadlift",
+      "bodyRegion": "lower",
+      "muscleGroup": "hamstrings",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight",
+        "dumbbell",
+        "kettlebell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=Zfr6wizR8rs",
+      "instructions": "Balance on one leg, hinge at the hips while the free leg reaches back, then drive through the standing foot to return",
+      "substitutionsRecommended": [
+        "romanian-deadlift",
+        "stiff-leg-deadlift",
+        "good-morning"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=Zfr6wizR8rs",
+        "female": "https://www.youtube.com/watch?v=Zfr6wizR8rs"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "gluteal",
+          "level": 3
+        },
+        {
+          "slug": "hamstring",
+          "level": 3
+        },
+        {
+          "slug": "abs",
+          "level": 1
+        },
+        {
+          "slug": "lower-back",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "split-squat",
+      "name": "Split Squat",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight",
+        "dumbbell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=4bNQITw0VdY",
+      "instructions": "Stand in a staggered stance, lower the back knee toward the floor, then press through the front foot to stand",
+      "substitutionsRecommended": [
+        "reverse-lunge",
+        "walking-lunge",
+        "bulgarian-split-squat"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=4bNQITw0VdY",
+        "female": "https://www.youtube.com/watch?v=4bNQITw0VdY"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "adductors",
+          "level": 1
+        },
+        {
+          "slug": "hamstring",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "zercher-squat",
+      "name": "Zercher Squat",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "barbell",
+        "squat_rack"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=Qq3yteWfVGE",
+      "instructions": "Hold the barbell in the crooks of the elbows, brace the torso, squat down, then drive up while keeping the bar close",
+      "substitutionsRecommended": [
+        "barbell-front-squat",
+        "goblet-squat",
+        "barbell-back-squat"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=Qq3yteWfVGE",
+        "female": "https://www.youtube.com/watch?v=Qq3yteWfVGE"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "adductors",
+          "level": 1
+        },
+        {
+          "slug": "hamstring",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "assisted-dip",
+      "name": "Assisted Dip (Band or Machine)",
+      "bodyRegion": "upper",
+      "muscleGroup": "chest",
+      "movementType": "compound",
+      "equipment": [
+        "dip_bars",
+        "assistance_band",
+        "dip_assist_machine"
+      ],
+      "videoUrl": "https://www.youtube.com/shorts/_HxxBada6Jw",
+      "instructions": "Use a band or assisted dip machine to reduce bodyweight, lower with control, then press back up through the handles",
+      "substitutionsRecommended": [
+        "dip",
+        "tricep-dip",
+        "machine-chest-press"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/shorts/_HxxBada6Jw",
+        "female": "https://www.youtube.com/shorts/_HxxBada6Jw"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "chest",
+          "level": 3
+        },
+        {
+          "slug": "triceps",
+          "level": 2
+        },
+        {
+          "slug": "deltoids",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "machine-shoulder-press",
+      "name": "Machine Shoulder Press",
+      "bodyRegion": "upper",
+      "muscleGroup": "shoulders",
+      "movementType": "compound",
+      "equipment": [
+        "shoulder_press_machine"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=3R14MnZbcpw",
+      "instructions": "Sit with handles at shoulder height, press overhead until arms are nearly extended, then lower with control",
+      "substitutionsRecommended": [
+        "dumbbell-shoulder-press",
+        "dumbbell-overhead-press",
+        "seated-overhead-press"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=3R14MnZbcpw",
+        "female": "https://www.youtube.com/watch?v=3R14MnZbcpw"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "deltoids",
+          "level": 3
+        },
+        {
+          "slug": "triceps",
+          "level": 2
+        },
+        {
+          "slug": "trapezius",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "single-arm-cable-row",
+      "name": "Single-Arm Cable Row",
+      "bodyRegion": "upper",
+      "muscleGroup": "back",
+      "movementType": "compound",
+      "equipment": [
+        "cable_machine",
+        "single_handle"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=1jN6qeXdvWA",
+      "instructions": "Set cable at mid height, row one handle toward the ribs while keeping torso stable, then return with control",
+      "substitutionsRecommended": [
+        "seated-cable-row",
+        "one-arm-dumbbell-row",
+        "machine-row"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=1jN6qeXdvWA",
+        "female": "https://www.youtube.com/watch?v=1jN6qeXdvWA"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "upper-back",
+          "level": 3
+        },
+        {
+          "slug": "biceps",
+          "level": 2
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        },
+        {
+          "slug": "trapezius",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "machine-row",
+      "name": "Machine Row",
+      "bodyRegion": "upper",
+      "muscleGroup": "back",
+      "movementType": "compound",
+      "equipment": [
+        "row_machine"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=0tzaCqk7_6s",
+      "instructions": "Sit against the pad, grip handles, row toward the torso while squeezing shoulder blades, then return slowly",
+      "substitutionsRecommended": [
+        "seated-cable-row",
+        "chest-supported-row",
+        "single-arm-cable-row"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=0tzaCqk7_6s",
+        "female": "https://www.youtube.com/watch?v=0tzaCqk7_6s"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "upper-back",
+          "level": 3
+        },
+        {
+          "slug": "biceps",
+          "level": 2
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        },
+        {
+          "slug": "trapezius",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "band-external-rotation",
+      "name": "Band External Rotation",
+      "bodyRegion": "upper",
+      "muscleGroup": "shoulders",
+      "movementType": "isolation",
+      "equipment": [
+        "resistance_band"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=_UvmPNGtlPM",
+      "instructions": "Anchor a band at elbow height, keep elbow close to the side, rotate the forearm outward, then return slowly",
+      "substitutionsRecommended": [
+        "band-pull-apart",
+        "face-pull",
+        "prone-y-t-raises"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=_UvmPNGtlPM",
+        "female": "https://www.youtube.com/watch?v=_UvmPNGtlPM"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "deltoids",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "band-pull-apart",
+      "name": "Band Pull-Apart",
+      "bodyRegion": "upper",
+      "muscleGroup": "shoulders",
+      "movementType": "isolation",
+      "equipment": [
+        "resistance_band"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=eZwnwWMkEL4",
+      "instructions": "Hold a band at shoulder height with straight arms, pull hands apart by squeezing the upper back, then return with control",
+      "substitutionsRecommended": [
+        "face-pull",
+        "reverse-fly",
+        "prone-y-t-raises"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=eZwnwWMkEL4",
+        "female": "https://www.youtube.com/watch?v=eZwnwWMkEL4"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "deltoids",
+          "level": 2
+        },
+        {
+          "slug": "upper-back",
+          "level": 2
+        },
+        {
+          "slug": "trapezius",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "wall-slide",
+      "name": "Wall Slide",
+      "bodyRegion": "upper",
+      "muscleGroup": "shoulders",
+      "movementType": "isolation",
+      "equipment": [
+        "wall"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=eI7IHxvhA3k",
+      "instructions": "Stand with back and forearms against a wall, slide arms overhead while keeping ribs down, then return",
+      "substitutionsRecommended": [
+        "band-external-rotation",
+        "band-pull-apart",
+        "prone-y-t-raises"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=eI7IHxvhA3k",
+        "female": "https://www.youtube.com/watch?v=eI7IHxvhA3k"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "deltoids",
+          "level": 1
+        },
+        {
+          "slug": "trapezius",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "scapular-push-up",
+      "name": "Scapular Push-Up",
+      "bodyRegion": "upper",
+      "muscleGroup": "shoulders",
+      "movementType": "isolation",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=LeMk15TN0No",
+      "instructions": "Hold a plank with arms straight, let shoulder blades move together, then push the floor away to spread them apart",
+      "substitutionsRecommended": [
+        "push-up",
+        "wall-slide",
+        "band-pull-apart"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=LeMk15TN0No",
+        "female": "https://www.youtube.com/watch?v=LeMk15TN0No"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "trapezius",
+          "level": 2
+        },
+        {
+          "slug": "chest",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "copenhagen-plank",
+      "name": "Copenhagen Plank",
+      "bodyRegion": "core",
+      "muscleGroup": "obliques",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight",
+        "bench"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=48wlc5zn02A",
+      "instructions": "Place the top leg on a bench, lift hips into a side plank, and hold while keeping the trunk and hips aligned",
+      "substitutionsRecommended": [
+        "side-plank",
+        "side-plank-knees-bent",
+        "hip-adduction-machine"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=48wlc5zn02A",
+        "female": "https://www.youtube.com/watch?v=48wlc5zn02A"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "adductors",
+          "level": 3
+        },
+        {
+          "slug": "obliques",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "hip-adduction-machine",
+      "name": "Hip Adduction Machine",
+      "bodyRegion": "lower",
+      "muscleGroup": "adductors",
+      "movementType": "isolation",
+      "equipment": [
+        "hip_adduction_machine"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=ScqpbvOZWe8",
+      "instructions": "Sit in the machine with pads against inner thighs, bring legs together under control, then return slowly",
+      "substitutionsRecommended": [
+        "copenhagen-plank",
+        "lateral-lunge",
+        "cossack-squat"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=ScqpbvOZWe8",
+        "female": "https://www.youtube.com/watch?v=ScqpbvOZWe8"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "adductors",
+          "level": 3
+        },
+        {
+          "slug": "gluteal",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "lateral-lunge",
+      "name": "Lateral Lunge",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight",
+        "dumbbell",
+        "kettlebell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=u_xtYxMEfoQ",
+      "instructions": "Step to the side, sit hips back over the stepping leg while the other leg stays straighter, then push back to standing",
+      "substitutionsRecommended": [
+        "lateral-squat",
+        "cossack-squat",
+        "reverse-lunge"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=u_xtYxMEfoQ",
+        "female": "https://www.youtube.com/watch?v=u_xtYxMEfoQ"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "adductors",
+          "level": 3
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "quadriceps",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "cossack-squat",
+      "name": "Cossack Squat",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight",
+        "dumbbell",
+        "kettlebell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=JaCbmoDqUc4",
+      "instructions": "Take a wide stance, shift into one hip while the opposite leg stays straight, then move back to center or alternate sides",
+      "substitutionsRecommended": [
+        "lateral-lunge",
+        "lateral-squat",
+        "hip-adduction-machine"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=JaCbmoDqUc4",
+        "female": "https://www.youtube.com/watch?v=JaCbmoDqUc4"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "adductors",
+          "level": 3
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "quadriceps",
+          "level": 2
+        },
+        {
+          "slug": "hamstring",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "tibialis-raise",
+      "name": "Tibialis Raise",
+      "bodyRegion": "lower",
+      "muscleGroup": "calves",
+      "movementType": "isolation",
+      "equipment": [
+        "bodyweight",
+        "wall",
+        "tib_bar"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=RHWRxiBe1iU",
+      "instructions": "Lean against a wall or use a tib bar, lift toes toward shins, squeeze the front of the lower legs, then lower slowly",
+      "substitutionsRecommended": [
+        "single-leg-calf-raise",
+        "calf-raise",
+        "ankle-rocks"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=RHWRxiBe1iU",
+        "female": "https://www.youtube.com/watch?v=RHWRxiBe1iU"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "tibialis",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "reverse-crunch",
+      "name": "Reverse Crunch",
+      "bodyRegion": "core",
+      "muscleGroup": "abs",
+      "movementType": "isolation",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=yH-oSzE5_g0",
+      "instructions": "Lie on back with knees bent, curl hips off the floor toward the ribs, then lower with control",
+      "substitutionsRecommended": [
+        "leg-raise",
+        "crunch",
+        "dead-bug"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=yH-oSzE5_g0",
+        "female": "https://www.youtube.com/watch?v=yH-oSzE5_g0"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "abs",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "suitcase-carry",
+      "name": "Suitcase Carry",
+      "bodyRegion": "core",
+      "muscleGroup": "obliques",
+      "movementType": "compound",
+      "equipment": [
+        "dumbbell",
+        "kettlebell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=WhxtwWqb2BQ",
+      "instructions": "Hold one heavy weight at the side, walk with tall posture, and resist leaning toward or away from the load",
+      "substitutionsRecommended": [
+        "farmers-walk",
+        "side-plank",
+        "pallof-press"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=WhxtwWqb2BQ",
+        "female": "https://www.youtube.com/watch?v=WhxtwWqb2BQ"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "obliques",
+          "level": 3
+        },
+        {
+          "slug": "forearm",
+          "level": 2
+        },
+        {
+          "slug": "abs",
+          "level": 1
+        },
+        {
+          "slug": "trapezius",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "cat-cow",
+      "name": "Cat-Cow",
+      "bodyRegion": "upper",
+      "muscleGroup": "back",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=xyNwxiuERXc",
+      "instructions": "On hands and knees, alternate rounding the spine upward and extending it downward with slow breathing",
+      "substitutionsRecommended": [
+        "bird-dog",
+        "thoracic-open-book",
+        "worlds-greatest-stretch"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=xyNwxiuERXc",
+        "female": "https://www.youtube.com/watch?v=xyNwxiuERXc"
+      },
+      "category": "mobility",
+      "muscleActivation": [
+        {
+          "slug": "abs",
+          "level": 1
+        },
+        {
+          "slug": "lower-back",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "worlds-greatest-stretch",
+      "name": "World's Greatest Stretch",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=-CiWQ2IvY34",
+      "instructions": "Step into a long lunge, place hands inside the front foot, rotate the chest toward the front leg, then switch sides",
+      "substitutionsRecommended": [
+        "couch-stretch",
+        "90-90-hip-switch",
+        "thoracic-open-book"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=-CiWQ2IvY34",
+        "female": "https://www.youtube.com/watch?v=-CiWQ2IvY34"
+      },
+      "category": "mobility",
+      "muscleActivation": [
+        {
+          "slug": "adductors",
+          "level": 1
+        },
+        {
+          "slug": "gluteal",
+          "level": 1
+        },
+        {
+          "slug": "hamstring",
+          "level": 1
+        },
+        {
+          "slug": "quadriceps",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "90-90-hip-switch",
+      "name": "90/90 Hip Switch",
+      "bodyRegion": "lower",
+      "muscleGroup": "glutes",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=HUZimFZJZWU",
+      "instructions": "Sit with both knees bent at 90 degrees, rotate both legs side to side while keeping the torso tall",
+      "substitutionsRecommended": [
+        "worlds-greatest-stretch",
+        "couch-stretch",
+        "clamshell"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=HUZimFZJZWU",
+        "female": "https://www.youtube.com/watch?v=HUZimFZJZWU"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "adductors",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "couch-stretch",
+      "name": "Couch Stretch",
+      "bodyRegion": "lower",
+      "muscleGroup": "quads",
+      "movementType": "isolation",
+      "equipment": [
+        "bodyweight",
+        "bench",
+        "wall"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=7bW0dBwB7Dc",
+      "instructions": "Place the back foot on a bench or wall, set the back knee down, and gently bring the torso upright to stretch the hip flexor and quad",
+      "substitutionsRecommended": [
+        "worlds-greatest-stretch",
+        "split-squat",
+        "lateral-lunge"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=7bW0dBwB7Dc",
+        "female": "https://www.youtube.com/watch?v=7bW0dBwB7Dc"
+      },
+      "category": "mobility",
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "thoracic-open-book",
+      "name": "Thoracic Open Book",
+      "bodyRegion": "upper",
+      "muscleGroup": "back",
+      "movementType": "isolation",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=peeW19ofFUg",
+      "instructions": "Lie on one side with knees bent, rotate the top arm and chest open, then return slowly before switching sides",
+      "substitutionsRecommended": [
+        "cat-cow",
+        "worlds-greatest-stretch",
+        "wall-slide"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=peeW19ofFUg",
+        "female": "https://www.youtube.com/watch?v=peeW19ofFUg"
+      },
+      "category": "mobility",
+      "muscleActivation": [
+        {
+          "slug": "obliques",
+          "level": 1
+        },
+        {
+          "slug": "upper-back",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "ankle-rocks",
+      "name": "Ankle Rocks",
+      "bodyRegion": "lower",
+      "muscleGroup": "calves",
+      "movementType": "isolation",
+      "equipment": [
+        "bodyweight",
+        "wall"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=uI_S4kRDIhY",
+      "instructions": "In a staggered stance near a wall, drive the front knee forward over the toes while keeping the heel down, then rock back",
+      "substitutionsRecommended": [
+        "tibialis-raise",
+        "calf-raise",
+        "couch-stretch"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=uI_S4kRDIhY",
+        "female": "https://www.youtube.com/watch?v=uI_S4kRDIhY"
+      },
+      "category": "strength",
+      "muscleActivation": [
+        {
+          "slug": "calves",
+          "level": 1
+        },
+        {
+          "slug": "tibialis",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "incline-cable-fly",
+      "name": "Incline Cable Fly",
+      "bodyRegion": "upper",
+      "muscleGroup": "chest",
+      "movementType": "isolation",
+      "equipment": [
+        "cable_machine",
+        "incline_bench"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=lzxCuqCTAjU",
+      "instructions": "Set bench to incline between two low cable pulleys; arc handles up and together, squeeze upper chest, lower under control",
+      "category": "strength",
+      "substitutionsRecommended": [
+        "cable-crossover",
+        "chest-fly",
+        "incline-dumbbell-press"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=lzxCuqCTAjU",
+        "female": "https://www.youtube.com/watch?v=lzxCuqCTAjU"
+      },
+      "muscleActivation": [
+        {
+          "slug": "chest",
+          "level": 3
+        },
+        {
+          "slug": "deltoids",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "landmine-press",
+      "name": "Landmine Press",
+      "bodyRegion": "upper",
+      "muscleGroup": "shoulders",
+      "movementType": "compound",
+      "equipment": [
+        "barbell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=3gYz0bLG-wY",
+      "instructions": "Hold barbell end at shoulder, press up and slightly forward, control back down",
+      "category": "strength",
+      "substitutionsRecommended": [
+        "dumbbell-shoulder-press",
+        "machine-shoulder-press"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=3gYz0bLG-wY",
+        "female": "https://www.youtube.com/watch?v=3gYz0bLG-wY"
+      },
+      "muscleActivation": [
+        {
+          "slug": "deltoids",
+          "level": 3
+        },
+        {
+          "slug": "triceps",
+          "level": 2
+        },
+        {
+          "slug": "trapezius",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "pendlay-row",
+      "name": "Pendlay Row",
+      "bodyRegion": "upper",
+      "muscleGroup": "back",
+      "movementType": "compound",
+      "equipment": [
+        "barbell"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=h4nkoayPFWw",
+      "instructions": "From a flat back, pull barbell explosively from the floor to lower chest, reset each rep",
+      "category": "strength",
+      "substitutionsRecommended": [
+        "barbell-row",
+        "t-bar-row"
+      ],
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=h4nkoayPFWw",
+        "female": "https://www.youtube.com/watch?v=h4nkoayPFWw"
+      },
+      "muscleActivation": [
+        {
+          "slug": "upper-back",
+          "level": 3
+        },
+        {
+          "slug": "biceps",
+          "level": 2
+        },
+        {
+          "slug": "forearm",
+          "level": 1
+        },
+        {
+          "slug": "trapezius",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "assault-bike",
+      "name": "Assault Bike (Air Bike)",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "bike"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=jinMaYRpOTQ",
+      "instructions": "Drive with arms and legs at a sustainable pace; keep cadence steady for steady-state or alternate hard/easy for intervals",
+      "category": "endurance",
+      "loggingUnit": "seconds",
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=jinMaYRpOTQ",
+        "female": "https://www.youtube.com/watch?v=jinMaYRpOTQ"
+      },
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "calves",
+          "level": 2
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "hamstring",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "ski-erg",
+      "name": "Ski Erg",
+      "bodyRegion": "upper",
+      "muscleGroup": "back",
+      "movementType": "compound",
+      "equipment": [
+        "rowing_machine"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=tJU6VGbGEaI",
+      "instructions": "Hinge and pull handles down past hips like a ski pole plant, extend hips, return tall",
+      "category": "endurance",
+      "loggingUnit": "seconds",
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=tJU6VGbGEaI",
+        "female": "https://www.youtube.com/watch?v=tJU6VGbGEaI"
+      },
+      "muscleActivation": [
+        {
+          "slug": "upper-back",
+          "level": 3
+        },
+        {
+          "slug": "triceps",
+          "level": 2
+        },
+        {
+          "slug": "abs",
+          "level": 1
+        },
+        {
+          "slug": "lower-back",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "rucking",
+      "name": "Rucking",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "outdoor"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=CcaWye4g9QQ",
+      "instructions": "Walk at a brisk pace carrying a weighted pack; keep posture tall and stride steady",
+      "category": "endurance",
+      "loggingUnit": "seconds",
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=CcaWye4g9QQ",
+        "female": "https://www.youtube.com/watch?v=CcaWye4g9QQ"
+      },
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "calves",
+          "level": 2
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "hamstring",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "bear-crawl",
+      "name": "Bear Crawl",
+      "bodyRegion": "core",
+      "muscleGroup": "abs",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=lRolga8vTyc",
+      "instructions": "On hands and toes, knees hovering, crawl forward moving opposite hand and foot, keep hips low and stable",
+      "category": "conditioning",
+      "loggingUnit": "seconds",
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=lRolga8vTyc",
+        "female": "https://www.youtube.com/watch?v=lRolga8vTyc"
+      },
+      "muscleActivation": [
+        {
+          "slug": "abs",
+          "level": 3
+        },
+        {
+          "slug": "deltoids",
+          "level": 2
+        },
+        {
+          "slug": "quadriceps",
+          "level": 2
+        },
+        {
+          "slug": "triceps",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "shadow-boxing",
+      "name": "Shadow Boxing",
+      "bodyRegion": "upper",
+      "muscleGroup": "shoulders",
+      "movementType": "compound",
+      "equipment": [
+        "bodyweight"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=ou8SvZnk1Uo",
+      "instructions": "Throw controlled punch combinations while staying light on the feet; keep guard up and core braced",
+      "category": "conditioning",
+      "loggingUnit": "seconds",
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=ou8SvZnk1Uo",
+        "female": "https://www.youtube.com/watch?v=ou8SvZnk1Uo"
+      },
+      "muscleActivation": [
+        {
+          "slug": "deltoids",
+          "level": 2
+        },
+        {
+          "slug": "obliques",
+          "level": 2
+        },
+        {
+          "slug": "abs",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "sprint-intervals",
+      "name": "Sprint Intervals",
+      "bodyRegion": "lower",
+      "muscleGroup": "legs",
+      "movementType": "compound",
+      "equipment": [
+        "outdoor"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=E8hsqqR86HI",
+      "instructions": "Sprint hard for a short burst, then walk or jog to recover; repeat for the prescribed rounds",
+      "category": "conditioning",
+      "loggingUnit": "seconds",
+      "videoUrls": {
+        "male": "https://www.youtube.com/watch?v=E8hsqqR86HI",
+        "female": "https://www.youtube.com/watch?v=E8hsqqR86HI"
+      },
+      "muscleActivation": [
+        {
+          "slug": "quadriceps",
+          "level": 3
+        },
+        {
+          "slug": "calves",
+          "level": 2
+        },
+        {
+          "slug": "gluteal",
+          "level": 2
+        },
+        {
+          "slug": "hamstring",
+          "level": 2
+        }
+      ]
+    }
+  ],
+  "bodyRegions": [
+    "upper",
+    "lower",
+    "core"
+  ],
+  "muscleGroups": {
+    "upper": [
+      "chest",
+      "back",
+      "shoulders",
+      "arms"
+    ],
+    "lower": [
+      "legs",
+      "quads",
+      "hamstrings",
+      "glutes",
+      "adductors",
+      "calves"
+    ],
+    "core": [
+      "abs",
+      "obliques"
+    ]
+  },
+  "movementTypes": [
+    "compound",
+    "isolation"
+  ],
+  "equipment": [
+    "bodyweight",
+    "barbell",
+    "dumbbell",
+    "kettlebell",
+    "cable_machine",
+    "bench",
+    "incline_bench",
+    "decline_bench",
+    "preacher_bench",
+    "pull_up_bar",
+    "dip_bars",
+    "squat_rack",
+    "power_rack",
+    "smith_machine",
+    "leg_press_machine",
+    "hack_squat_machine",
+    "leg_extension_machine",
+    "leg_curl_machine",
+    "seated_leg_curl_machine",
+    "calf_raise_machine",
+    "seated_calf_raise_machine",
+    "donkey_calf_machine",
+    "hip_abduction_machine",
+    "glute_kickback_machine",
+    "hip_adduction_machine",
+    "pec_deck_machine",
+    "machine_chest_press",
+    "rowing_machine",
+    "row_machine",
+    "resistance_band",
+    "assistance_band",
+    "medicine_ball",
+    "ab_wheel",
+    "ez_bar",
+    "rope",
+    "ankle_strap",
+    "belt",
+    "t_bar",
+    "box",
+    "plyo_box",
+    "battle_rope",
+    "sled",
+    "pool",
+    "bike",
+    "stationary_bike",
+    "treadmill",
+    "outdoor",
+    "assisted_pullup_machine",
+    "dip_assist_machine",
+    "shoulder_press_machine",
+    "trap_bar",
+    "single_handle",
+    "wall",
+    "tib_bar",
+    "roman_chair",
+    "rings",
+    "parallettes",
+    "light_dumbbells",
+    "elliptical_machine",
+    "stair_climber_machine",
+    "jump_rope"
+  ],
+  "categories": [
+    "strength",
+    "endurance",
+    "conditioning",
+    "mobility",
+    "power"
+  ]
+}

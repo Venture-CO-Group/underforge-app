@@ -1,0 +1,38 @@
+{
+  "barbell-curl": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=a9hli15uWiA",
+    "duration_sec": 31.0,
+    "title": "Curl de biceps con barras - Entrenamiento Brazos / Biceps - Cómo entrenar Ejercicio #p4p",
+    "channel": "P4P WORKOUTS "
+  },
+  "dumbbell-curl": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=a9hli15uWiA",
+    "duration_sec": 31.0,
+    "title": "Curl de biceps con barras - Entrenamiento Brazos / Biceps - Cómo entrenar Ejercicio #p4p",
+    "channel": "P4P WORKOUTS "
+  },
+  "ez-bar-curl": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=mFgTFstIfFs",
+    "duration_sec": 22.0,
+    "title": "Biceps.- Curl con barra Z",
+    "channel": "XperFit Wellness Club"
+  },
+  "seated-dumbbell-curl": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=3k0Iu_ogVtw",
+    "duration_sec": 7.0,
+    "title": "Curl con mancuernas sentado y simultáneo",
+    "channel": "sportizemespain"
+  },
+  "incline-dumbbell-curl": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=OWaaLHA7pX0",
+    "duration_sec": 30.0,
+    "title": "CURL DE BICEPS BANCO INCLINADO",
+    "channel": "CARLOS Online Coach"
+  },
+  "lying-tricep-extension": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=zpOgDTbkG-k",
+    "duration_sec": 10.0,
+    "title": "ET3 Extensión tríceps con mancuerna tumbado por encima de la cabeza",
+    "channel": "Entrenamiento Sputnik"
+  }
+}

@@ -1,0 +1,252 @@
+/**
+ * AUTO-GENERATED FILE - DO NOT EDIT MANUALLY
+ * Generated from assets/exercises/exercises.json
+ * Run: python3 scripts/generate_exercise_list.py to regenerate
+ */
+
+/**
+ * Complete list of all available exercise IDs for use in LLM prompts
+ * Total: 192 exercises
+ */
+export const AVAILABLE_EXERCISE_IDS = [
+  '90-90-hip-switch',
+  'ab-rollout',
+  'ankle-rocks',
+  'archer-push-up',
+  'arnold-press',
+  'assault-bike',
+  'assisted-dip',
+  'assisted-pull-up',
+  'back-extension',
+  'back-lever',
+  'band-external-rotation',
+  'band-pull-apart',
+  'barbell-back-squat',
+  'barbell-bench-press',
+  'barbell-curl',
+  'barbell-deadlift',
+  'barbell-decline-bench-press',
+  'barbell-front-squat',
+  'barbell-incline-bench-press',
+  'barbell-overhead-press',
+  'barbell-row',
+  'barbell-shrug',
+  'battle-rope',
+  'bear-crawl',
+  'bicycle-crunch',
+  'bird-dog',
+  'box-jump',
+  'box-squat',
+  'bulgarian-split-squat',
+  'burpee',
+  'cable-crossover',
+  'cable-crunch',
+  'cable-curl',
+  'cable-kickback',
+  'cable-lateral-raise',
+  'cable-pull-through',
+  'cable-tricep-extension',
+  'calf-raise',
+  'cat-cow',
+  'chest-fly',
+  'chest-supported-row',
+  'chin-up',
+  'clamshell',
+  'clap-push-up',
+  'clean-and-press',
+  'close-grip-bench-press',
+  'concentration-curl',
+  'copenhagen-plank',
+  'cossack-squat',
+  'couch-stretch',
+  'crunch',
+  'cycling',
+  'dead-bug',
+  'decline-dumbbell-press',
+  'diamond-push-up',
+  'dip',
+  'donkey-calf-raise',
+  'donkey-kick',
+  'dumbbell-bench-press',
+  'dumbbell-curl',
+  'dumbbell-deadlift',
+  'dumbbell-fly',
+  'dumbbell-front-squat',
+  'dumbbell-overhead-press',
+  'dumbbell-pullover',
+  'dumbbell-row',
+  'dumbbell-shoulder-press',
+  'dumbbell-shrug',
+  'elliptical',
+  'ez-bar-curl',
+  'face-pull',
+  'farmers-walk',
+  'front-lever',
+  'front-raise',
+  'glute-bridge',
+  'glute-kickback',
+  'goblet-squat',
+  'good-morning',
+  'hack-squat',
+  'half-kneeling-single-arm-db-press',
+  'hammer-curl',
+  'handstand-push-up',
+  'hanging-leg-raise',
+  'high-knees',
+  'hiking',
+  'hip-abduction',
+  'hip-adduction-machine',
+  'hip-thrust',
+  'hollow-body-hold',
+  'human-flag',
+  'incline-cable-fly',
+  'incline-dumbbell-curl',
+  'incline-dumbbell-press',
+  'incline-push-up',
+  'incline-walking',
+  'inverted-row',
+  'jump-rope',
+  'jump-squat',
+  'jumping-jack',
+  'kettlebell-front-squat-double',
+  'kettlebell-front-squat-single',
+  'kettlebell-swing',
+  'l-sit',
+  'landmine-press',
+  'lat-pulldown',
+  'lateral-lunge',
+  'lateral-raise',
+  'lateral-squat',
+  'leg-curl',
+  'leg-extension',
+  'leg-press',
+  'leg-raise',
+  'lying-tricep-extension',
+  'machine-chest-press',
+  'machine-row',
+  'machine-shoulder-press',
+  'mountain-climber',
+  'muscle-up',
+  'nordic-hamstring-curl',
+  'oblique-crunch',
+  'one-arm-dumbbell-row',
+  'overhead-tricep-extension',
+  'pallof-press',
+  'pec-deck',
+  'pendlay-row',
+  'pistol-squat',
+  'plank',
+  'preacher-curl',
+  'prone-y-t-raises',
+  'pull-up',
+  'push-up',
+  'rack-pull',
+  'reverse-crunch',
+  'reverse-fly',
+  'reverse-lunge',
+  'reverse-wrist-curl',
+  'romanian-deadlift',
+  'rope-pushdown',
+  'rowing-machine',
+  'rucking',
+  'running',
+  'russian-twist',
+  'scapular-push-up',
+  'seated-cable-row',
+  'seated-calf-raise',
+  'seated-dumbbell-curl',
+  'seated-leg-curl',
+  'seated-overhead-press',
+  'shadow-boxing',
+  'shrimp-squat',
+  'side-plank',
+  'side-plank-knees-bent',
+  'single-arm-cable-row',
+  'single-leg-calf-raise',
+  'single-leg-romanian-deadlift',
+  'sissy-squat',
+  'sit-up',
+  'ski-erg',
+  'skin-the-cat',
+  'skull-crusher',
+  'sled-push',
+  'split-squat',
+  'sprint-intervals',
+  'stair-climber',
+  'standing-calf-raise',
+  'standing-pallof-hold',
+  'step-up',
+  'stiff-leg-deadlift',
+  'straight-arm-pulldown',
+  'suitcase-carry',
+  'sumo-deadlift',
+  'sumo-squat',
+  'swimming',
+  't-bar-row',
+  'thoracic-open-book',
+  'thruster',
+  'tibialis-raise',
+  'toes-to-bar',
+  'trap-bar-deadlift',
+  'tricep-dip',
+  'tricep-pushdown',
+  'tuck-front-lever',
+  'upright-row',
+  'v-up',
+  'walking',
+  'walking-lunge',
+  'wall-sit',
+  'wall-slide',
+  'woodchop',
+  'worlds-greatest-stretch',
+  'wrist-curl',
+  'zercher-squat'
+] as const;
+
+/**
+ * Exercise IDs grouped by muscle group for structured recommendations
+ */
+export const EXERCISES_BY_MUSCLE_GROUP = {
+  'abs': ['ab-rollout', 'bear-crawl', 'burpee', 'cable-crunch', 'crunch', 'dead-bug', 'farmers-walk', 'hanging-leg-raise', 'hollow-body-hold', 'jumping-jack', 'l-sit', 'leg-raise', 'mountain-climber', 'plank', 'reverse-crunch', 'sit-up', 'toes-to-bar', 'v-up'],
+  'adductors': ['hip-adduction-machine'],
+  'arms': ['barbell-curl', 'cable-curl', 'cable-tricep-extension', 'close-grip-bench-press', 'concentration-curl', 'dumbbell-curl', 'ez-bar-curl', 'hammer-curl', 'incline-dumbbell-curl', 'lying-tricep-extension', 'overhead-tricep-extension', 'preacher-curl', 'reverse-wrist-curl', 'rope-pushdown', 'seated-dumbbell-curl', 'skull-crusher', 'tricep-dip', 'tricep-pushdown', 'wrist-curl'],
+  'back': ['assisted-pull-up', 'back-extension', 'back-lever', 'barbell-row', 'bird-dog', 'cat-cow', 'chest-supported-row', 'chin-up', 'dumbbell-row', 'face-pull', 'front-lever', 'good-morning', 'human-flag', 'inverted-row', 'lat-pulldown', 'machine-row', 'muscle-up', 'one-arm-dumbbell-row', 'pendlay-row', 'pull-up', 'rack-pull', 'rowing-machine', 'seated-cable-row', 'single-arm-cable-row', 'ski-erg', 'straight-arm-pulldown', 'swimming', 't-bar-row', 'thoracic-open-book', 'tuck-front-lever'],
+  'calves': ['ankle-rocks', 'calf-raise', 'donkey-calf-raise', 'jump-rope', 'seated-calf-raise', 'single-leg-calf-raise', 'standing-calf-raise', 'tibialis-raise'],
+  'chest': ['archer-push-up', 'assisted-dip', 'barbell-bench-press', 'barbell-decline-bench-press', 'barbell-incline-bench-press', 'cable-crossover', 'chest-fly', 'clap-push-up', 'decline-dumbbell-press', 'diamond-push-up', 'dip', 'dumbbell-bench-press', 'dumbbell-fly', 'dumbbell-pullover', 'incline-cable-fly', 'incline-dumbbell-press', 'incline-push-up', 'machine-chest-press', 'pec-deck', 'push-up'],
+  'glutes': ['90-90-hip-switch', 'cable-kickback', 'cable-pull-through', 'clamshell', 'donkey-kick', 'glute-bridge', 'glute-kickback', 'hip-abduction', 'hip-thrust', 'kettlebell-swing', 'sumo-deadlift'],
+  'hamstrings': ['leg-curl', 'nordic-hamstring-curl', 'romanian-deadlift', 'seated-leg-curl', 'single-leg-romanian-deadlift', 'stiff-leg-deadlift'],
+  'legs': ['assault-bike', 'barbell-back-squat', 'barbell-deadlift', 'barbell-front-squat', 'box-jump', 'box-squat', 'bulgarian-split-squat', 'cossack-squat', 'cycling', 'dumbbell-deadlift', 'dumbbell-front-squat', 'elliptical', 'goblet-squat', 'hack-squat', 'high-knees', 'hiking', 'incline-walking', 'jump-squat', 'kettlebell-front-squat-double', 'kettlebell-front-squat-single', 'lateral-lunge', 'lateral-squat', 'leg-press', 'pistol-squat', 'reverse-lunge', 'rucking', 'running', 'shrimp-squat', 'sled-push', 'split-squat', 'sprint-intervals', 'stair-climber', 'step-up', 'sumo-squat', 'thruster', 'trap-bar-deadlift', 'walking', 'walking-lunge', 'worlds-greatest-stretch', 'zercher-squat'],
+  'obliques': ['bicycle-crunch', 'copenhagen-plank', 'oblique-crunch', 'pallof-press', 'russian-twist', 'side-plank', 'side-plank-knees-bent', 'standing-pallof-hold', 'suitcase-carry', 'woodchop'],
+  'quads': ['couch-stretch', 'leg-extension', 'sissy-squat', 'wall-sit'],
+  'shoulders': ['arnold-press', 'band-external-rotation', 'band-pull-apart', 'barbell-overhead-press', 'barbell-shrug', 'battle-rope', 'cable-lateral-raise', 'clean-and-press', 'dumbbell-overhead-press', 'dumbbell-shoulder-press', 'dumbbell-shrug', 'front-raise', 'half-kneeling-single-arm-db-press', 'handstand-push-up', 'landmine-press', 'lateral-raise', 'machine-shoulder-press', 'prone-y-t-raises', 'reverse-fly', 'scapular-push-up', 'seated-overhead-press', 'shadow-boxing', 'skin-the-cat', 'upright-row', 'wall-slide'],
+} as const;
+
+/**
+ * Exercise IDs whose middle log column is measured in seconds (isometrics and
+ * steady-state endurance) rather than reps. All other catalog ids are reps.
+ */
+export const SECONDS_EXERCISE_IDS = new Set<string>(['assault-bike', 'back-lever', 'battle-rope', 'bear-crawl', 'cycling', 'elliptical', 'farmers-walk', 'front-lever', 'hollow-body-hold', 'human-flag', 'jump-rope', 'l-sit', 'plank', 'rowing-machine', 'rucking', 'running', 'shadow-boxing', 'side-plank', 'side-plank-knees-bent', 'ski-erg', 'sled-push', 'sprint-intervals', 'stair-climber', 'standing-pallof-hold', 'swimming', 'tuck-front-lever', 'wall-sit']);
+
+/**
+ * Helper to get all exercise IDs as a comma-separated string for LLM prompts
+ */
+export function getExerciseIdsForPrompt(): string {
+  return AVAILABLE_EXERCISE_IDS.join(', ');
+}
+
+/**
+ * Helper to get exercise list formatted for LLM workout planning.
+ * Exercises whose "reps" value should be expressed in seconds (holds and cardio)
+ * are annotated inline so the planner emits a duration instead of a rep count.
+ */
+export function getExerciseListForPrompt(): string {
+  let result = 'AVAILABLE EXERCISES:\n';
+  for (const [muscle, ids] of Object.entries(EXERCISES_BY_MUSCLE_GROUP)) {
+    result += `\n${muscle.toUpperCase()}:\n`;
+    ids.forEach((id: string) => {
+      const unit = SECONDS_EXERCISE_IDS.has(id) ? ' (seconds)' : '';
+      result += `  - ${id}${unit}\n`;
+    });
+  }
+  return result;
+}

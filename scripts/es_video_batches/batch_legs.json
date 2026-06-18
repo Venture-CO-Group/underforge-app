@@ -1,0 +1,68 @@
+{
+  "barbell-front-squat": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=NpdxqgO9N8I",
+    "duration_sec": 39.0,
+    "title": "🎥 Tip para sujetar la barra en sentadilla frontal - Roots videotips ✅.⁣",
+    "channel": "Roots Health Center"
+  },
+  "thruster": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=kajLFpGcFHM",
+    "duration_sec": 16.0,
+    "title": "THRUSTER en CrossFit [técnica]",
+    "channel": "VBN Fitness"
+  },
+  "jump-squat": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=ylxeTLS7N2o",
+    "duration_sec": 29.0,
+    "title": "Sentadilla con salto - Entrenamiento de alta intensidad de Óscar Peiró | Men's Health España",
+    "channel": "Men's Health España"
+  },
+  "sled-push": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=m2bw9a9GMqs",
+    "duration_sec": 27.0,
+    "title": "Trineo de empuje para entrenamiento de fuerza, resistencia y agilidad",
+    "channel": "INDOOR"
+  },
+  "stair-climber": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=9sufkwi-M_k",
+    "duration_sec": 23.0,
+    "title": "TÉCNICA DE CARRERA EN CAJÓN  - ENTRENA CON PAULA",
+    "channel": "Entrena con Paula"
+  },
+  "high-knees": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=PLY17hW8HvU",
+    "duration_sec": 13.0,
+    "title": "Rodillas altas con apertura / Skipping and opening",
+    "channel": "Carlos Casado Coach"
+  },
+  "shrimp-squat": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=6a3fQ2k4_rI",
+    "duration_sec": 50.0,
+    "title": "Shrimp squat / Sentadilla gamba | calistenia | Tipos de sentadillas | #NoGymNoProblem - nº29",
+    "channel": "NO GYM NO PROBLEM"
+  },
+  "dumbbell-deadlift": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=x7W2BOKWWKs",
+    "duration_sec": 25.0,
+    "title": "PESO MUERTO RUMANO CON MANCUERNAS",
+    "channel": "CARLOS Online Coach"
+  },
+  "dumbbell-front-squat": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=jv2rD37oQOk",
+    "duration_sec": 14.0,
+    "title": "Sentadilla frontal con mancuernas",
+    "channel": "Olympia Training Channel (by Alessandro Tata)"
+  },
+  "kettlebell-front-squat-single": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=CT3WMuyTVLQ",
+    "duration_sec": 34.0,
+    "title": "Sentadilla Frontal con kettlebell",
+    "channel": "Entrenamiento Funcional Bogota"
+  },
+  "kettlebell-front-squat-double": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=PETvWbwqe00",
+    "duration_sec": 26.0,
+    "title": "2KB Front Squat (Sentadilla frontal con dos pesas)",
+    "channel": "KettlebellsBarcelona"
+  }
+}

@@ -1,0 +1,1 @@
+# Send notifications tests package

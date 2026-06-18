@@ -1,0 +1,92 @@
+{
+  "$comment": "Human-maintained annotations consumed by scripts/generate-data-model.js. Add EVERY column of a coach-facing table here; unclassified columns show ⚠️ in the doc and fail `npm run data-model:check`. Access values: coach-edit | app | system | read.",
+  "relevantTables": {
+    "user_profile": {
+      "purpose": "The user's identity, preferences, and the AI/coach plan. The dashboard's main edit surface. `onboarding_profile_json` holds the whole plan (see JSON shapes below).",
+      "columns": {
+        "user_id": { "access": "system", "note": "primary key (Clerk-style sub); never change" },
+        "display_name": { "access": "coach-edit", "note": "safe to edit" },
+        "onboarding_profile_json": { "access": "coach-edit", "note": "the full Onboard/action plan blob; edit via structured tooling, not raw — regeneration overwrites it" },
+        "onboarding_profile_ai_gen_json": { "access": "system", "note": "historical AI snapshot; read-only baseline" },
+        "timezone": { "access": "app", "note": "set by the app from the device" },
+        "expo_push_token": { "access": "system", "note": "push token; app-managed" },
+        "device_type": { "access": "app", "note": "app-managed" },
+        "active": { "access": "app", "note": "active-profile flag; app-managed" },
+        "is_coach": { "access": "read", "note": "marks coach accounts; set deliberately in Studio" },
+        "share_stats": { "access": "app", "note": "leaderboard opt-in; user-controlled" },
+        "human_coach_step_notes_json": { "access": "coach-edit", "note": "coach free-text per step; keys step_1/step_2/step_3 (see lib/human-coach-step-notes.ts). Kept separate so plan regen never clobbers it" },
+        "created_at": { "access": "system" },
+        "reminder_frequency": { "access": "app", "note": "user preference" },
+        "away_mode": { "access": "app", "note": "user-controlled streak pause" },
+        "away_mode_start_date": { "access": "app" },
+        "account_status": { "access": "coach-edit", "note": "active|deactivated; admin/coach gate on app access" },
+        "preferred_weight_unit": { "access": "app", "note": "user preference" },
+        "plan_status": { "access": "coach-edit", "note": "workflow enum: 'AI drafted' → 'Coach reviewed' → 'Coach and client reviewed'" },
+        "auth_user_id": { "access": "system", "note": "Supabase auth linkage; never edit" },
+        "weekly_checkin_schedule_mode": { "access": "app", "note": "user preference" },
+        "avatar_url": { "access": "app", "note": "set by app upload to the avatars bucket" },
+        "default_share_audience": { "access": "app", "note": "user preference: public|circles" },
+        "signup_code": { "access": "read", "note": "acquisition attribution: the special_codes.code the user joined with (e.g. coach code), or NULL. Set once by the app at signup; stored as the literal code, not an FK" }
+      }
+    },
+    "coaches": {
+      "purpose": "Coach accounts that can log into the dashboard.",
+      "columns": {
+        "id": { "access": "system", "note": "referenced by coach_user, special_codes, checkin_coach_with_user" },
+        "coach_name": { "access": "read", "note": "slug used to match onboarding config" },
+        "email": { "access": "coach-edit", "note": "login email" },
+        "password_hash": { "access": "system", "note": "bcrypt; set/rotate via secure tooling only" },
+        "full_name": { "access": "coach-edit", "note": "display name (first token must match onboarding config key)" },
+        "coach_type": { "access": "coach-edit", "note": "ai_only | ai_human_hybrid; controls human-coach features" },
+        "created_at": { "access": "system" },
+        "last_login_at": { "access": "system", "note": "stamped by the dashboard on login" }
+      }
+    },
+    "coach_user": {
+      "purpose": "Append-only log of coach + plan-tier assignments. The current row per user is WHERE is_current = true (the dashboard roster); older rows are the ai↔human history ordered by assigned_at. To change a user's tier/coach: set the live row is_current=false, then insert a new is_current=true row.",
+      "columns": {
+        "id": { "access": "system" },
+        "coach_id": { "access": "coach-edit", "note": "FK → coaches.id" },
+        "user_id": { "access": "coach-edit", "note": "FK → user_profile.user_id" },
+        "plan_tier_id": { "access": "coach-edit", "note": "FK → plan_tiers.id; NULL = ai_only. The user's coaching plan tier (unrelated to training/nutrition/recovery plans)" },
+        "is_current": { "access": "coach-edit", "note": "marks the live assignment; exactly one true per user (partial unique index). Set false on the old row when changing tier/coach" },
+        "assigned_at": { "access": "system", "note": "when this assignment row was written; doubles as the tier-change timestamp for history" }
+      }
+    },
+    "checkin_coach_with_user": {
+      "purpose": "Human coach check-in notes per user, written from the dashboard.",
+      "columns": {
+        "id": { "access": "system", "note": "uuid" },
+        "user_id": { "access": "coach-edit", "note": "FK → user_profile.user_id" },
+        "coach_id": { "access": "coach-edit", "note": "FK → coaches.id" },
+        "checkin_date": { "access": "coach-edit" },
+        "notes": { "access": "coach-edit", "note": "the check-in note body" },
+        "checkin_type": { "access": "coach-edit", "note": "how the coach checked in: message | call | video | in_person (NULL = unspecified)" },
+        "created_at": { "access": "system" },
+        "updated_at": { "access": "coach-edit", "note": "bump on edit" }
+      }
+    }
+  },
+  "contextTables": {
+    "user_nutrition_targets": "Persisted macro/calorie targets the app derives from the plan. Coaches change these indirectly by editing the plan (step 2), not by writing this table.",
+    "weekly_checkin_reports": "Weekly metrics snapshot + LLM narrative. App-written; useful read context for coaches.",
+    "workout_logs": "User workout sessions. App-written.",
+    "workout_exercise_logs": "Per-set exercise rows under a workout_log. App-written.",
+    "activity_logs": "Cardio/sport sessions (manual + wearable). App/Edge-written.",
+    "meal_logs": "Individual meal entries. App-written.",
+    "daily_nutrition_totals": "Daily cumulative nutrition totals. App-written.",
+    "body_composition_log": "Weekly body-composition scans (weight, muscle %, fat %). App-written. photo_front_url/photo_side_url/photo_back_url are optional progress-photo public URLs in the 'body-photos' bucket; front is the angle the app renders above each weight-chart bar.",
+    "task_completions": "Daily action-step completions. App-written.",
+    "daily_metrics": "Canonical wearable metrics per day/source. Edge-written.",
+    "provider_raw_payloads": "Raw wearable payloads. Service-role only.",
+    "user_provider_connections": "Wearable OAuth state with encrypted tokens. Service-role only — anon reads the *_public view.",
+    "special_codes": "Pre-auth onboarding entry codes (coach/event/promo). Managed in Studio.",
+    "plan_tiers": "Catalog of coaching plan tiers (key, display_name, checkins_per_week). Referenced by coach_user.plan_tier_id. Add a future tier by inserting a row — no schema change. checkins_per_week is the expected human check-ins/week the dashboard uses to compute 'pending check-ins this week' = max(0, checkins_per_week − count(checkin_coach_with_user rows since Monday)); ai_only = 0. The app maps `key` to a localized name; `display_name` is the English label."
+  },
+  "bucketNotes": {
+    "avatars": "user profile photos; avatar_url on user_profile points here",
+    "social-posts": "social post photos; photo_url on social_posts points here",
+    "circle-images": "forging circle cover photos; image_url on forging_circles points here",
+    "body-photos": "weekly body progress photos; photo_front_url/photo_side_url/photo_back_url on body_composition_log point here. Public-read by design (see Storage section) — paths are {userId}/{year}_W{week}_{angle}.jpg"
+  }
+}

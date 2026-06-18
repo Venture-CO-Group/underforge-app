@@ -1,0 +1,739 @@
+{
+  "question_bank": {
+    "gender_question": {
+      "label_en": "What is your gender?",
+      "label_es": "¿Cuál es tu género?",
+      "ui_widget": "picker",
+      "ui_widget_options": ["Male", "Female", "Prefer not to say"],
+      "ui_widget_options_es": ["Masculino", "Femenino", "Prefiero no decirlo"]
+    },
+    "current_age_question": {
+      "label_en": "How old are you?",
+      "label_es": "¿Cuántos años tienes?",
+      "ui_widget": "picker",
+      "ui_widget_options": ["18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100"]
+    },
+    "current_height_question": {
+      "label_en": "What is your height?",
+      "label_es": "¿Cuánto mides de estatura?",
+      "ui_widget": "picker",
+      "ui_widget_options": ["4'0\" (122 cm)", "4'1\" (124 cm)", "4'2\" (127 cm)", "4'3\" (130 cm)", "4'4\" (132 cm)", "4'5\" (135 cm)", "4'6\" (137 cm)", "4'7\" (140 cm)", "4'8\" (142 cm)", "4'9\" (145 cm)", "4'10\" (147 cm)", "4'11\" (150 cm)", "5'0\" (152 cm)", "5'1\" (155 cm)", "5'2\" (157 cm)", "5'3\" (160 cm)", "5'4\" (163 cm)", "5'5\" (165 cm)", "5'6\" (168 cm)", "5'7\" (170 cm)", "5'8\" (173 cm)", "5'9\" (175 cm)", "5'10\" (178 cm)", "5'11\" (180 cm)", "6'0\" (183 cm)", "6'1\" (185 cm)", "6'2\" (188 cm)", "6'3\" (190 cm)", "6'4\" (193 cm)", "6'5\" (196 cm)", "6'6\" (198 cm)", "6'7\" (200 cm)", "6'8\" (203 cm)", "6'9\" (206 cm)", "6'10\" (208 cm)", "6'11\" (210 cm)", "7'0\" (213 cm)"]
+    },
+    "current_weight_question": {
+      "label_en": "What is your current weight?",
+      "label_es": "¿Cuál es tu peso actual?",
+      "ui_widget": "picker",
+      "ui_widget_options": ["80 lbs (36 kg)", "85 lbs (39 kg)", "90 lbs (41 kg)", "95 lbs (43 kg)", "100 lbs (45 kg)", "105 lbs (48 kg)", "110 lbs (50 kg)", "115 lbs (52 kg)", "120 lbs (54 kg)", "125 lbs (57 kg)", "130 lbs (59 kg)", "135 lbs (61 kg)", "140 lbs (64 kg)", "145 lbs (66 kg)", "150 lbs (68 kg)", "155 lbs (70 kg)", "160 lbs (73 kg)", "165 lbs (75 kg)", "170 lbs (77 kg)", "175 lbs (79 kg)", "180 lbs (82 kg)", "185 lbs (84 kg)", "190 lbs (86 kg)", "195 lbs (88 kg)", "200 lbs (91 kg)", "205 lbs (93 kg)", "210 lbs (95 kg)", "215 lbs (98 kg)", "220 lbs (100 kg)", "225 lbs (102 kg)", "230 lbs (104 kg)", "235 lbs (107 kg)", "240 lbs (109 kg)", "245 lbs (111 kg)", "250 lbs (113 kg)", "255 lbs (116 kg)", "260 lbs (118 kg)", "265 lbs (120 kg)", "270 lbs (122 kg)", "275 lbs (125 kg)", "280 lbs (127 kg)", "285 lbs (129 kg)", "290 lbs (132 kg)", "295 lbs (134 kg)", "300 lbs (136 kg)", "305 lbs (138 kg)", "310 lbs (141 kg)", "315 lbs (143 kg)", "320 lbs (145 kg)", "325 lbs (147 kg)", "330 lbs (150 kg)", "335 lbs (152 kg)", "340 lbs (154 kg)", "345 lbs (156 kg)", "350 lbs (159 kg)", "355 lbs (161 kg)", "360 lbs (163 kg)", "365 lbs (166 kg)", "370 lbs (168 kg)", "375 lbs (170 kg)", "380 lbs (172 kg)", "385 lbs (175 kg)", "390 lbs (177 kg)", "395 lbs (179 kg)", "400 lbs (181 kg)"]
+    },
+    "occupation_activity": {
+      "label_en": "What is your occupation like?",
+      "label_es": "¿Cómo es tu trabajo u ocupación?",
+      "ui_widget": "picker",
+      "ui_widget_options": [
+        "Mostly sitting",
+        "Some standing and walking",
+        "Regular movement",
+        "Very active"
+      ],
+      "ui_widget_options_es": [
+        "Mayormente sentado/a",
+        "Algo de pie y caminando",
+        "Movimiento regular",
+        "Muy activo/a"
+      ]
+    },
+
+    "quantitative_goal_burn_fat": {
+      "label_en": "What is your realistic fat loss target in the next 4 weeks?",
+      "label_es": "¿Cuál es una meta realista de pérdida de grasa para las próximas 4 semanas?",
+      "ui_widget": "picker",
+      "ui_widget_options": [
+        "Conservative cut — Lose ~1-1.5 kg in 4 weeks (best for leaner individuals or muscle retention priority)",
+        "Moderate cut — Lose ~2-3 kg in 4 weeks (common sustainable fat-loss pace)",
+        "Aggressive cut — Lose ~3-4+ kg in 4 weeks (best suited for higher body-fat starting points, harder to preserve performance)"
+      ],
+      "ui_widget_options_es": [
+        "Corte conservador — Perder ~1-1.5 kg en 4 semanas (ideal para quienes están más delgados o priorizan retener músculo)",
+        "Corte moderado — Perder ~2-3 kg en 4 semanas (ritmo sostenible habitual de pérdida de grasa)",
+        "Corte agresivo — Perder ~3-4+ kg en 4 semanas (más adecuado con más grasa corporal; es más difícil mantener el rendimiento)"
+      ]
+    },
+    "quantitative_goal_build_muscle": {
+      "label_en": "What is your realistic muscle gain target in the next 4 weeks?",
+      "label_es": "¿Cuál es una meta realista de ganancia muscular para las próximas 4 semanas?",
+      "ui_widget": "picker",
+      "ui_widget_options": [
+        "Gain 400-1000 g (~0.9-2.2 lb) of lean mass in 4 weeks (beginner gains)",
+        "Gain 200-500 g (~0.4-1.1 lb) of lean mass in 4 weeks (intermediate gains)",
+        "Gain 100-250 g (~0.2-0.6 lb) of lean mass in 4 weeks (advanced gains)"
+      ],
+      "ui_widget_options_es": [
+        "Ganar 400-1000 g (~0.9-2.2 lb) de masa magra en 4 semanas (ganancias de principiante)",
+        "Ganar 200-500 g (~0.4-1.1 lb) de masa magra en 4 semanas (ganancias intermedias)",
+        "Ganar 100-250 g (~0.2-0.6 lb) de masa magra en 4 semanas (ganancias avanzadas)"
+      ]
+    },
+    "quantitative_goal_increase_strength": {
+      "label_en": "What is your realistic strength gain target in the next 4 weeks?",
+      "label_es": "¿Cuál es una meta realista de ganancia de fuerza para las próximas 4 semanas?",
+      "ui_widget": "picker",
+      "ui_widget_options": [
+        "Increase main lifts by 5–10% in 4 weeks (beginner progression)",
+        "Increase main lifts by 3–5% in 4 weeks (intermediate progression)",
+        "Increase main lifts by 1–3% in 4 weeks (advanced progression)"
+      ],
+      "ui_widget_options_es": [
+        "Aumentar levantamientos principales 5–10% en 4 semanas (progresión de principiante)",
+        "Aumentar levantamientos principales 3–5% en 4 semanas (progresión intermedia)",
+        "Aumentar levantamientos principales 1–3% en 4 semanas (progresión avanzada)"
+      ]
+    },
+    "quantitative_goal_get_challenged": {
+      "label_en": "What challenge level are you aiming for in the next 4 weeks?",
+      "label_es": "¿Qué nivel de reto quieres para las próximas 4 semanas?",
+      "ui_widget": "picker",
+      "ui_widget_options": [
+        "Complete a structured 4-week program with consistent attendance (beginner challenge)",
+        "Hit 3+ personal records across lifts or conditioning in 4 weeks (intermediate challenge)",
+        "Complete an advanced periodized block with measurable performance gains (advanced challenge)"
+      ],
+      "ui_widget_options_es": [
+        "Completar un programa estructurado de 4 semanas con asistencia constante (reto para principiantes)",
+        "Lograr 3+ récords personales en fuerza o acondicionamiento en 4 semanas (reto intermedio)",
+        "Completar un bloque periodizado avanzado con mejoras de rendimiento medibles (reto avanzado)"
+      ]
+    },
+    "what_held_back_burn_fat": {
+      "label_en": "What has held you back in the past towards burning body fat?",
+      "label_es": "¿Qué te ha frenado en el pasado para quemar grasa corporal?",
+      "ui_widget": "text"
+    },
+    "what_held_back_build_muscle": {
+      "label_en": "What has held you back in the past towards building muscle mass?",
+      "label_es": "¿Qué te ha frenado en el pasado para ganar masa muscular?",
+      "ui_widget": "text"
+    },
+    "what_held_back_increase_strength": {
+      "label_en": "What has held you back in the past towards increasing strength?",
+      "label_es": "¿Qué te ha frenado en el pasado para aumentar tu fuerza?",
+      "ui_widget": "text"
+    },
+
+    "training_experience_years": {
+      "label_en": "How long have you been training consistently?",
+      "label_es": "¿Cuánto tiempo llevas entrenando de forma constante?",
+      "ui_widget": "picker",
+      "ui_widget_options": [
+        "Less than 6 months",
+        "6–12 months",
+        "1–2 years",
+        "3–5 years",
+        "5+ years"
+      ],
+      "ui_widget_options_es": [
+        "Menos de 6 meses",
+        "6–12 meses",
+        "1–2 años",
+        "3–5 años",
+        "5+ años"
+      ]
+    },
+    "years_trained": {
+      "label_en": "How many years have you trained for?",
+      "label_es": "¿Cuántos años has entrenado en total?",
+      "ui_widget": "picker",
+      "ui_widget_options": ["Less than 1 year", "1–2 years", "3–5 years", "5–10 years", "10+ years"],
+      "ui_widget_options_es": ["Menos de 1 año", "1–2 años", "3–5 años", "5–10 años", "10+ años"]
+    },
+    "exercise_frequency": {
+      "label_en": "How often do you exercise or engage in intentional physical activity?",
+      "label_es": "¿Con qué frecuencia haces ejercicio o actividad física intencional?",
+      "ui_widget": "picker",
+      "ui_widget_options": [
+        "Little to no exercise: Sedentary lifestyle, less than 1 workout per week",
+        "Light exercise: 1–3 days per week of light activity (walking, yoga, light cardio)",
+        "Moderate exercise: 3–5 days per week of moderate intensity (jogging, weight training, sports)",
+        "Heavy exercise: 6–7 days per week of intense training (HIIT, competitive sports, heavy lifting)",
+        "Extreme: Multiple workouts per day or very intense daily training"
+      ],
+      "ui_widget_options_es": [
+        "Poco o ningún ejercicio: estilo de vida sedentario, menos de 1 entrenamiento por semana",
+        "Ejercicio ligero: 1–3 días por semana de actividad leve (caminata, yoga, cardio ligero)",
+        "Ejercicio moderado: 3–5 días por semana de intensidad moderada (trote, pesas, deportes)",
+        "Ejercicio intenso: 6–7 días por semana de entrenamiento intenso (HIIT, deportes competitivos, levantamiento pesado)",
+        "Extremo: múltiples entrenamientos por día o entrenamiento diario muy intenso"
+      ]
+    },
+    "preferred_training_setting": {
+      "label_en": "Which setting do you prefer to train in? Select all that apply",
+      "label_es": "¿En qué tipo de lugar prefieres entrenar? Selecciona todas las opciones que apliquen",
+      "ui_widget": "multi_select",
+      "ui_widget_options": [
+        "Gym",
+        "Home",
+        "Park (requires calisthenics bars)"
+      ],
+      "ui_widget_options_es": [
+        "Gimnasio",
+        "Casa",
+        "Parque (requiere barras de calistenia)"
+      ]
+    },
+    "available_equipment": {
+      "label_en": "What equipment do you have at home? Select all that apply",
+      "label_es": "¿Qué equipo tienes en casa? Selecciona todas las opciones que apliquen",
+      "ui_widget": "multi_select",
+      "ui_widget_options": [
+        "Dumbbells",
+        "Kettlebells",
+        "Barbell",
+        "Resistance bands",
+        "Pull-up bar",
+        "Bench",
+        "TRX",
+        "Gymnastic rings",
+        "None, just my bodyweight",
+        "Other"
+      ],
+      "ui_widget_options_es": [
+        "Mancuernas",
+        "Kettlebells",
+        "Barra olímpica",
+        "Bandas de resistencia",
+        "Barra de dominadas",
+        "Banco",
+        "TRX",
+        "Anillos de gimnasia",
+        "Ninguno, solo mi peso corporal",
+        "Otro"
+      ],
+      "depends_on": {
+        "question": "preferred_training_setting",
+        "includes_value": "Home"
+      }
+    },
+    "body_type": {
+      "label_en": "Do you know your body type?",
+      "label_es": "¿Conoces tu tipo de cuerpo?",
+      "ui_widget": "picker",
+      "ui_widget_options": [
+        "Ectomorph: Lean, fast metabolism, struggles to gain muscle or fat",
+        "Mesomorph: Athletic build, broad shoulders, gains muscle easily",
+        "Endomorph: Rounder, higher body fat, slower metabolism, builds strength but loses fat gradually",
+        "Not sure"
+      ],
+      "ui_widget_options_es": [
+        "Ectomorfo: delgado, metabolismo rápido, le cuesta ganar músculo o grasa",
+        "Mesomorfo: complexión atlética, hombros anchos, gana músculo con facilidad",
+        "Endomorfo: complexión más redondeada, mayor grasa corporal, metabolismo lento, gana fuerza pero pierde grasa gradualmente",
+        "No estoy seguro/a"
+      ]
+    },
+
+    "typical_day_eating": {
+      "label_en": "How would you describe a typical day of eating (times, foods, drinks, weekdays vs weekends)?",
+      "label_es": "¿Cómo describirías un día típico de alimentación (horarios, comidas, bebidas, entre semana y fines de semana)?",
+      "ui_widget": "text"
+    },
+    "dietary_restrictions": {
+      "label_en": "Do you have any dietary restrictions?",
+      "label_es": "¿Tienes alguna restricción alimentaria?",
+      "ui_widget": "multi_select",
+      "ui_widget_options": [
+        "None",
+        "Vegan",
+        "Vegetarian",
+        "Keto",
+        "Paleo",
+        "Halal",
+        "Kosher",
+        "Lactose-free",
+        "Gluten-free",
+        "Low-FODMAP",
+        "Other"
+      ],
+      "ui_widget_options_es": [
+        "Ninguna",
+        "Vegano/a",
+        "Vegetariano/a",
+        "Keto",
+        "Paleo",
+        "Halal",
+        "Kosher",
+        "Sin lactosa",
+        "Sin gluten",
+        "Bajo en FODMAP",
+        "Otro"
+      ]
+    },
+    "alcoholic_drinks_per_week": {
+      "label_en": "How many alcoholic drinks per week do you consume, if any?",
+      "label_es": "¿Cuántas bebidas alcohólicas tomas a la semana, si es que tomas?",
+      "ui_widget": "picker",
+      "ui_widget_options": ["0", "1–3", "4–7", "8–14", "15+", "Prefer not to answer"],
+      "ui_widget_options_es": ["0", "1–3", "4–7", "8–14", "15+", "Prefiero no responder"]
+    },
+    "track_progress": {
+      "label_en": "Do you track your progress? Select all that apply",
+      "label_es": "¿Llevas registro de tu progreso? Selecciona todas las opciones que apliquen",
+      "ui_widget": "multi_select",
+      "ui_widget_options": [
+        "None",
+        "Training",
+        "Calories consumed",
+        "Calories spent",
+        "Water consumption",
+        "Sleep",
+        "Stress"
+      ],
+      "ui_widget_options_es": [
+        "Ninguno",
+        "Entrenamiento",
+        "Calorías consumidas",
+        "Calorías gastadas",
+        "Consumo de agua",
+        "Sueño",
+        "Estrés"
+      ]
+    },
+
+    "hours_sleep_per_night": {
+      "label_en": "How many hours of sleep do you get per night?",
+      "label_es": "¿Cuántas horas duermes por noche (en promedio)?",
+      "ui_widget": "picker",
+      "ui_widget_options": ["<5", "5–6", "6–7", "7–8", "8–9", "9+"]
+    },
+    "sleep_quality_rating": {
+      "label_en": "How would you rate your sleep quality?",
+      "label_es": "¿Cómo calificarías la calidad de tu sueño?",
+      "ui_widget": "picker",
+      "ui_widget_options": ["Poor", "Moderate", "Good"],
+      "ui_widget_options_es": ["Mala", "Regular", "Buena"]
+    },
+    "sleep_routine": {
+      "label_en": "Do you have a sleep routine or protocol?",
+      "label_es": "¿Tienes alguna rutina o protocolo de sueño?",
+      "ui_widget": "picker",
+      "ui_widget_options": ["Yes, consistent", "Sometimes", "No"],
+      "ui_widget_options_es": ["Sí, constante", "A veces", "No"]
+    },
+    "sleep_tracking_apps": {
+      "label_en": "Do you use apps to track your sleep?",
+      "label_es": "¿Usas aplicaciones para registrar tu sueño?",
+      "ui_widget": "picker",
+      "ui_widget_options": ["Yes", "No"],
+      "ui_widget_options_es": ["Sí", "No"]
+    },
+    "supplements_gut_health": {
+      "label_en": "Do you take any supplements for nutritional wellness?",
+      "label_es": "¿Tomas algún suplemento para tu bienestar nutricional?",
+      "ui_widget": "multi_select",
+      "ui_widget_options": [
+        "None",
+        "Probiotics",
+        "Prebiotics",
+        "Digestive enzymes",
+        "L-Glutamine",
+        "Fiber supplement",
+        "Apple cider vinegar",
+        "Other"
+      ],
+      "ui_widget_options_es": [
+        "Ninguno",
+        "Probióticos",
+        "Prebióticos",
+        "Enzimas digestivas",
+        "L-Glutamina",
+        "Suplemento de fibra",
+        "Vinagre de manzana",
+        "Otro"
+      ]
+    },
+    "healthy_foods_liked": {
+      "label_en": "Which of the following healthy foods do you like?",
+      "label_es": "¿Cuáles de los siguientes alimentos saludables te gustan?",
+      "ui_widget": "multi_select",
+      "ui_widget_options": [
+        "Chicken breast",
+        "Salmon",
+        "Tuna",
+        "Eggs",
+        "Greek yogurt",
+        "Cottage cheese",
+        "Tofu",
+        "Tempeh",
+        "Lentils",
+        "Chickpeas",
+        "Black beans",
+        "Quinoa",
+        "Oats",
+        "Brown rice",
+        "Sweet potatoes",
+        "Broccoli",
+        "Spinach",
+        "Kale",
+        "Avocado",
+        "Nuts and seeds",
+        "Berries",
+        "Bananas",
+        "Olive oil"
+      ],
+      "ui_widget_options_es": [
+        "Pechuga de pollo",
+        "Salmón",
+        "Atún",
+        "Huevos",
+        "Yogur griego",
+        "Queso cottage",
+        "Tofu",
+        "Tempeh",
+        "Lentejas",
+        "Garbanzos",
+        "Frijoles negros",
+        "Quinoa",
+        "Avena",
+        "Arroz integral",
+        "Camote",
+        "Brócoli",
+        "Espinaca",
+        "Col rizada",
+        "Aguacate",
+        "Nueces y semillas",
+        "Frutos rojos",
+        "Plátanos",
+        "Aceite de oliva"
+      ]
+    },
+    "foods_dislike": {
+      "label_en": "Any foods you absolutely dislike or will not eat, even if \"optimal\"?",
+      "label_es": "¿Hay alimentos que de plano no te gustan o no comerías, aunque sean \"ideales\"?",
+      "ui_widget": "text",
+      "optional": true
+    },
+    "barriers_eating_at_home": {
+      "label_en": "What stops you from eating more at home?",
+      "label_es": "¿Qué te impide comer más en casa?",
+      "ui_widget": "picker",
+      "ui_widget_options": [
+        "Time constraints",
+        "I travel often",
+        "I can't really cook",
+        "I don't like to cook",
+        "Nothing, I eat mostly at home",
+        "Other"
+      ],
+      "ui_widget_options_es": [
+        "Falta de tiempo",
+        "Viajo frecuentemente",
+        "No sé cocinar bien",
+        "No me gusta cocinar",
+        "Nada, como principalmente en casa",
+        "Otro"
+      ]
+    },
+    "supplements_recovery": {
+      "label_en": "Do you take supplements for muscle recovery, sleep or stress management?",
+      "label_es": "¿Tomas suplementos para recuperación muscular, sueño o manejo del estrés?",
+      "ui_widget": "multi_select",
+      "ui_widget_options": [
+        "None",
+        "Magnesium",
+        "CBD",
+        "Creatine",
+        "Omega 3",
+        "Collagen",
+        "Protein powder",
+        "Other"
+      ],
+      "ui_widget_options_es": [
+        "Ninguno",
+        "Magnesio",
+        "CBD",
+        "Creatina",
+        "Omega 3",
+        "Colágeno",
+        "Proteína en polvo",
+        "Otro"
+      ]
+    },
+    "current_stress_level": {
+      "label_en": "What is your current stress level? (1 = very low, 10 = extremely stressed)",
+      "label_es": "¿Cuál es tu nivel actual de estrés? (1 = muy bajo, 10 = extremadamente estresado/a)",
+      "ui_widget": "slider",
+      "ui_widget_options": ["1", "10"],
+      "ui_widget_options_labels": ["Very low", "Extremely stressed"],
+      "ui_widget_options_labels_es": ["Muy bajo", "Extremadamente estresado/a"]
+    },
+    "practice_meditation": {
+      "label_en": "Do you practice meditation or other stress relief techniques?",
+      "label_es": "¿Practicas meditación u otras técnicas para reducir el estrés?",
+      "ui_widget": "picker",
+      "ui_widget_options": ["Yes, regularly", "Sometimes", "No"],
+      "ui_widget_options_es": ["Sí, regularmente", "A veces", "No"]
+    },
+
+    "existing_pain": {
+      "label_en": "Do you experience moderate to severe pain in any of these body areas?",
+      "label_es": "¿Tienes dolor moderado a severo en alguna de estas áreas del cuerpo?",
+      "ui_widget": "body_map",
+      "ui_widget_options": [
+        "neck", "shoulders", "upper-back", "lower-back", "elbows", "wrists", "hips", "knees", "ankles"
+      ]
+    },
+    "10rm_squat": {
+      "label_en": "What is your 10RM in squat? (weight you can lift for exactly 10 reps)",
+      "label_es": "¿Cuál es tu 10RM en sentadilla? (el peso que puedes levantar exactamente 10 veces)",
+      "ui_widget": "picker",
+      "ui_widget_options": ["I don't know", "20 kg", "25 kg", "30 kg", "35 kg", "40 kg", "45 kg", "50 kg", "55 kg", "60 kg", "65 kg", "70 kg", "75 kg", "80 kg", "85 kg", "90 kg", "95 kg", "100 kg", "105 kg", "110 kg", "115 kg", "120 kg", "125 kg", "130 kg", "135 kg", "140 kg", "145 kg", "150 kg", "155 kg", "160 kg", "165 kg", "170 kg", "175 kg", "180 kg", "185 kg", "190 kg", "195 kg", "200 kg", "205 kg", "210 kg", "215 kg", "220 kg", "225 kg", "230 kg", "235 kg", "240 kg", "245 kg", "250 kg"],
+      "ui_widget_options_es": ["No lo sé", "20 kg", "25 kg", "30 kg", "35 kg", "40 kg", "45 kg", "50 kg", "55 kg", "60 kg", "65 kg", "70 kg", "75 kg", "80 kg", "85 kg", "90 kg", "95 kg", "100 kg", "105 kg", "110 kg", "115 kg", "120 kg", "125 kg", "130 kg", "135 kg", "140 kg", "145 kg", "150 kg", "155 kg", "160 kg", "165 kg", "170 kg", "175 kg", "180 kg", "185 kg", "190 kg", "195 kg", "200 kg", "205 kg", "210 kg", "215 kg", "220 kg", "225 kg", "230 kg", "235 kg", "240 kg", "245 kg", "250 kg"]
+    },
+    "10rm_bench": {
+      "label_en": "What is your 10RM in bench press? (weight you can lift for exactly 10 reps)",
+      "label_es": "¿Cuál es tu 10RM en press de banca? (el peso que puedes levantar exactamente 10 veces)",
+      "ui_widget": "picker",
+      "ui_widget_options": ["I don't know", "10 kg", "15 kg", "20 kg", "25 kg", "30 kg", "35 kg", "40 kg", "45 kg", "50 kg", "55 kg", "60 kg", "65 kg", "70 kg", "75 kg", "80 kg", "85 kg", "90 kg", "95 kg", "100 kg", "105 kg", "110 kg", "115 kg", "120 kg", "125 kg", "130 kg", "135 kg", "140 kg", "145 kg", "150 kg", "155 kg", "160 kg", "165 kg", "170 kg", "175 kg", "180 kg"],
+      "ui_widget_options_es": ["No lo sé", "10 kg", "15 kg", "20 kg", "25 kg", "30 kg", "35 kg", "40 kg", "45 kg", "50 kg", "55 kg", "60 kg", "65 kg", "70 kg", "75 kg", "80 kg", "85 kg", "90 kg", "95 kg", "100 kg", "105 kg", "110 kg", "115 kg", "120 kg", "125 kg", "130 kg", "135 kg", "140 kg", "145 kg", "150 kg", "155 kg", "160 kg", "165 kg", "170 kg", "175 kg", "180 kg"]
+    },
+    "1rm_squat": {
+      "label_en": "What is your 1RM in squat? (maximum weight for a single rep)",
+      "label_es": "¿Cuál es tu 1RM en sentadilla? (el peso máximo para una sola repetición)",
+      "ui_widget": "picker",
+      "ui_widget_options": ["I don't know", "30 kg", "35 kg", "40 kg", "45 kg", "50 kg", "55 kg", "60 kg", "65 kg", "70 kg", "75 kg", "80 kg", "85 kg", "90 kg", "95 kg", "100 kg", "105 kg", "110 kg", "115 kg", "120 kg", "125 kg", "130 kg", "135 kg", "140 kg", "145 kg", "150 kg", "155 kg", "160 kg", "165 kg", "170 kg", "175 kg", "180 kg", "185 kg", "190 kg", "195 kg", "200 kg", "210 kg", "220 kg", "230 kg", "240 kg", "250 kg", "260 kg", "270 kg", "280 kg", "290 kg", "300 kg"],
+      "ui_widget_options_es": ["No lo sé", "30 kg", "35 kg", "40 kg", "45 kg", "50 kg", "55 kg", "60 kg", "65 kg", "70 kg", "75 kg", "80 kg", "85 kg", "90 kg", "95 kg", "100 kg", "105 kg", "110 kg", "115 kg", "120 kg", "125 kg", "130 kg", "135 kg", "140 kg", "145 kg", "150 kg", "155 kg", "160 kg", "165 kg", "170 kg", "175 kg", "180 kg", "185 kg", "190 kg", "195 kg", "200 kg", "210 kg", "220 kg", "230 kg", "240 kg", "250 kg", "260 kg", "270 kg", "280 kg", "290 kg", "300 kg"]
+    },
+    "1rm_bench": {
+      "label_en": "What is your 1RM in bench press? (maximum weight for a single rep)",
+      "label_es": "¿Cuál es tu 1RM en press de banca? (el peso máximo para una sola repetición)",
+      "ui_widget": "picker",
+      "ui_widget_options": ["I don't know", "20 kg", "25 kg", "30 kg", "35 kg", "40 kg", "45 kg", "50 kg", "55 kg", "60 kg", "65 kg", "70 kg", "75 kg", "80 kg", "85 kg", "90 kg", "95 kg", "100 kg", "105 kg", "110 kg", "115 kg", "120 kg", "125 kg", "130 kg", "135 kg", "140 kg", "145 kg", "150 kg", "155 kg", "160 kg", "165 kg", "170 kg", "175 kg", "180 kg", "185 kg", "190 kg", "195 kg", "200 kg"],
+      "ui_widget_options_es": ["No lo sé", "20 kg", "25 kg", "30 kg", "35 kg", "40 kg", "45 kg", "50 kg", "55 kg", "60 kg", "65 kg", "70 kg", "75 kg", "80 kg", "85 kg", "90 kg", "95 kg", "100 kg", "105 kg", "110 kg", "115 kg", "120 kg", "125 kg", "130 kg", "135 kg", "140 kg", "145 kg", "150 kg", "155 kg", "160 kg", "165 kg", "170 kg", "175 kg", "180 kg", "185 kg", "190 kg", "195 kg", "200 kg"]
+    },
+
+    "endurance_scheduling": {
+      "label_en": "How is your endurance/conditioning scheduled relative to strength sessions?",
+      "label_es": "¿Cómo organizas el cardio/acondicionamiento respecto a tus sesiones de fuerza?",
+      "ui_widget": "picker",
+      "ui_widget_options": [
+        "Same session, before lifting",
+        "Same session, after lifting",
+        "Separate days"
+      ],
+      "ui_widget_options_es": [
+        "Misma sesión, antes de levantar",
+        "Misma sesión, después de levantar",
+        "Días separados"
+      ],
+      "optional": true
+    },
+    "struggle_upper_lower": {
+      "label_en": "Is there a part of the body in which you would like to concentrate more?",
+      "label_es": "¿Hay alguna parte del cuerpo en la que quieras concentrarte más?",
+      "ui_widget": "body_map_focus",
+      "ui_widget_options": ["chest", "upper-back", "lower-back", "trapezius", "deltoids", "biceps", "triceps", "forearm", "abs", "obliques", "quadriceps", "hamstring", "adductors", "gluteal", "calves", "full_body"]
+    },
+    "tried_losing_fat_before": {
+      "label_en": "Have you intentionally tried to lose fat before?",
+      "label_es": "¿Has intentado perder grasa intencionalmente antes?",
+      "ui_widget": "picker",
+      "ui_widget_options": ["Yes", "No"],
+      "ui_widget_options_es": ["Sí", "No"]
+    },
+    "previous_fat_loss_approaches": {
+      "label_en": "What approaches have you previously tried?",
+      "label_es": "¿Qué enfoques has probado antes?",
+      "ui_widget": "multi_select",
+      "ui_widget_options": [
+        "Calorie tracking",
+        "Low-carbohydrate or ketogenic diet",
+        "Intermittent fasting or time-restricted eating",
+        "High-volume cardio",
+        "Other"
+      ],
+      "ui_widget_options_es": [
+        "Conteo de calorías",
+        "Dieta baja en carbohidratos o cetogénica",
+        "Ayuno intermitente o alimentación restringida por tiempo",
+        "Cardio de alto volumen",
+        "Otro"
+      ],
+      "optional": true,
+      "depends_on": {
+        "question": "tried_losing_fat_before",
+        "value": "Yes"
+      }
+    },
+    "what_worked_what_hasnt": {
+      "label_en": "What has worked and what hasn't in your fitness journey?",
+      "label_es": "¿Qué ha funcionado y qué no en tu camino al bienestar físico?",
+      "ui_widget": "text"
+    },
+    "stops_progress": {
+      "label_en": "What usually stops your progress?",
+      "label_es": "¿Qué suele frenar tu progreso?",
+      "ui_widget": "picker",
+      "ui_widget_options": [
+        "Hunger",
+        "Fatigue or low energy",
+        "Poor recovery",
+        "Time constraints",
+        "Adherence or motivation"
+      ],
+      "ui_widget_options_es": [
+        "Hambre",
+        "Fatiga o energía baja",
+        "Recuperación deficiente",
+        "Falta de tiempo",
+        "Adherencia o motivación"
+      ]
+    },
+    "cardio_type": {
+      "label_en": "What type of cardio do you perform most often?",
+      "label_es": "¿Qué tipo de cardio realizas con más frecuencia?",
+      "ui_widget": "picker",
+      "ui_widget_options": [
+        "Low-intensity steady-state",
+        "Interval or HIIT",
+        "Mixed",
+        "None"
+      ],
+      "ui_widget_options_es": [
+        "Cardio de baja intensidad y estado constante",
+        "Intervalos o HIIT",
+        "Mixto",
+        "Ninguno"
+      ]
+    },
+    "usual_cardio": {
+      "label_en": "What's your usual cardiovascular activity?",
+      "label_es": "¿Cuál es tu actividad cardiovascular habitual?",
+      "ui_widget": "cardio_triad",
+      "ui_widget_options": ["days_per_week", "session_length", "intensity"]
+    },
+ 
+
+    "anything_else_for_coach": {
+      "label_en": "Is there anything else you'd like your coach to know before getting started?",
+      "label_es": "¿Hay algo más que quieras que tu coach sepa antes de empezar?",
+      "ui_widget": "text",
+      "optional": true
+    }
+  },
+
+  "back_matter_questions": [
+    "anything_else_for_coach"
+  ],
+
+  "_comment_common_sections": "The following arrays define the common question sections shared by all goals. The goal-specific arrays below reference question keys from the bank.",
+
+  "common_general_information": [
+    "current_age_question",
+    "current_height_question",
+    "current_weight_question",
+    "occupation_activity"
+  ],
+  "common_training_familiarity": [
+    "usual_cardio",
+    "training_experience_years",
+    "preferred_training_setting",
+    "available_equipment",
+    "struggle_upper_lower",
+    "track_progress"
+  ],
+  "common_nutrition_initial": [],
+  "common_sleep_and_stress_initial": [
+    "hours_sleep_per_night",
+    "current_stress_level"
+  ],
+  "common_health_background": [
+    "existing_pain"
+  ],
+
+  "burn_body_fat": [
+    "quantitative_goal_burn_fat",
+    "current_age_question",
+    "current_height_question",
+    "current_weight_question",
+    "occupation_activity",
+    "usual_cardio",
+    "what_held_back_burn_fat",
+    "training_experience_years",
+    "preferred_training_setting",
+    "struggle_upper_lower",
+    "track_progress",
+    "existing_pain",
+    "hours_sleep_per_night",
+    "current_stress_level",
+    "anything_else_for_coach"
+  ],
+
+  "build_muscle_mass": [
+    "quantitative_goal_build_muscle",
+    "current_age_question",
+    "current_height_question",
+    "current_weight_question",
+    "occupation_activity",
+    "usual_cardio",
+    "what_held_back_build_muscle",
+    "training_experience_years",
+    "preferred_training_setting",
+    "struggle_upper_lower",
+    "track_progress",
+    "existing_pain",
+    "hours_sleep_per_night",
+    "current_stress_level",
+    "anything_else_for_coach"
+  ],
+
+  "increase_strength": [
+    "quantitative_goal_increase_strength",
+    "current_age_question",
+    "current_height_question",
+    "current_weight_question",
+    "occupation_activity",
+    "usual_cardio",
+    "what_held_back_increase_strength",
+    "training_experience_years",
+    "preferred_training_setting",
+    "struggle_upper_lower",
+    "track_progress",
+    "existing_pain",
+    "hours_sleep_per_night",
+    "current_stress_level",
+    "anything_else_for_coach"
+  ],
+
+  "get_challenged": [
+    "quantitative_goal_get_challenged",
+    "current_age_question",
+    "current_height_question",
+    "current_weight_question",
+    "occupation_activity",
+    "usual_cardio",
+    "training_experience_years",
+    "preferred_training_setting",
+    "struggle_upper_lower",
+    "track_progress",
+    "existing_pain",
+    "hours_sleep_per_night",
+    "current_stress_level",
+    "anything_else_for_coach"
+  ],
+
+  "nutrition_survey": [
+    "typical_day_eating",
+    "dietary_restrictions",
+    "healthy_foods_liked",
+    "foods_dislike",
+    "barriers_eating_at_home",
+    "alcoholic_drinks_per_week",
+    "supplements_gut_health"
+  ],
+
+  "recovery_survey": [
+    "sleep_quality_rating",
+    "sleep_routine",
+    "sleep_tracking_apps",
+    "practice_meditation",
+    "supplements_recovery"
+  ]
+}

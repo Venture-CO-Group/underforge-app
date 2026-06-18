@@ -1,0 +1,62 @@
+{
+  "dumbbell-shoulder-press": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=mbIhJZ2Sbcc",
+    "duration_sec": 16.0,
+    "title": "411. Press militar o de hombros con mancuernas de pie",
+    "channel": "Proet Ejercicio Terapéutico "
+  },
+  "cable-lateral-raise": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=YTITnApbXbI",
+    "duration_sec": 6.0,
+    "title": "Elevaciones laterales en poleas",
+    "channel": "Tienda Mundo Fitness"
+  },
+  "upright-row": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=U629w1olWcs",
+    "duration_sec": 36.0,
+    "title": "REMO AL MENTÓN | Técnica ejercicios",
+    "channel": "Aaron Martinez"
+  },
+  "clean-and-press": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=Q75MEj45MaU",
+    "duration_sec": 16.0,
+    "title": "Burpee + Cargada y press 1 mancuerna",
+    "channel": "MFQH"
+  },
+  "battle-rope": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=4qPUQp8qRJI",
+    "duration_sec": 16.0,
+    "title": "Cuerdas de batalla: Ondas con Desplante lateral Rutinas050600",
+    "channel": "SportCityMexico"
+  },
+  "handstand-push-up": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=4IdSswx8WLg",
+    "duration_sec": 11.0,
+    "title": "FLEXIÓN DE PINO o HSPU en CrossFit [técnica]",
+    "channel": "VBN Fitness"
+  },
+  "skin-the-cat": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=PMsXqamLzwU",
+    "duration_sec": 11.0,
+    "title": "🟢Skin The Cat - Calistenia Principiantes - Anillas",
+    "channel": "ErTrainer - entrenador personal - electroestimulación - calistenia - bajar peso"
+  },
+  "dumbbell-overhead-press": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=eWE9dzO-EWI",
+    "duration_sec": 9.0,
+    "title": "1 PRESS VERTICAL CON MANCUERNAS",
+    "channel": "Real Federación Española de Balonmano"
+  },
+  "seated-overhead-press": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=lXZ4IMCa7b4",
+    "duration_sec": 33.0,
+    "title": "Press Militar Sentado con Mancuernas",
+    "channel": "Michael Romero"
+  },
+  "dumbbell-shrug": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=2oiKODXPKqM",
+    "duration_sec": 20.0,
+    "title": "Cómo Hacer ENCOGIMIENTOS CON MANCUERNAS - Ejercicios Para Trapecios",
+    "channel": "Dorian Fit"
+  }
+}

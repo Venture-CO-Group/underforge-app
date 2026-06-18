@@ -1,0 +1,176 @@
+{
+  "expo": {
+    "name": "UnderForge",
+    "slug": "longeviq",
+    "version": "3.1.9",
+    "orientation": "portrait",
+    "icon": "./assets/app_icons/ios/iTunesArtwork@1x.png",
+    "scheme": "longeviq",
+    "userInterfaceStyle": "automatic",
+    "owner": "aprid89",
+    "ios": {
+      "supportsTablet": true,
+      "buildNumber": "40",
+      "bundleIdentifier": "com.aprid89.UnderForge",
+      "runtimeVersion": "1.0.0",
+      "icon": "./assets/app_icons/ios/iTunesArtwork@1x.png",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to capture food photos for meal logging.",
+        "NSPhotoLibraryUsageDescription": "This app requests access to your photo library so you can select meal photos for calorie and macronutrient tracking and personalized coaching. We will show your daily nutrition according to logged meals and provide tailored feedback.",
+        "NSPhotoLibraryAddUsageDescription": "This app may add photos to your library (with permission) to save annotated or processed meal images, e.g. saving a resized/annotated copy of a logged meal photo.",
+        "NSAppTransportSecurity": {
+          "NSExceptionDomains": {
+            "192.0.0.2": {
+              "NSIncludesSubdomains": true,
+              "NSExceptionAllowsInsecureHTTPLoads": true
+            },
+            "192.0.0.3": {
+              "NSIncludesSubdomains": true,
+              "NSExceptionAllowsInsecureHTTPLoads": true
+            },
+            "192.0.0.4": {
+              "NSIncludesSubdomains": true,
+              "NSExceptionAllowsInsecureHTTPLoads": true
+            },
+            "192.0.0.5": {
+              "NSIncludesSubdomains": true,
+              "NSExceptionAllowsInsecureHTTPLoads": true
+            },
+            "localhost": {
+              "NSExceptionAllowsInsecureHTTPLoads": true
+            },
+            "127.0.0.1": {
+              "NSExceptionAllowsInsecureHTTPLoads": true
+            }
+          }
+        },
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSHealthShareUsageDescription": "UnderForge reads your workouts, steps, active and resting energy, sleep, heart-rate variability, and resting heart rate from Apple Health so your activity counts toward your daily calorie target and informs your coaching.",
+        "NSHealthUpdateUsageDescription": "UnderForge can write workouts you log in the app to Apple Health so they are available across your other health apps."
+      },
+      "entitlements": {
+        "com.apple.developer.healthkit": true,
+        "com.apple.developer.healthkit.access": []
+      }
+    },
+    "android": {
+      "softwareKeyboardLayoutMode": "resize",
+      "versionCode": 20,
+      "icon": "./assets/app_icons/android/icon.png",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/app_icons/android/adaptive_foreground.png",
+        "backgroundColor": "#0B1114"
+      },
+      "runtimeVersion": "1.0.0",
+      "package": "com.aprid89.underforge",
+      "googleServicesFile": "./google-services.json",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.health.READ_STEPS",
+        "android.permission.health.READ_EXERCISE",
+        "android.permission.health.READ_ACTIVE_CALORIES_BURNED",
+        "android.permission.health.READ_TOTAL_CALORIES_BURNED",
+        "android.permission.health.READ_BASAL_METABOLIC_RATE",
+        "android.permission.health.READ_SLEEP",
+        "android.permission.health.READ_HEART_RATE_VARIABILITY",
+        "android.permission.health.READ_RESTING_HEART_RATE",
+        "com.google.android.gms.permission.AD_ID"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#0B1114"
+        }
+      ],
+      "expo-background-task",
+      [
+        "expo-notifications",
+        {
+          "sounds": [
+            "./assets/sounds/forging_sound.wav"
+          ]
+        }
+      ],
+      [
+        "react-native-fbsdk-next",
+        {
+          "appID": "2326699754524219",
+          "clientToken": "be66bbdeaaeb8d56fcdc08dd713e0e1c",
+          "displayName": "UnderForge",
+          "scheme": "fb2326699754524219",
+          "advertiserIDCollectionEnabled": true,
+          "autoLogAppEventsEnabled": true,
+          "isAutoInitEnabled": true,
+          "iosUserTrackingPermission": "UnderForge uses this identifier to measure whether our ads are effective and to improve the app. You can change this anytime in Settings."
+        }
+      ],
+      "expo-localization",
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "This app uses the camera to capture food photos for meal logging.",
+          "photosPermission": "This app requests access to your photo library so you can take meal photos for calorie and macronutrient tracking and personalized coaching. We will show your daily nutrition according to logged meals and provide tailored feedback."
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "minSdkVersion": 26,
+            "largeHeap": true
+          },
+          "ios": {
+            "useFrameworks": "static",
+            "useLegacyPackageManager": false
+          }
+        }
+      ],
+      "./plugins/withOkHttpFix.js",
+      "expo-video",
+      "expo-audio",
+      [
+        "react-native-health",
+        {
+          "isClinicalDataEnabled": false,
+          "healthSharePermission": "UnderForge reads your workouts, steps, active and resting energy, sleep, heart-rate variability, and resting heart rate from Apple Health so your activity counts toward your daily calorie target and informs your coaching.",
+          "healthUpdatePermission": "UnderForge can write workouts you log in the app to Apple Health so they are available across your other health apps.",
+          "background": true
+        }
+      ],
+      "react-native-health-connect",
+      "./plugins/withHealthConnectPermissionDelegate.js",
+      "expo-tracking-transparency"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "assetBundlePatterns": [
+      "assets/icons/**/*"
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "eaa39b25-2174-4741-b93f-c99873e73ee7"
+      }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/eaa39b25-2174-4741-b93f-c99873e73ee7",
+      "checkAutomatically": "ON_LOAD",
+      "fallbackToCacheTimeout": 0
+    }
+  }
+}

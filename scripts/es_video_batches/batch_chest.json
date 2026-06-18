@@ -1,0 +1,68 @@
+{
+  "dumbbell-bench-press": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=c0XgwF-Hwgk",
+    "duration_sec": 53.0,
+    "title": "PRESS PLANO CON MANCUERNAS | TÉCNICA CORRECTA con Azpiazu",
+    "channel": "AZPIAZU: Fitness y Cambios Reales"
+  },
+  "decline-dumbbell-press": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=2uWdrii0ZG8",
+    "duration_sec": 16.0,
+    "title": "Press declinado con mancuerna",
+    "channel": "Campestre Aguascalientes Oficial"
+  },
+  "cable-crossover": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=qtgGZJRnivE",
+    "duration_sec": 46.0,
+    "title": "Ejercicio práctico S.N.A.P.D. / Cruce del puente con una sola cuerda",
+    "channel": " Colegio Militar Liceo Social Compartir (OFICIAL)"
+  },
+  "dumbbell-pullover": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=qRhCDkJH8Ck",
+    "duration_sec": 19.0,
+    "title": "Pullover con mancuerna sobre banco | SPORT LIFE",
+    "channel": "Sport Life España"
+  },
+  "dumbbell-fly": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=7tF9n6S-F5c",
+    "duration_sec": 16.0,
+    "title": "Cruce de Mancuernas (Alternando) de Pie - IVOPHYSICAL",
+    "channel": "IvoPhysical"
+  },
+  "pec-deck": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=Mv-Rai-5jYU",
+    "duration_sec": 11.0,
+    "title": "Aperturas en máquina | Pec Deck Fly / Machine Chest Fly",
+    "channel": "Trainer Alex León "
+  },
+  "diamond-push-up": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=hcmKOgghGrM",
+    "duration_sec": 38.0,
+    "title": "Flexiones DIAMANTE ✅ TÉCNICA (tríceps a fuego 🔥)",
+    "channel": "La Bombilla Saludable "
+  },
+  "clap-push-up": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=pFqDpa5KhPo",
+    "duration_sec": 10.0,
+    "title": "Flexiones con palmada",
+    "channel": "Mr. Fahrenheit"
+  },
+  "archer-push-up": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=eumYaPGZoro",
+    "duration_sec": 30.0,
+    "title": "Flexión arquera",
+    "channel": "Power Team"
+  },
+  "machine-chest-press": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=ADqg_IoKhME",
+    "duration_sec": 16.0,
+    "title": "Press de Pecho en máquina Rutinas041000",
+    "channel": "SportCityMexico"
+  },
+  "incline-push-up": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=uCTbmCjiF7Y",
+    "duration_sec": 26.0,
+    "title": "Claves para hacer: Flexiones Inclinadas",
+    "channel": "Instituto de Entrenamiento Personal"
+  }
+}

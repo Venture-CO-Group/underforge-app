@@ -1,0 +1,6 @@
+modal
+fastapi
+supabase
+python-multipart
+uvicorn
+pydantic

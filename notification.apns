@@ -1,0 +1,9 @@
+{
+  "aps": {
+    "alert": {
+      "title": "Coach Message",
+      "body": "Hi! How are you feeling today? Remember to take your vitamins and stay hydrated."
+    },
+    "sound": "default"
+  }
+}

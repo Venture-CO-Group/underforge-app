@@ -1,0 +1,770 @@
+{
+  "90-90-hip-switch": {
+    "nameEs": "Cambio de cadera 90/90",
+    "videoUrlEs": "https://www.youtube.com/shorts/eu7CXsemhPk"
+  },
+  "ab-rollout": {
+    "nameEs": "Rueda abdominal",
+    "videoUrlEs": "https://www.youtube.com/shorts/UQQvlkaio8Y"
+  },
+  "ankle-rocks": {
+    "nameEs": "Balanceo de tobillos",
+    "videoUrlEs": "https://www.youtube.com/shorts/V1wnyiRmoGk"
+  },
+  "archer-push-up": {
+    "nameEs": "Flexión arquero",
+    "videoUrlEs": "https://www.youtube.com/shorts/_kNKELhv-Z8"
+  },
+  "arnold-press": {
+    "nameEs": "Press Arnold",
+    "videoUrlEs": "https://www.youtube.com/watch?v=jeJttN2EWCo"
+  },
+  "assault-bike": {
+    "nameEs": "Bicicleta de asalto (Air Bike)",
+    "videoUrlEs": "https://www.youtube.com/shorts/0MOPjPJkCj0"
+  },
+  "assisted-dip": {
+    "nameEs": "Fondos asistidos (banda o máquina)",
+    "videoUrlEs": "https://www.youtube.com/watch?v=lh5-K9Ll71s"
+  },
+  "assisted-pull-up": {
+    "nameEs": "Dominada asistida",
+    "videoUrlEs": "https://www.youtube.com/shorts/1D7UdpGI-CE"
+  },
+  "back-extension": {
+    "nameEs": "Hiperextensión de espalda (columna neutra)",
+    "videoUrlEs": "https://www.youtube.com/shorts/neoUfYkJVwM"
+  },
+  "back-lever": {
+    "nameEs": "Back lever",
+    "videoUrlEs": "https://www.youtube.com/shorts/V4K3aMbFYKg"
+  },
+  "band-external-rotation": {
+    "nameEs": "Rotación externa con banda",
+    "videoUrlEs": "https://www.youtube.com/watch?v=wQdfeB80fqo"
+  },
+  "band-pull-apart": {
+    "nameEs": "Apertura con banda",
+    "videoUrlEs": "https://www.youtube.com/watch?v=k4SJcYp3cuk"
+  },
+  "barbell-back-squat": {
+    "nameEs": "Sentadilla trasera con barra",
+    "videoUrlEs": "https://www.youtube.com/shorts/HW4NEytEiO0"
+  },
+  "barbell-bench-press": {
+    "nameEs": "Press de banca con barra",
+    "videoUrlEs": "https://www.youtube.com/shorts/S7NrsueBHhA"
+  },
+  "barbell-curl": {
+    "nameEs": "Curl de bíceps con barra",
+    "videoUrlEs": "https://www.youtube.com/watch?v=a9hli15uWiA"
+  },
+  "barbell-deadlift": {
+    "nameEs": "Peso muerto con barra",
+    "videoUrlEs": "https://www.youtube.com/watch?v=0XL4cZR2Ink"
+  },
+  "barbell-decline-bench-press": {
+    "nameEs": "Press de banca declinado con barra",
+    "videoUrlEs": "https://www.youtube.com/shorts/yvp6aGRMQoA"
+  },
+  "barbell-front-squat": {
+    "nameEs": "Sentadilla frontal con barra",
+    "videoUrlEs": "https://www.youtube.com/shorts/_qv0m3tPd3s"
+  },
+  "barbell-incline-bench-press": {
+    "nameEs": "Press de banca inclinado con barra",
+    "videoUrlEs": "https://www.youtube.com/shorts/VXaBbUYMfIs"
+  },
+  "barbell-overhead-press": {
+    "nameEs": "Press militar con barra",
+    "videoUrlEs": "https://www.youtube.com/watch?v=5T8uTigxs2I"
+  },
+  "barbell-row": {
+    "nameEs": "Remo con barra",
+    "videoUrlEs": "https://www.youtube.com/shorts/woq91YoLGAU"
+  },
+  "barbell-shrug": {
+    "nameEs": "Encogimientos con barra",
+    "videoUrlEs": "https://www.youtube.com/shorts/xUt1cEtbjhE"
+  },
+  "battle-rope": {
+    "nameEs": "Ondas con cuerda",
+    "videoUrlEs": "https://www.youtube.com/watch?v=4qPUQp8qRJI"
+  },
+  "bear-crawl": {
+    "nameEs": "Caminata del oso",
+    "videoUrlEs": "https://www.youtube.com/shorts/xp71ZdGTj9Q"
+  },
+  "bicycle-crunch": {
+    "nameEs": "Abdominal en bicicleta",
+    "videoUrlEs": "https://www.youtube.com/shorts/K79CoGMh7P0"
+  },
+  "bird-dog": {
+    "nameEs": "Bird dog",
+    "videoUrlEs": "https://www.youtube.com/watch?v=cqe97lhKVP4"
+  },
+  "box-jump": {
+    "nameEs": "Salto al cajón",
+    "videoUrlEs": "https://www.youtube.com/shorts/0OIZek8FRJM"
+  },
+  "box-squat": {
+    "nameEs": "Sentadilla al cajón",
+    "videoUrlEs": "https://www.youtube.com/shorts/Tv5-1injKrU"
+  },
+  "bulgarian-split-squat": {
+    "nameEs": "Zancada búlgara",
+    "videoUrlEs": "https://www.youtube.com/shorts/t4-_udCqwqI"
+  },
+  "burpee": {
+    "nameEs": "Burpee",
+    "videoUrlEs": "https://www.youtube.com/shorts/q1n7pyxVy28"
+  },
+  "cable-crossover": {
+    "nameEs": "Cruce de cables",
+    "videoUrlEs": "https://www.youtube.com/shorts/QEW6RO0O-ak"
+  },
+  "cable-crunch": {
+    "nameEs": "Abdominales en polea alta",
+    "videoUrlEs": "https://www.youtube.com/shorts/XfmmdwT1pVs"
+  },
+  "cable-curl": {
+    "nameEs": "Curl en polea baja",
+    "videoUrlEs": "https://www.youtube.com/shorts/90lb2VyvDwY"
+  },
+  "cable-kickback": {
+    "nameEs": "Patada trasera en polea",
+    "videoUrlEs": "https://www.youtube.com/shorts/B9Fqo0KqeWc"
+  },
+  "cable-lateral-raise": {
+    "nameEs": "Elevaciones laterales en polea",
+    "videoUrlEs": "https://www.youtube.com/shorts/rXZeimjX6g0"
+  },
+  "cable-pull-through": {
+    "nameEs": "Pull-through en polea baja",
+    "videoUrlEs": "https://www.youtube.com/shorts/SbquVKT_2jg"
+  },
+  "cable-tricep-extension": {
+    "nameEs": "Extensiones de tríceps en polea alta",
+    "videoUrlEs": "https://www.youtube.com/shorts/4NWWB0f0vzQ"
+  },
+  "calf-raise": {
+    "nameEs": "Elevaciones de gemelos",
+    "videoUrlEs": "https://www.youtube.com/watch?v=Wr6Bik6Lrp4"
+  },
+  "cat-cow": {
+    "nameEs": "Gato-camello (Cat-Cow)",
+    "videoUrlEs": "https://www.youtube.com/watch?v=J99uL4J5khE"
+  },
+  "chest-fly": {
+    "nameEs": "Aperturas con mancuernas (pecho)",
+    "videoUrlEs": "https://www.youtube.com/watch?v=Nhvz9EzdJ4U"
+  },
+  "chest-supported-row": {
+    "nameEs": "Remo con apoyo de pecho",
+    "videoUrlEs": "https://www.youtube.com/shorts/SE4WipuspmY"
+  },
+  "chin-up": {
+    "nameEs": "Dominadas en supinación",
+    "videoUrlEs": "https://www.youtube.com/shorts/iNJ5QW3YMAg"
+  },
+  "clamshell": {
+    "nameEs": "Concha (clam shell)",
+    "videoUrlEs": "https://www.youtube.com/shorts/yGfe0XZ0pUU"
+  },
+  "clap-push-up": {
+    "nameEs": "Flexiones con palmada",
+    "videoUrlEs": "https://www.youtube.com/watch?v=pFqDpa5KhPo"
+  },
+  "clean-and-press": {
+    "nameEs": "Cargada y press",
+    "videoUrlEs": "https://www.youtube.com/watch?v=RXkY7nlr4vI"
+  },
+  "close-grip-bench-press": {
+    "nameEs": "Press de banca agarre cerrado",
+    "videoUrlEs": "https://www.youtube.com/watch?v=XEFDMwmrLAM"
+  },
+  "concentration-curl": {
+    "nameEs": "Curl concentrado",
+    "videoUrlEs": "https://www.youtube.com/watch?v=Xu7FRTd3Jg8"
+  },
+  "copenhagen-plank": {
+    "nameEs": "Plancha de Copenhague",
+    "videoUrlEs": "https://www.youtube.com/shorts/R6-0oI9gQnQ"
+  },
+  "cossack-squat": {
+    "nameEs": "Sentadilla cosaca",
+    "videoUrlEs": "https://www.youtube.com/shorts/crxOH1EoIWU"
+  },
+  "couch-stretch": {
+    "nameEs": "Estiramiento del sofá",
+    "videoUrlEs": "https://www.youtube.com/watch?v=dbDYs4d58Pg"
+  },
+  "crunch": {
+    "nameEs": "Abdominales cortos (crunch)",
+    "videoUrlEs": "https://www.youtube.com/shorts/U2Pxw_PLfXc"
+  },
+  "cycling": {
+    "nameEs": "Ciclismo",
+    "videoUrlEs": "https://www.youtube.com/shorts/r7XxibDuFWY"
+  },
+  "dead-bug": {
+    "nameEs": "Dead bug",
+    "videoUrlEs": "https://www.youtube.com/watch?v=jbWmbhElf3Q"
+  },
+  "decline-dumbbell-press": {
+    "nameEs": "Press declinado con mancuernas",
+    "videoUrlEs": "https://www.youtube.com/watch?v=2uWdrii0ZG8"
+  },
+  "diamond-push-up": {
+    "nameEs": "Flexiones en diamante",
+    "videoUrlEs": "https://www.youtube.com/watch?v=hcmKOgghGrM"
+  },
+  "dip": {
+    "nameEs": "Fondos en paralelas (pecho)",
+    "videoUrlEs": "https://www.youtube.com/shorts/JT2r9qaP9bU"
+  },
+  "donkey-calf-raise": {
+    "nameEs": "Gemelo en burro",
+    "videoUrlEs": "https://www.youtube.com/watch?v=watMaxAQBCU"
+  },
+  "donkey-kick": {
+    "nameEs": "Patada de burro",
+    "videoUrlEs": "https://www.youtube.com/watch?v=NxQkW_n39WQ"
+  },
+  "dumbbell-bench-press": {
+    "nameEs": "Press de banca con mancuernas",
+    "videoUrlEs": "https://www.youtube.com/watch?v=c0XgwF-Hwgk"
+  },
+  "dumbbell-curl": {
+    "nameEs": "Curl de bíceps con mancuernas",
+    "videoUrlEs": "https://www.youtube.com/watch?v=a9hli15uWiA"
+  },
+  "dumbbell-deadlift": {
+    "nameEs": "Peso muerto con mancuernas",
+    "videoUrlEs": "https://www.youtube.com/watch?v=x7W2BOKWWKs"
+  },
+  "dumbbell-fly": {
+    "nameEs": "Cruce con mancuernas (pecho)",
+    "videoUrlEs": "https://www.youtube.com/watch?v=lMcLXbjrbQ4"
+  },
+  "dumbbell-front-squat": {
+    "nameEs": "Sentadilla frontal con mancuernas",
+    "videoUrlEs": "https://www.youtube.com/watch?v=jv2rD37oQOk"
+  },
+  "dumbbell-overhead-press": {
+    "nameEs": "Press vertical con mancuernas",
+    "videoUrlEs": "https://www.youtube.com/watch?v=eWE9dzO-EWI"
+  },
+  "dumbbell-pullover": {
+    "nameEs": "Pullover con mancuerna",
+    "videoUrlEs": "https://www.youtube.com/watch?v=qRhCDkJH8Ck"
+  },
+  "dumbbell-row": {
+    "nameEs": "Remo con mancuerna",
+    "videoUrlEs": "https://www.youtube.com/watch?v=ZRSGpBUVcNw"
+  },
+  "dumbbell-shoulder-press": {
+    "nameEs": "Press de hombros con mancuernas",
+    "videoUrlEs": "https://www.youtube.com/watch?v=mbIhJZ2Sbcc"
+  },
+  "dumbbell-shrug": {
+    "nameEs": "Encogimientos con mancuernas",
+    "videoUrlEs": "https://www.youtube.com/watch?v=2oiKODXPKqM"
+  },
+  "elliptical": {
+    "nameEs": "Elíptica",
+    "videoUrlEs": "https://www.youtube.com/watch?v=d-1TD5AhmbE"
+  },
+  "ez-bar-curl": {
+    "nameEs": "Curl con barra Z",
+    "videoUrlEs": "https://www.youtube.com/watch?v=mFgTFstIfFs"
+  },
+  "face-pull": {
+    "nameEs": "Face pull",
+    "videoUrlEs": "https://www.youtube.com/watch?v=eTCBSFlCJ_s"
+  },
+  "farmers-walk": {
+    "nameEs": "Farmer walk",
+    "videoUrlEs": "https://www.youtube.com/watch?v=YP__IooIeaM"
+  },
+  "front-lever": {
+    "nameEs": "Front lever",
+    "videoUrlEs": "https://www.youtube.com/shorts/gzIPpyvxWQ0"
+  },
+  "front-raise": {
+    "nameEs": "Elevaciones frontales",
+    "videoUrlEs": "https://www.youtube.com/watch?v=ho8gQ8SdhJY"
+  },
+  "glute-bridge": {
+    "nameEs": "Puente de glúteos",
+    "videoUrlEs": "https://www.youtube.com/watch?v=Xp33YgPZgns"
+  },
+  "glute-kickback": {
+    "nameEs": "Patada de glúteo en máquina",
+    "videoUrlEs": "https://www.youtube.com/shorts/n-cgsNePyFo"
+  },
+  "goblet-squat": {
+    "nameEs": "Sentadilla goblet",
+    "videoUrlEs": "https://www.youtube.com/watch?v=pEGfGwp6IEA"
+  },
+  "good-morning": {
+    "nameEs": "Good morning",
+    "videoUrlEs": "https://www.youtube.com/watch?v=nWyx81AfTos"
+  },
+  "hack-squat": {
+    "nameEs": "Sentadilla en máquina hack",
+    "videoUrlEs": "https://www.youtube.com/watch?v=scs5XcsZuc8"
+  },
+  "half-kneeling-single-arm-db-press": {
+    "nameEs": "Press con una mancuerna arrodillado",
+    "videoUrlEs": "https://www.youtube.com/watch?v=4DUIY95jX6Y"
+  },
+  "hammer-curl": {
+    "nameEs": "Curl martillo",
+    "videoUrlEs": "https://www.youtube.com/watch?v=CFBZ4jN1CMI"
+  },
+  "handstand-push-up": {
+    "nameEs": "Flexión en pino",
+    "videoUrlEs": "https://www.youtube.com/watch?v=4IdSswx8WLg"
+  },
+  "hanging-leg-raise": {
+    "nameEs": "Elevación de piernas colgado",
+    "videoUrlEs": "https://www.youtube.com/shorts/vsG3ufxXtUo"
+  },
+  "high-knees": {
+    "nameEs": "Rodillas altas",
+    "videoUrlEs": "https://www.youtube.com/watch?v=PLY17hW8HvU"
+  },
+  "hiking": {
+    "nameEs": "Senderismo",
+    "videoUrlEs": "https://www.youtube.com/shorts/dUQzMd_D23E"
+  },
+  "hip-abduction": {
+    "nameEs": "Abducción de cadera en máquina",
+    "videoUrlEs": "https://www.youtube.com/watch?v=H98IP8rARy4"
+  },
+  "hip-adduction-machine": {
+    "nameEs": "Máquina de aducción de cadera",
+    "videoUrlEs": "https://www.youtube.com/shorts/Q-yJSNr0sxQ"
+  },
+  "hip-thrust": {
+    "nameEs": "Elevación de cadera (hip thrust)",
+    "videoUrlEs": "https://www.youtube.com/watch?v=pUdIL5x0fWg"
+  },
+  "hollow-body-hold": {
+    "nameEs": "Hollow body",
+    "videoUrlEs": "https://www.youtube.com/watch?v=EsnM8eBtazU"
+  },
+  "human-flag": {
+    "nameEs": "Bandera humana",
+    "videoUrlEs": "https://www.youtube.com/shorts/7EBd-Z3SYZ4"
+  },
+  "incline-cable-fly": {
+    "nameEs": "Aperturas en polea inclinada",
+    "videoUrlEs": "https://www.youtube.com/shorts/jtxgWFlWfWo"
+  },
+  "incline-dumbbell-curl": {
+    "nameEs": "Curl inclinado con mancuernas",
+    "videoUrlEs": "https://www.youtube.com/watch?v=OWaaLHA7pX0"
+  },
+  "incline-dumbbell-press": {
+    "nameEs": "Press inclinado con mancuernas",
+    "videoUrlEs": "https://www.youtube.com/watch?v=ZaDlbm8E8Tg"
+  },
+  "incline-push-up": {
+    "nameEs": "Flexiones inclinadas",
+    "videoUrlEs": "https://www.youtube.com/watch?v=uCTbmCjiF7Y"
+  },
+  "incline-walking": {
+    "nameEs": "Caminata inclinada",
+    "videoUrlEs": "https://www.youtube.com/shorts/k5-CGO-QVQg"
+  },
+  "inverted-row": {
+    "nameEs": "Remo invertido",
+    "videoUrlEs": "https://www.youtube.com/shorts/TMCAdemQICk"
+  },
+  "jump-rope": {
+    "nameEs": "Saltar a la comba",
+    "videoUrlEs": "https://www.youtube.com/watch?v=sZ4VEOM_S5U"
+  },
+  "jump-squat": {
+    "nameEs": "Sentadilla con salto",
+    "videoUrlEs": "https://www.youtube.com/watch?v=ylxeTLS7N2o"
+  },
+  "jumping-jack": {
+    "nameEs": "Saltos de tijera",
+    "videoUrlEs": "https://www.youtube.com/watch?v=QBqwvDdw7dQ"
+  },
+  "kettlebell-front-squat-double": {
+    "nameEs": "Sentadilla frontal con dos kettlebells",
+    "videoUrlEs": "https://www.youtube.com/watch?v=PETvWbwqe00"
+  },
+  "kettlebell-front-squat-single": {
+    "nameEs": "Sentadilla frontal con una kettlebell",
+    "videoUrlEs": "https://www.youtube.com/watch?v=AgD7XRyH05o"
+  },
+  "kettlebell-swing": {
+    "nameEs": "Swing con kettlebell",
+    "videoUrlEs": "https://www.youtube.com/watch?v=1cVT3ee9mgU"
+  },
+  "l-sit": {
+    "nameEs": "L-sit",
+    "videoUrlEs": "https://www.youtube.com/shorts/CK04n6RmDzc"
+  },
+  "landmine-press": {
+    "nameEs": "Press landmine",
+    "videoUrlEs": "https://www.youtube.com/watch?v=TFIwk1kz9h4"
+  },
+  "lat-pulldown": {
+    "nameEs": "Jalón al pecho",
+    "videoUrlEs": "https://www.youtube.com/shorts/sAYU5EvtXSo"
+  },
+  "lateral-lunge": {
+    "nameEs": "Zancada lateral",
+    "videoUrlEs": "https://www.youtube.com/shorts/B4GwmI4j7ok"
+  },
+  "lateral-raise": {
+    "nameEs": "Elevaciones laterales",
+    "videoUrlEs": "https://www.youtube.com/shorts/zBqZqAjCnR4"
+  },
+  "lateral-squat": {
+    "nameEs": "Sentadilla lateral (cangrejo)",
+    "videoUrlEs": "https://www.youtube.com/shorts/nBqtb3xSIUc"
+  },
+  "leg-curl": {
+    "nameEs": "Curl femoral tumbado",
+    "videoUrlEs": "https://www.youtube.com/shorts/B6t8MvbTtew"
+  },
+  "leg-extension": {
+    "nameEs": "Extensiones de rodilla en máquina",
+    "videoUrlEs": "https://www.youtube.com/shorts/zPdFwh0pXGY"
+  },
+  "leg-press": {
+    "nameEs": "Prensa de piernas",
+    "videoUrlEs": "https://www.youtube.com/shorts/CZrG20G5B1g"
+  },
+  "leg-raise": {
+    "nameEs": "Elevación de piernas tumbado",
+    "videoUrlEs": "https://www.youtube.com/shorts/pBC7ciQ5BMc"
+  },
+  "lying-tricep-extension": {
+    "nameEs": "Extensiones de tríceps tumbado",
+    "videoUrlEs": "https://www.youtube.com/shorts/cIo6N4_m7OI"
+  },
+  "machine-chest-press": {
+    "nameEs": "Press de pecho en máquina",
+    "videoUrlEs": "https://www.youtube.com/shorts/fGpg1zE-Kd0"
+  },
+  "machine-row": {
+    "nameEs": "Remo en máquina",
+    "videoUrlEs": "https://www.youtube.com/shorts/iyOM6y5ADAQ"
+  },
+  "machine-shoulder-press": {
+    "nameEs": "Press de hombros en máquina",
+    "videoUrlEs": "https://www.youtube.com/shorts/BqdJeb6jHko"
+  },
+  "mountain-climber": {
+    "nameEs": "Mountain climber",
+    "videoUrlEs": "https://www.youtube.com/watch?v=zWJQzw1n9zo"
+  },
+  "muscle-up": {
+    "nameEs": "Muscle-up",
+    "videoUrlEs": "https://www.youtube.com/shorts/rJQqh6pQLhc"
+  },
+  "nordic-hamstring-curl": {
+    "nameEs": "Curl nórdico de isquios",
+    "videoUrlEs": "https://www.youtube.com/watch?v=k8S9iTf8nHc"
+  },
+  "oblique-crunch": {
+    "nameEs": "Abdominal oblicuo",
+    "videoUrlEs": "https://www.youtube.com/shorts/OiV1qiplFA8"
+  },
+  "one-arm-dumbbell-row": {
+    "nameEs": "Remo con una mano",
+    "videoUrlEs": "https://www.youtube.com/shorts/nsKU2--tz1Q"
+  },
+  "overhead-tricep-extension": {
+    "nameEs": "Extensiones de tríceps por encima de la cabeza",
+    "videoUrlEs": "https://www.youtube.com/shorts/PQGYcsYMISs"
+  },
+  "pallof-press": {
+    "nameEs": "Pallof press",
+    "videoUrlEs": "https://www.youtube.com/shorts/wu3OWepazLw"
+  },
+  "pec-deck": {
+    "nameEs": "Aperturas en máquina (Pec deck)",
+    "videoUrlEs": "https://www.youtube.com/watch?v=Mv-Rai-5jYU"
+  },
+  "pendlay-row": {
+    "nameEs": "Remo Pendlay",
+    "videoUrlEs": "https://www.youtube.com/shorts/Yxj-dV8NL3o"
+  },
+  "pistol-squat": {
+    "nameEs": "Sentadilla pistola",
+    "videoUrlEs": "https://www.youtube.com/shorts/kf3nbLf1odQ"
+  },
+  "plank": {
+    "nameEs": "Plancha frontal",
+    "videoUrlEs": "https://www.youtube.com/shorts/XCOq6lfsFAk"
+  },
+  "preacher-curl": {
+    "nameEs": "Curl en banco Scott",
+    "videoUrlEs": "https://www.youtube.com/shorts/uO5OUPTT5fE"
+  },
+  "prone-y-t-raises": {
+    "nameEs": "Elevaciones en Y-T prono",
+    "videoUrlEs": "https://www.youtube.com/watch?v=0kvpjatc-O8"
+  },
+  "pull-up": {
+    "nameEs": "Dominadas en pronación",
+    "videoUrlEs": "https://www.youtube.com/watch?v=9xI1QTm-zRc"
+  },
+  "push-up": {
+    "nameEs": "Flexiones",
+    "videoUrlEs": "https://www.youtube.com/shorts/cWrJFIdTje0"
+  },
+  "rack-pull": {
+    "nameEs": "Peso muerto parcial (rack pull)",
+    "videoUrlEs": "https://www.youtube.com/shorts/52yR278Tm1s"
+  },
+  "reverse-crunch": {
+    "nameEs": "Crunch invertido",
+    "videoUrlEs": "https://www.youtube.com/watch?v=Q6Xg48GUGfY"
+  },
+  "reverse-fly": {
+    "nameEs": "Pájaro (elevaciones posteriores)",
+    "videoUrlEs": "https://www.youtube.com/shorts/MewpQ7FqHNA"
+  },
+  "reverse-lunge": {
+    "nameEs": "Zancada inversa",
+    "videoUrlEs": "https://www.youtube.com/shorts/8xtGoDqX4c8"
+  },
+  "reverse-wrist-curl": {
+    "nameEs": "Curl de muñecas inverso",
+    "videoUrlEs": "https://www.youtube.com/shorts/T2IVE4YnrUw"
+  },
+  "romanian-deadlift": {
+    "nameEs": "Peso muerto rumano",
+    "videoUrlEs": "https://www.youtube.com/shorts/9z6AYqXkBbY"
+  },
+  "rope-pushdown": {
+    "nameEs": "Extensiones de tríceps con cuerda",
+    "videoUrlEs": "https://www.youtube.com/shorts/u36jNfqh8_U"
+  },
+  "rowing-machine": {
+    "nameEs": "Remoergómetro",
+    "videoUrlEs": "https://www.youtube.com/watch?v=TiQC32k8qmk"
+  },
+  "rucking": {
+    "nameEs": "Marcha con mochila lastrada",
+    "videoUrlEs": "https://www.youtube.com/watch?v=CcaWye4g9QQ"
+  },
+  "running": {
+    "nameEs": "Correr",
+    "videoUrlEs": "https://www.youtube.com/watch?v=mQSnptuyyWk"
+  },
+  "russian-twist": {
+    "nameEs": "Giro ruso",
+    "videoUrlEs": "https://www.youtube.com/watch?v=s_T2ANC7GBs"
+  },
+  "scapular-push-up": {
+    "nameEs": "Flexión escapular",
+    "videoUrlEs": "https://www.youtube.com/shorts/XkxcT6qXiYk"
+  },
+  "seated-cable-row": {
+    "nameEs": "Remo sentado en polea",
+    "videoUrlEs": "https://www.youtube.com/shorts/iyOM6y5ADAQ"
+  },
+  "seated-calf-raise": {
+    "nameEs": "Gemelo sentado",
+    "videoUrlEs": "https://www.youtube.com/shorts/3ra-uyR1Aus"
+  },
+  "seated-dumbbell-curl": {
+    "nameEs": "Curl sentado con mancuernas",
+    "videoUrlEs": "https://www.youtube.com/watch?v=CFBZ4jN1CMI"
+  },
+  "seated-leg-curl": {
+    "nameEs": "Curl femoral sentado",
+    "videoUrlEs": "https://www.youtube.com/watch?v=WGih6WFr3uI"
+  },
+  "seated-overhead-press": {
+    "nameEs": "Press militar sentado",
+    "videoUrlEs": "https://www.youtube.com/watch?v=lXZ4IMCa7b4"
+  },
+  "shadow-boxing": {
+    "nameEs": "Boxeo de sombra",
+    "videoUrlEs": "https://www.youtube.com/watch?v=ou8SvZnk1Uo"
+  },
+  "shrimp-squat": {
+    "nameEs": "Sentadilla gamba",
+    "videoUrlEs": "https://www.youtube.com/watch?v=6a3fQ2k4_rI"
+  },
+  "side-plank": {
+    "nameEs": "Plancha lateral",
+    "videoUrlEs": "https://www.youtube.com/watch?v=se8iGMebSQ0"
+  },
+  "side-plank-knees-bent": {
+    "nameEs": "Plancha lateral con rodillas flexionadas",
+    "videoUrlEs": "https://www.youtube.com/watch?v=T5XO-I_BVYM"
+  },
+  "single-arm-cable-row": {
+    "nameEs": "Remo en polea a un brazo",
+    "videoUrlEs": "https://www.youtube.com/watch?v=1jN6qeXdvWA"
+  },
+  "single-leg-calf-raise": {
+    "nameEs": "Gemelo a una pierna",
+    "videoUrlEs": "https://www.youtube.com/watch?v=KcTEGifMTDY"
+  },
+  "single-leg-romanian-deadlift": {
+    "nameEs": "Peso muerto rumano a una pierna",
+    "videoUrlEs": "https://www.youtube.com/watch?v=Zfr6wizR8rs"
+  },
+  "sissy-squat": {
+    "nameEs": "Sissy squat",
+    "videoUrlEs": "https://www.youtube.com/watch?v=FTmbNjUu7CI"
+  },
+  "sit-up": {
+    "nameEs": "Abdominales completos",
+    "videoUrlEs": "https://www.youtube.com/watch?v=7AOLLglx_R0"
+  },
+  "ski-erg": {
+    "nameEs": "Ski Erg (esquí ergómetro)",
+    "videoUrlEs": "https://www.youtube.com/watch?v=tJU6VGbGEaI"
+  },
+  "skin-the-cat": {
+    "nameEs": "Skin the cat",
+    "videoUrlEs": "https://www.youtube.com/watch?v=PMsXqamLzwU"
+  },
+  "skull-crusher": {
+    "nameEs": "Press francés (skull crusher)",
+    "videoUrlEs": "https://www.youtube.com/watch?v=jO2Jl9eZpXk"
+  },
+  "sled-push": {
+    "nameEs": "Trineo (empuje)",
+    "videoUrlEs": "https://www.youtube.com/watch?v=m2bw9a9GMqs"
+  },
+  "split-squat": {
+    "nameEs": "Sentadilla dividida (split)",
+    "videoUrlEs": "https://www.youtube.com/watch?v=4bNQITw0VdY"
+  },
+  "sprint-intervals": {
+    "nameEs": "Sprints por intervalos",
+    "videoUrlEs": "https://www.youtube.com/watch?v=E8hsqqR86HI"
+  },
+  "stair-climber": {
+    "nameEs": "Subida de escaleras (máquina)",
+    "videoUrlEs": "https://www.youtube.com/watch?v=9sufkwi-M_k"
+  },
+  "standing-calf-raise": {
+    "nameEs": "Gemelo de pie",
+    "videoUrlEs": "https://www.youtube.com/watch?v=95itLfMBG40"
+  },
+  "standing-pallof-hold": {
+    "nameEs": "Pallof press isométrico de pie",
+    "videoUrlEs": "https://www.youtube.com/watch?v=AH_QZLm_0-s"
+  },
+  "step-up": {
+    "nameEs": "Subidas al cajón",
+    "videoUrlEs": "https://www.youtube.com/watch?v=37tVohr7LcE"
+  },
+  "stiff-leg-deadlift": {
+    "nameEs": "Peso muerto con piernas rígidas",
+    "videoUrlEs": "https://www.youtube.com/watch?v=CN_7cz3P-1U"
+  },
+  "straight-arm-pulldown": {
+    "nameEs": "Pullover en polea con brazos rectos",
+    "videoUrlEs": "https://www.youtube.com/watch?v=ey9Fv3FGrRg"
+  },
+  "suitcase-carry": {
+    "nameEs": "Transporte tipo maletín",
+    "videoUrlEs": "https://www.youtube.com/watch?v=WhxtwWqb2BQ"
+  },
+  "sumo-deadlift": {
+    "nameEs": "Peso muerto sumo",
+    "videoUrlEs": "https://www.youtube.com/watch?v=OKMDYjnK8m8"
+  },
+  "sumo-squat": {
+    "nameEs": "Sentadilla sumo",
+    "videoUrlEs": "https://www.youtube.com/watch?v=qiQAsB0x-7k"
+  },
+  "swimming": {
+    "nameEs": "Natación",
+    "videoUrlEs": "https://www.youtube.com/watch?v=gh5mAtmeR3Y"
+  },
+  "t-bar-row": {
+    "nameEs": "Remo en barra T",
+    "videoUrlEs": "https://www.youtube.com/watch?v=yPis7nlbqdY"
+  },
+  "thoracic-open-book": {
+    "nameEs": "Apertura torácica (libro abierto)",
+    "videoUrlEs": "https://www.youtube.com/watch?v=peeW19ofFUg"
+  },
+  "thruster": {
+    "nameEs": "Thruster",
+    "videoUrlEs": "https://www.youtube.com/watch?v=kajLFpGcFHM"
+  },
+  "tibialis-raise": {
+    "nameEs": "Elevación de tibial",
+    "videoUrlEs": "https://www.youtube.com/watch?v=RHWRxiBe1iU"
+  },
+  "toes-to-bar": {
+    "nameEs": "Pies a la barra",
+    "videoUrlEs": "https://www.youtube.com/watch?v=8nM4pLRRqxU"
+  },
+  "trap-bar-deadlift": {
+    "nameEs": "Peso muerto con barra hexagonal",
+    "videoUrlEs": "https://www.youtube.com/watch?v=tpUKFfIFG24"
+  },
+  "tricep-dip": {
+    "nameEs": "Fondos de tríceps",
+    "videoUrlEs": "https://www.youtube.com/watch?v=4ua3MzaU0QU"
+  },
+  "tricep-pushdown": {
+    "nameEs": "Press de tríceps en polea alta",
+    "videoUrlEs": "https://www.youtube.com/watch?v=LXkCrxn3caQ"
+  },
+  "tuck-front-lever": {
+    "nameEs": "Front lever en tuck",
+    "videoUrlEs": "https://www.youtube.com/watch?v=NHsgESsO3kA"
+  },
+  "upright-row": {
+    "nameEs": "Remo al mentón",
+    "videoUrlEs": "https://www.youtube.com/watch?v=U629w1olWcs"
+  },
+  "v-up": {
+    "nameEs": "Abdominal en V",
+    "videoUrlEs": "https://www.youtube.com/watch?v=iP2fjvG0g3w"
+  },
+  "walking": {
+    "nameEs": "Caminar",
+    "videoUrlEs": "https://www.youtube.com/watch?v=-fD2TSL2s7I"
+  },
+  "walking-lunge": {
+    "nameEs": "Zancada caminando",
+    "videoUrlEs": "https://www.youtube.com/watch?v=L8fvypPrzzs"
+  },
+  "wall-sit": {
+    "nameEs": "Cuadrado en pared",
+    "videoUrlEs": "https://www.youtube.com/watch?v=y-wV4Venusw"
+  },
+  "wall-slide": {
+    "nameEs": "Deslizamiento en la pared",
+    "videoUrlEs": "https://www.youtube.com/watch?v=eI7IHxvhA3k"
+  },
+  "woodchop": {
+    "nameEs": "Corte de madera en polea",
+    "videoUrlEs": "https://www.youtube.com/watch?v=wrCR50lT_CY"
+  },
+  "worlds-greatest-stretch": {
+    "nameEs": "El mejor estiramiento del mundo",
+    "videoUrlEs": "https://www.youtube.com/watch?v=-CiWQ2IvY34"
+  },
+  "wrist-curl": {
+    "nameEs": "Curl de muñecas",
+    "videoUrlEs": "https://www.youtube.com/watch?v=3VLTzIrnb5g"
+  },
+  "zercher-squat": {
+    "nameEs": "Sentadilla Zercher",
+    "videoUrlEs": "https://www.youtube.com/watch?v=Qq3yteWfVGE"
+  }
+}

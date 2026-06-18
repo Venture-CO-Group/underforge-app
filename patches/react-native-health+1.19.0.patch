@@ -1,0 +1,1654 @@
+diff --git a/node_modules/react-native-health/index.js b/node_modules/react-native-health/index.js
+--- a/node_modules/react-native-health/index.js
++++ b/node_modules/react-native-health/index.js
+@@ -1,14 +1,140 @@
++import { NativeModules } from 'react-native'
+ import { Activities, Observers, Permissions, Units } from './src/constants'
+ 
+-const { AppleHealthKit } = require('react-native').NativeModules
++/**
++ * RN 0.76+ (bridgeless / lazy native modules) compatibility shim.
++ *
++ * The stock package did `Object.assign({}, AppleHealthKit, { Constants })`
++ * at module-load time, which under bridgeless captures only the eagerly
++ * resolved methods (often none) and exports a broken object whose
++ * `initHealthKit` is undefined.
++ *
++ * This is the upstream workaround tracked in
++ * https://github.com/agencyenterprise/react-native-health/pull/396 — bind
++ * each method to its own property explicitly so Hermes / the JSI host
++ * function machinery sees a stable, non-Proxy, non-bind-wrapped reference.
++ *
++ * We use optional chaining on every method so that platforms / dev modes
++ * where `NativeModules.AppleHealthKit` is not present (Android, web, Expo
++ * Go, headless test runs) just produce a `HealthKit` object with all
++ * methods === undefined; callers that already null-check `initHealthKit`
++ * (see `lib/providers/healthkit.ts::requireHealthKit`) will then degrade
++ * gracefully.
++ */
+ 
+-export const HealthKit = Object.assign({}, AppleHealthKit, {
+-  Constants: {
+-    Activities,
+-    Observers,
+-    Permissions,
+-    Units,
+-  },
+-})
++const { AppleHealthKit } = NativeModules
+ 
++const Constants = {
++  Activities,
++  Observers,
++  Permissions,
++  Units,
++}
++
++export const HealthKit = {
++  Constants,
++
++  initHealthKit: AppleHealthKit?.initHealthKit,
++  isAvailable: AppleHealthKit?.isAvailable,
++
++  getBiologicalSex: AppleHealthKit?.getBiologicalSex,
++  getBloodType: AppleHealthKit?.getBloodType,
++  getDateOfBirth: AppleHealthKit?.getDateOfBirth,
++
++  getLatestWeight: AppleHealthKit?.getLatestWeight,
++  getWeightSamples: AppleHealthKit?.getWeightSamples,
++  saveWeight: AppleHealthKit?.saveWeight,
++  getLatestHeight: AppleHealthKit?.getLatestHeight,
++  getHeightSamples: AppleHealthKit?.getHeightSamples,
++  saveHeight: AppleHealthKit?.saveHeight,
++  getLatestWaistCircumference: AppleHealthKit?.getLatestWaistCircumference,
++  getWaistCircumferenceSamples: AppleHealthKit?.getWaistCircumferenceSamples,
++  saveWaistCircumference: AppleHealthKit?.saveWaistCircumference,
++  getLatestPeakFlow: AppleHealthKit?.getLatestPeakFlow,
++  getPeakFlowSamples: AppleHealthKit?.getPeakFlowSamples,
++  savePeakFlow: AppleHealthKit?.savePeakFlow,
++  saveLeanBodyMass: AppleHealthKit?.saveLeanBodyMass,
++  getLatestBmi: AppleHealthKit?.getLatestBmi,
++  getBmiSamples: AppleHealthKit?.getBmiSamples,
++  saveBmi: AppleHealthKit?.saveBmi,
++  getLatestBodyFatPercentage: AppleHealthKit?.getLatestBodyFatPercentage,
++  getBodyFatPercentageSamples: AppleHealthKit?.getBodyFatPercentageSamples,
++  saveBodyFatPercentage: AppleHealthKit?.saveBodyFatPercentage,
++  saveBodyTemperature: AppleHealthKit?.saveBodyTemperature,
++  getLatestLeanBodyMass: AppleHealthKit?.getLatestLeanBodyMass,
++  getLeanBodyMassSamples: AppleHealthKit?.getLeanBodyMassSamples,
++
++  getStepCount: AppleHealthKit?.getStepCount,
++  getSamples: AppleHealthKit?.getSamples,
++  getAnchoredWorkouts: AppleHealthKit?.getAnchoredWorkouts,
++  getDailyStepCountSamples: AppleHealthKit?.getDailyStepCountSamples,
++  saveSteps: AppleHealthKit?.saveSteps,
++  saveWalkingRunningDistance: AppleHealthKit?.saveWalkingRunningDistance,
++  getDistanceWalkingRunning: AppleHealthKit?.getDistanceWalkingRunning,
++  getDailyDistanceWalkingRunningSamples:
++    AppleHealthKit?.getDailyDistanceWalkingRunningSamples,
++  getDistanceCycling: AppleHealthKit?.getDistanceCycling,
++  getDailyDistanceCyclingSamples: AppleHealthKit?.getDailyDistanceCyclingSamples,
++  getFlightsClimbed: AppleHealthKit?.getFlightsClimbed,
++  getDailyFlightsClimbedSamples: AppleHealthKit?.getDailyFlightsClimbedSamples,
++
++  getEnergyConsumedSamples: AppleHealthKit?.getEnergyConsumedSamples,
++  getProteinSamples: AppleHealthKit?.getProteinSamples,
++  getFiberSamples: AppleHealthKit?.getFiberSamples,
++  getTotalFatSamples: AppleHealthKit?.getTotalFatSamples,
++  getCarbohydratesSamples: AppleHealthKit?.getCarbohydratesSamples,
++  saveFood: AppleHealthKit?.saveFood,
++  saveWater: AppleHealthKit?.saveWater,
++  getWater: AppleHealthKit?.getWater,
++  getWaterSamples: AppleHealthKit?.getWaterSamples,
++  saveCarbohydratesSample: AppleHealthKit?.saveCarbohydratesSample,
++  deleteCarbohydratesSample: AppleHealthKit?.deleteCarbohydratesSample,
++
++  saveHeartRateSample: AppleHealthKit?.saveHeartRateSample,
++  getHeartRateSamples: AppleHealthKit?.getHeartRateSamples,
++  getRestingHeartRate: AppleHealthKit?.getRestingHeartRate,
++  getRestingHeartRateSamples: AppleHealthKit?.getRestingHeartRateSamples,
++  getWalkingHeartRateAverage: AppleHealthKit?.getWalkingHeartRateAverage,
++  getActiveEnergyBurned: AppleHealthKit?.getActiveEnergyBurned,
++  getBasalEnergyBurned: AppleHealthKit?.getBasalEnergyBurned,
++  getAppleExerciseTime: AppleHealthKit?.getAppleExerciseTime,
++  getAppleStandTime: AppleHealthKit?.getAppleStandTime,
++  getVo2MaxSamples: AppleHealthKit?.getVo2MaxSamples,
++  getBodyTemperatureSamples: AppleHealthKit?.getBodyTemperatureSamples,
++  getBloodPressureSamples: AppleHealthKit?.getBloodPressureSamples,
++  getRespiratoryRateSamples: AppleHealthKit?.getRespiratoryRateSamples,
++  getHeartRateVariabilitySamples: AppleHealthKit?.getHeartRateVariabilitySamples,
++  getHeartbeatSeriesSamples: AppleHealthKit?.getHeartbeatSeriesSamples,
++  getBloodGlucoseSamples: AppleHealthKit?.getBloodGlucoseSamples,
++  saveBloodGlucoseSample: AppleHealthKit?.saveBloodGlucoseSample,
++  deleteBloodGlucoseSample: AppleHealthKit?.deleteBloodGlucoseSample,
++  getOxygenSaturationSamples: AppleHealthKit?.getOxygenSaturationSamples,
++  getElectrocardiogramSamples: AppleHealthKit?.getElectrocardiogramSamples,
++  getEnvironmentalAudioExposure: AppleHealthKit?.getEnvironmentalAudioExposure,
++  getHeadphoneAudioExposure: AppleHealthKit?.getHeadphoneAudioExposure,
++
++  getSleepSamples: AppleHealthKit?.getSleepSamples,
++  getMindfulSession: AppleHealthKit?.getMindfulSession,
++  saveMindfulSession: AppleHealthKit?.saveMindfulSession,
++
++  getWorkoutRouteSamples: AppleHealthKit?.getWorkoutRouteSamples,
++  saveWorkout: AppleHealthKit?.saveWorkout,
++  getAuthStatus: AppleHealthKit?.getAuthStatus,
++  getAuthorizationStatus: AppleHealthKit?.getAuthorizationStatus,
++
++  getLatestBloodAlcoholContent: AppleHealthKit?.getLatestBloodAlcoholContent,
++  getBloodAlcoholContentSamples: AppleHealthKit?.getBloodAlcoholContentSamples,
++  saveBloodAlcoholContent: AppleHealthKit?.saveBloodAlcoholContent,
++  getDistanceSwimming: AppleHealthKit?.getDistanceSwimming,
++  getDailyDistanceSwimmingSamples: AppleHealthKit?.getDailyDistanceSwimmingSamples,
++
++  getInfo: AppleHealthKit?.getInfo,
++  getModuleInfo: AppleHealthKit?.getModuleInfo,
++  getClinicalRecords: AppleHealthKit?.getClinicalRecords,
++  getActivitySummary: AppleHealthKit?.getActivitySummary,
++  getInsulinDeliverySamples: AppleHealthKit?.getInsulinDeliverySamples,
++  saveInsulinDeliverySample: AppleHealthKit?.saveInsulinDeliverySample,
++  deleteInsulinDeliverySample: AppleHealthKit?.deleteInsulinDeliverySample,
++}
++
+ module.exports = HealthKit
+diff --git a/node_modules/react-native-health/RCTAppleHealthKit/RCTAppleHealthKit.m b/node_modules/react-native-health/RCTAppleHealthKit/RCTAppleHealthKit.m
+--- a/node_modules/react-native-health/RCTAppleHealthKit/RCTAppleHealthKit.m
++++ b/node_modules/react-native-health/RCTAppleHealthKit/RCTAppleHealthKit.m
+@@ -65,547 +65,1377 @@
+ 
+ RCT_EXPORT_METHOD(isAvailable:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self isHealthKitAvailable:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(initHealthKit:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self initializeHealthKit:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(initStepCountObserver:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self fitness_initializeStepEventObserver:input hasListeners:hasListeners callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getBiologicalSex:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self characteristic_getBiologicalSex:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getBloodType:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self characteristic_getBloodType:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getDateOfBirth:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self characteristic_getDateOfBirth:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getLatestWeight:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self body_getLatestWeight:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getWeightSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self body_getWeightSamples:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(saveWeight:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self body_saveWeight:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getLatestHeight:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self body_getLatestHeight:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getHeightSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self body_getHeightSamples:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(saveHeight:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self body_saveHeight:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getLatestWaistCircumference:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self body_getLatestWaistCircumference:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getWaistCircumferenceSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self body_getWaistCircumferenceSamples:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(saveWaistCircumference:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self body_saveWaistCircumference:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getLatestPeakFlow:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self body_getLatestPeakFlow:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getPeakFlowSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self body_getPeakFlowSamples:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(savePeakFlow:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self body_savePeakFlow:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getLatestBmi:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self body_getLatestBodyMassIndex:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getBmiSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self body_getBodyMassIndexSamples:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(saveBmi:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self body_saveBodyMassIndex:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getLatestBodyFatPercentage:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self body_getLatestBodyFatPercentage:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getBodyFatPercentageSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self body_getBodyFatPercentageSamples:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(saveBodyFatPercentage:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self body_saveBodyFatPercentage:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(saveBodyTemperature:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self body_saveBodyTemperature:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getLatestLeanBodyMass:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self body_getLatestLeanBodyMass:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getLeanBodyMassSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self body_getLeanBodyMassSamples:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(saveLeanBodyMass:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self body_saveLeanBodyMass:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getStepCount:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self fitness_getStepCountOnDay:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self fitness_getSamples:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getAnchoredWorkouts:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self workout_getAnchoredQuery:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getWorkoutRouteSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self workout_getRoute:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(setObserver:(NSDictionary *)input)
+ {
+-    [self _initializeHealthStore];
+-    [self fitness_setObserver:input];
++    // Patched: see `patches/react-native-health+1.19.0.patch` for context.
++    //
++    // Under React Native 0.76+ (bridgeless / TurboModule runtime) the original
++    // implementation crashes Hermes with EXC_BAD_ACCESS. The path
++    // `fitness_setObserver` -> `setObserverForType` -> `enableBackgroundDeliveryForType:`
++    // can raise an NSException (Simulator does not support background delivery,
++    // and unauthorized/unknown sample types raise an internal inconsistency
++    // exception). The TurboModule `convertNSExceptionToJSError` handler then
++    // dereferences invalid memory while symbolicating the call stack and the
++    // app SIGSEGVs on the JS thread.
++    //
++    // We intentionally drop the call here rather than at the JS layer alone
++    // because cached/older JS bundles in dev-client builds may still invoke
++    // it. The JS shim in `lib/providers/healthkit-observers.ts` is also a
++    // no-op for current-source builds. Real-time wake-ups are recovered via
++    // foreground re-sync + the periodic `expo-background-task`.
++    return;
+ }
+ 
+ RCT_EXPORT_METHOD(getDailyStepCountSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self fitness_getDailyStepSamples:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(saveSteps:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self fitness_saveSteps:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(saveWalkingRunningDistance:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self fitness_saveWalkingRunningDistance:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getDistanceWalkingRunning:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self fitness_getDistanceWalkingRunningOnDay:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getDailyDistanceWalkingRunningSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self fitness_getDailyDistanceWalkingRunningSamples:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getDistanceCycling:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self fitness_getDistanceCyclingOnDay:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getDailyDistanceCyclingSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self fitness_getDailyDistanceCyclingSamples:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getDistanceSwimming:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self fitness_getDistanceSwimmingOnDay:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getDailyDistanceSwimmingSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self fitness_getDailyDistanceSwimmingSamples:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getFlightsClimbed:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self fitness_getFlightsClimbedOnDay:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getDailyFlightsClimbedSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self fitness_getDailyFlightsClimbedSamples:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getEnergyConsumedSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
+-   [self dietary_getEnergyConsumedSamples:input callback:callback];
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
++       [self dietary_getEnergyConsumedSamples:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getProteinSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
+-   [self dietary_getProteinSamples:input callback:callback];
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
++       [self dietary_getProteinSamples:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getFiberSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
+-   [self dietary_getFiberSamples:input callback:callback];
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
++       [self dietary_getFiberSamples:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getTotalFatSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
+-   [self dietary_getTotalFatSamples:input callback:callback];
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
++       [self dietary_getTotalFatSamples:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(saveFood:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self saveFood:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(saveWater:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self saveWater:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getWater:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self getWater:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(saveHeartRateSample:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self vitals_saveHeartRateSample:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getWaterSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self getWaterSamples:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getHeartRateSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self vitals_getHeartRateSamples:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getRestingHeartRate:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self vitals_getRestingHeartRate:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getWalkingHeartRateAverage:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self vitals_getWalkingHeartRateAverage:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getActiveEnergyBurned:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
+-   [self _initializeHealthStore];
+-   [self activity_getActiveEnergyBurned:input callback:callback];
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
++       [self _initializeHealthStore];
++       [self activity_getActiveEnergyBurned:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getBasalEnergyBurned:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self activity_getBasalEnergyBurned:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getAppleExerciseTime:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self activity_getAppleExerciseTime:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getAppleStandTime:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self activity_getAppleStandTime:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getVo2MaxSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self vitals_getVo2MaxSamples:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getBodyTemperatureSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self vitals_getBodyTemperatureSamples:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getBloodPressureSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self vitals_getBloodPressureSamples:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getRespiratoryRateSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self vitals_getRespiratoryRateSamples:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getHeartRateVariabilitySamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self vitals_getHeartRateVariabilitySamples:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getHeartbeatSeriesSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self vitals_getHeartbeatSeriesSamples:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getRestingHeartRateSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self vitals_getRestingHeartRateSamples:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getOxygenSaturationSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self vitals_getOxygenSaturationSamples:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getElectrocardiogramSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self vitals_getElectrocardiogramSamples:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getBloodGlucoseSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self results_getBloodGlucoseSamples:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getCarbohydratesSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self results_getCarbohydratesSamples:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getInsulinDeliverySamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self results_getInsulinDeliverySamples:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(saveInsulinDeliverySample:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self results_saveInsulinDeliverySample:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(deleteInsulinDeliverySample:(NSString *)oid callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self results_deleteInsulinDeliverySample:oid callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(saveCarbohydratesSample:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self results_saveCarbohydratesSample:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(deleteCarbohydratesSample:(NSString *)oid callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self results_deleteCarbohydratesSample:oid callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(saveBloodGlucoseSample:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self results_saveBloodGlucoseSample:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(deleteBloodGlucoseSample:(NSString *)oid callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self results_deleteBloodGlucoseSample:oid callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getSleepSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self sleep_getSleepSamples:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getInfo:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self getModuleInfo:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getMindfulSession:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self mindfulness_getMindfulSession:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(saveMindfulSession:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self mindfulness_saveMindfulSession:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(saveWorkout:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self workout_save:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getAuthStatus: (NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self getAuthorizationStatus:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getLatestBloodAlcoholContent: (NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self labTests_getLatestBloodAlcoholContent:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getBloodAlcoholContentSamples: (NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self labTests_getBloodAlcoholContentSamples:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(saveBloodAlcoholContent: (NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self labTests_saveBloodAlcoholContent:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getEnvironmentalAudioExposure: (NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self hearing_getEnvironmentalAudioExposure:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getHeadphoneAudioExposure: (NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self hearing_getHeadphoneAudioExposure:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getActivitySummary: (NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self summary_getActivitySummary:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ RCT_EXPORT_METHOD(getClinicalRecords:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+ {
++    // __UF_RCT_EXPORT_WRAPPED__
++    @try {
+     [self _initializeHealthStore];
+     [self clinicalRecords_getClinicalRecords:input callback:callback];
++
++    } @catch (NSException *__uf_ex) {
++        NSLog(@"[HealthKit] %s threw: %@", __PRETTY_FUNCTION__, __uf_ex.reason);
++        if (callback) {
++            callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit native exception: %@", __uf_ex.reason], nil, nil)]);
++        }
++    }
+ }
+ 
+ - (HKHealthStore *)_initializeHealthStore {
+-  if(![self healthStore]) {
+-    self.healthStore = [[HKHealthStore alloc] init];
++  // __UF_INIT_HEALTH_STORE_PATCHED__
++  @try {
++    if(![self healthStore]) {
++      self.healthStore = [[HKHealthStore alloc] init];
++    }
++  } @catch (NSException *__uf_ex) {
++    NSLog(@"[HealthKit] _initializeHealthStore threw: %@", __uf_ex.reason);
+   }
+   return [self healthStore];
+ }
+@@ -625,51 +1455,71 @@
+ 
+ - (void)initializeHealthKit:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback
+ {
+-    [self _initializeHealthStore];
++    // __UF_INITIALIZE_HEALTHKIT_PATCHED__
++    @try {
++        [self _initializeHealthStore];
+ 
+-    if ([HKHealthStore isHealthDataAvailable]) {
+-        NSSet *writeDataTypes;
+-        NSSet *readDataTypes;
++        if ([HKHealthStore isHealthDataAvailable]) {
++            NSSet *writeDataTypes;
++            NSSet *readDataTypes;
+ 
+-        // get permissions from input object provided by JS options argument
+-        NSDictionary* permissions =[input objectForKey:@"permissions"];
+-        if(permissions != nil){
+-            NSArray* readPermsArray = [permissions objectForKey:@"read"];
+-            NSArray* writePermsArray = [permissions objectForKey:@"write"];
+-            NSSet* readPerms = [self getReadPermsFromOptions:readPermsArray];
+-            NSSet* writePerms = [self getWritePermsFromOptions:writePermsArray];
++            // get permissions from input object provided by JS options argument
++            NSDictionary* permissions =[input objectForKey:@"permissions"];
++            if(permissions != nil){
++                NSArray* readPermsArray = [permissions objectForKey:@"read"];
++                NSArray* writePermsArray = [permissions objectForKey:@"write"];
++                NSSet* readPerms = [self getReadPermsFromOptions:readPermsArray];
++                NSSet* writePerms = [self getWritePermsFromOptions:writePermsArray];
+ 
+-            if(readPerms != nil) {
+-                readDataTypes = readPerms;
++                if(readPerms != nil) {
++                    readDataTypes = readPerms;
++                }
++                if(writePerms != nil) {
++                    writeDataTypes = writePerms;
++                }
++            } else {
++                callback(@[RCTMakeError(@"permissions must be provided in the initialization options", nil, nil)]);
++                return;
+             }
+-            if(writePerms != nil) {
+-                writeDataTypes = writePerms;
++
++            // make sure at least 1 read or write permission is provided
++            if(!writeDataTypes && !readDataTypes){
++                callback(@[RCTMakeError(@"at least 1 read or write permission must be set in options.permissions", nil, nil)]);
++                return;
++            }
++
++            @try {
++                [self.healthStore requestAuthorizationToShareTypes:writeDataTypes readTypes:readDataTypes completion:^(BOOL success, NSError *error) {
++                    @try {
++                        if (!success) {
++                            NSString *errMsg = [NSString stringWithFormat:@"Error with HealthKit authorization: %@", error];
++                            NSLog(@"%@", errMsg);
++                            callback(@[RCTMakeError(errMsg, nil, nil)]);
++                            return;
++                        } else {
++                            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
++                                @try {
++                                    callback(@[[NSNull null], @true]);
++                                } @catch (NSException *__uf_inner_ex) {
++                                    NSLog(@"[HealthKit] initializeHealthKit completion dispatch_async threw: %@", __uf_inner_ex.reason);
++                                }
++                            });
++                        }
++                    } @catch (NSException *__uf_completion_ex) {
++                        NSLog(@"[HealthKit] initializeHealthKit completion threw: %@", __uf_completion_ex.reason);
++                        callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit auth completion exception: %@", __uf_completion_ex.reason], nil, nil)]);
++                    }
++                }];
++            } @catch (NSException *__uf_req_ex) {
++                NSLog(@"[HealthKit] requestAuthorizationToShareTypes threw synchronously: %@", __uf_req_ex.reason);
++                callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit auth sync exception: %@", __uf_req_ex.reason], nil, nil)]);
+             }
+         } else {
+-            callback(@[RCTMakeError(@"permissions must be provided in the initialization options", nil, nil)]);
+-            return;
++            callback(@[RCTMakeError(@"HealthKit data is not available", nil, nil)]);
+         }
+-
+-        // make sure at least 1 read or write permission is provided
+-        if(!writeDataTypes && !readDataTypes){
+-            callback(@[RCTMakeError(@"at least 1 read or write permission must be set in options.permissions", nil, nil)]);
+-            return;
+-        }
+-
+-        [self.healthStore requestAuthorizationToShareTypes:writeDataTypes readTypes:readDataTypes completion:^(BOOL success, NSError *error) {
+-            if (!success) {
+-                NSString *errMsg = [NSString stringWithFormat:@"Error with HealthKit authorization: %@", error];
+-                 NSLog(@"%@", errMsg);
+-                callback(@[RCTMakeError(errMsg, nil, nil)]);
+-                return;
+-            } else {
+-                dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+-                    callback(@[[NSNull null], @true]);
+-                });
+-            }
+-        }];
+-    } else {
+-        callback(@[RCTMakeError(@"HealthKit data is not available", nil, nil)]);
++    } @catch (NSException *__uf_outer_ex) {
++        NSLog(@"[HealthKit] initializeHealthKit outer threw: %@", __uf_outer_ex.reason);
++        callback(@[RCTMakeError([NSString stringWithFormat:@"HealthKit init exception: %@", __uf_outer_ex.reason], nil, nil)]);
+     }
+ }
+ 

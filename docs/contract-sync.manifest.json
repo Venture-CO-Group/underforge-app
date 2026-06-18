@@ -1,0 +1,26 @@
+{
+  "$comment": "The single source-of-truth list of files mirrored from underforge_app into the coach-dashboard repo by .github/workflows/sync-contracts.yml (via scripts/sync-contracts.js). THIS IS THE ONLY THING YOU MAINTAIN BY HAND: when the dashboard needs a new shared file, add one line here and it starts syncing automatically. `dest` is relative to `destRoot` inside the dashboard repo. Keep `category` accurate so the generated README explains each file.",
+  "destRoot": "shared/underforge",
+  "files": [
+    { "src": "assets/exercises/exercises.json", "dest": "exercises.json", "category": "data", "note": "Canonical exercise catalog (all exercises + taxonomy blocks). The dashboard loads this directly." },
+    { "src": "assets/exercises/exercise_es_overrides.json", "dest": "exercise_es_overrides.json", "category": "data", "note": "Spanish name + video per exercise id (100% coverage)." },
+
+    { "src": "docs/exercise-catalog-contract.md", "dest": "exercise-catalog-contract.md", "category": "contract", "note": "Human/AI contract for the exercise catalog + muscle map + reps/duration encoding." },
+    { "src": "docs/exercise-catalog-contract.config.json", "dest": "exercise-catalog-contract.config.json", "category": "contract", "note": "Axis descriptions + per-field dashboard access rules for exercises." },
+    { "src": "docs/coach-dashboard-data-model.md", "dest": "coach-dashboard-data-model.md", "category": "contract", "note": "Supabase data-model contract (which columns a coach may edit, JSON shapes, workflows)." },
+    { "src": "docs/coach-dashboard-data-model.config.json", "dest": "coach-dashboard-data-model.config.json", "category": "contract", "note": "Per-column ownership classification for coach-facing tables." },
+
+    { "src": "schema.sql", "dest": "schema.sql", "category": "schema", "note": "Canonical Supabase DDL (tables, columns, policies, buckets, functions, views)." },
+
+    { "src": "types/workout.ts", "dest": "types/workout.ts", "category": "types", "note": "Exercise / WorkoutPlan / PlannedExercise / MuscleActivation TypeScript shapes (read-only reference for the dashboard)." },
+    { "src": "types/onboard.ts", "dest": "types/onboard.ts", "category": "types", "note": "Onboard / action-plan blob shape (user_profile.onboarding_profile_json)." },
+    { "src": "types/user_profile.ts", "dest": "types/user_profile.ts", "category": "types", "note": "user_profile field mirror." },
+    { "src": "types/onboarding_config.ts", "dest": "types/onboarding_config.ts", "category": "types", "note": "Onboarding config shapes." },
+
+    { "src": "lib/muscle-activation.ts", "dest": "logic/muscle-activation.ts", "category": "logic", "note": "Muscle-map slugs, group->slug fallback, aggregation + heatmap bucketing. Port this to draw the identical map." },
+    { "src": "lib/workout-energy.ts", "dest": "logic/workout-energy.ts", "category": "logic", "note": "loadFactorForSet — the per-set load weighting the map uses." },
+    { "src": "lib/training-focus.ts", "dest": "logic/training-focus.ts", "category": "logic", "note": "Strength-vs-cardio split shown next to the map." },
+    { "src": "lib/exercise-duration.ts", "dest": "logic/exercise-duration.ts", "category": "logic", "note": "Reps-vs-seconds encoding + minutes<->seconds conversion for the overloaded `reps` field." },
+    { "src": "lib/exercise-catalog.ts", "dest": "logic/exercise-catalog.ts", "category": "logic", "note": "resolveCatalogExercise — legacy plan/log id -> catalog resolution (read before trusting category/activation)." }
+  ]
+}

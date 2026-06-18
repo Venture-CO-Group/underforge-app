@@ -1,0 +1,39 @@
+diff --git a/node_modules/react-native/ReactAndroid/src/main/java/com/facebook/react/ReactActivityDelegate.java b/node_modules/react-native/ReactAndroid/src/main/java/com/facebook/react/ReactActivityDelegate.java
+index 37845bc..ac5470b 100644
+--- a/node_modules/react-native/ReactAndroid/src/main/java/com/facebook/react/ReactActivityDelegate.java
++++ b/node_modules/react-native/ReactAndroid/src/main/java/com/facebook/react/ReactActivityDelegate.java
+@@ -214,15 +214,31 @@ public class ReactActivityDelegate {
+   }
+ 
+   public boolean onKeyDown(int keyCode, KeyEvent event) {
+-    return Objects.requireNonNull(mReactDelegate).onKeyDown(keyCode, event);
++    // patch-package: guard against a null delegate. Key events can be dispatched
++    // before onCreate sets mReactDelegate or while the React host is being torn
++    // down/reloaded (common in dev via the expo-dev-menu key detector). The
++    // upstream Objects.requireNonNull throws an NPE and crashes the activity;
++    // returning false just leaves the key unhandled.
++    if (mReactDelegate == null) {
++      return false;
++    }
++    return mReactDelegate.onKeyDown(keyCode, event);
+   }
+ 
+   public boolean onKeyUp(int keyCode, KeyEvent event) {
+-    return Objects.requireNonNull(mReactDelegate).shouldShowDevMenuOrReload(keyCode, event);
++    // patch-package: see onKeyDown above — null-guard instead of NPE-crashing.
++    if (mReactDelegate == null) {
++      return false;
++    }
++    return mReactDelegate.shouldShowDevMenuOrReload(keyCode, event);
+   }
+ 
+   public boolean onKeyLongPress(int keyCode, KeyEvent event) {
+-    return Objects.requireNonNull(mReactDelegate).onKeyLongPress(keyCode);
++    // patch-package: see onKeyDown above — null-guard instead of NPE-crashing.
++    if (mReactDelegate == null) {
++      return false;
++    }
++    return mReactDelegate.onKeyLongPress(keyCode);
+   }
+ 
+   public boolean onBackPressed() {

@@ -1,0 +1,85 @@
+{
+  "primary_goals": [
+    "Build muscle mass",
+    "Burn body fat",
+    "Increase strength",
+    "Get challenged by my coach"
+  ],
+  "primary_goals_es": [
+    "Ganar masa muscular",
+    "Quemar grasa corporal",
+    "Aumentar la fuerza",
+    "Ser retado/a por mi coach"
+  ],
+  "primary_goals_motivation_reasons": {
+    "Burn body fat": [
+      "Feel confident and comfortable in my own skin",
+      "Improve my health markers and reduce disease risk",
+      "Have more energy and feel lighter throughout the day",
+      "Look and feel my best for an upcoming event"
+    ],
+    "Build muscle mass": [
+      "Build a physique I'm proud of",
+      "Improve my metabolic health and body composition",
+      "Feel stronger and more capable in daily life",
+      "Challenge myself and see real physical transformation"
+    ],
+    "Increase strength": [
+      "Hit personal records and push my limits",
+      "Build a strong foundation for athletic performance",
+      "Improve functional strength for daily life",
+      "Prove to myself what I'm capable of"
+    ],
+    "Get challenged by my coach": [
+      "Break out of my comfort zone and grow",
+      "Get held accountable by someone who knows what they're doing",
+      "Discover my true potential with expert guidance",
+      "Take my fitness to the next level"
+    ]
+  },
+  "primary_goals_motivation_reasons_es": {
+    "Burn body fat": [
+      "Sentirme seguro/a y cómodo/a en mi propio cuerpo",
+      "Mejorar mis indicadores de salud y reducir el riesgo de enfermedades",
+      "Tener más energía y sentirme más ligero/a durante el día",
+      "Verme y sentirme en mi mejor versión para un evento próximo"
+    ],
+    "Build muscle mass": [
+      "Construir el físico del que esté orgulloso/a",
+      "Mejorar mi salud metabólica y composición corporal",
+      "Sentirme más fuerte y capaz en la vida cotidiana",
+      "Retarme y ver una transformación física real"
+    ],
+    "Increase strength": [
+      "Alcanzar récords personales y superar mis límites",
+      "Construir una base sólida para el rendimiento deportivo",
+      "Mejorar la fuerza funcional para la vida diaria",
+      "Demostrarme lo que soy capaz de lograr"
+    ],
+    "Get challenged by my coach": [
+      "Salir de mi zona de confort y crecer",
+      "Tener a alguien que me haga responsable y sepa lo que hace",
+      "Descubrir mi verdadero potencial con orientación experta",
+      "Llevar mi condición física al siguiente nivel"
+    ]
+  },
+  "secondary_goals": [
+    "Improve sleep",
+    "Decrease stress",
+    "Improve my nutrition",
+    "Supplement advice",
+    "Learn best training practices"
+  ],
+  "secondary_goals_es": [
+    "Mejorar el sueño",
+    "Reducir el estrés",
+    "Mejorar mi nutrición",
+    "Asesoría de suplementos",
+    "Aprender las mejores prácticas de entrenamiento"
+  ],
+  "name": {
+    "label_en": "What is your name?",
+    "label_es": "¿Cómo te llamas?",
+    "ui_widget": "text"
+  }
+}

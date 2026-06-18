@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="robots" content="noindex" />
+  <title>UnderForge — Restablecer contraseña</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0c0c0e;
+      --card: #16161a;
+      --text: #f4f4f5;
+      --muted: #a1a1aa;
+      --orange: #e8915b;
+      --orange-strong: #f0934a;
+      --error: #f87171;
+      --radius: 18px;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { width: 100%; max-width: 420px; text-align: center; }
+    .logo {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 400;
+      font-size: 51px;
+      letter-spacing: 0.5px;
+      background: linear-gradient(90deg, var(--orange-strong), #c75c2e);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 28px;
+    }
+    h1 { font-size: 26px; font-weight: 700; margin: 0 0 12px; }
+    p.lead { color: var(--muted); font-size: 16px; line-height: 1.5; margin: 0 0 28px; }
+    form { display: flex; flex-direction: column; gap: 14px; text-align: left; }
+    label { font-size: 13px; color: var(--muted); margin-bottom: -8px; }
+    input[type="password"] {
+      width: 100%;
+      padding: 15px 16px;
+      font-size: 16px;
+      color: var(--text);
+      background: var(--card);
+      border: 1px solid #2a2a30;
+      border-radius: 14px;
+      outline: none;
+    }
+    input[type="password"]:focus { border-color: var(--orange); }
+    button {
+      margin-top: 8px;
+      padding: 16px 20px;
+      font-size: 17px;
+      font-weight: 700;
+      color: #1a1208;
+      background: var(--orange);
+      border: none;
+      border-radius: 999px;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:disabled { opacity: 0.5; cursor: default; }
+    .msg { margin-top: 16px; font-size: 14px; line-height: 1.5; min-height: 20px; }
+    .msg.error { color: var(--error); }
+    .msg.ok { color: var(--orange); }
+    .hidden { display: none !important; }
+    a.button-link {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 16px 28px;
+      font-size: 17px;
+      font-weight: 700;
+      color: #1a1208;
+      background: var(--orange);
+      border-radius: 999px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="logo">UnderForge</div>
+
+    <!-- Loading state -->
+    <div id="loading">
+      <p class="lead" data-i18n="loading">Verificando tu enlace…</p>
+    </div>
+
+    <!-- Reset form -->
+    <div id="form-view" class="hidden">
+      <h1 data-i18n="title">Restablecer contraseña</h1>
+      <p class="lead" data-i18n="subtitle">Escribe tu nueva contraseña.</p>
+      <form id="reset-form" autocomplete="off">
+        <label for="pw" data-i18n="newPassword">Nueva contraseña</label>
+        <input id="pw" type="password" autocomplete="new-password" minlength="8" required />
+        <label for="pw2" data-i18n="confirmPassword">Repite la contraseña</label>
+        <input id="pw2" type="password" autocomplete="new-password" minlength="8" required />
+        <button id="submit-btn" type="submit" data-i18n="save">Guardar contraseña</button>
+      </form>
+      <div id="form-msg" class="msg"></div>
+    </div>
+
+    <!-- Success -->
+    <div id="success-view" class="hidden">
+      <h1 data-i18n="successTitle">¡Contraseña actualizada!</h1>
+      <p class="lead" data-i18n="successBody">Ya puedes volver a la app de UnderForge e iniciar sesión con tu nueva contraseña.</p>
+      <a class="button-link" href="longeviq://" data-i18n="openApp">Abrir UnderForge</a>
+    </div>
+
+    <!-- Invalid / expired -->
+    <div id="invalid-view" class="hidden">
+      <h1 data-i18n="invalidTitle">Enlace no válido</h1>
+      <p class="lead" data-i18n="invalidBody">Este enlace para restablecer la contraseña no es válido o ha caducado. Solicita uno nuevo desde la pantalla de inicio de sesión.</p>
+      <a class="button-link" href="longeviq://" data-i18n="backToLogin">← Volver a iniciar sesión</a>
+      <!-- TEMPORARY diagnostic — remove once the flow is confirmed working. -->
+      <p id="diag" style="margin-top:28px;font-size:11px;font-family:ui-monospace,Menlo,monospace;color:#52525b;word-break:break-word;"></p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script>
+    // ─────────────────────────────────────────────────────────────────────────
+    // 1) FILL THESE IN. Both come from Supabase Dashboard → Project Settings →
+    //    API. The anon key is a public key and is safe to expose in client code.
+    // ─────────────────────────────────────────────────────────────────────────
+    const SUPABASE_URL = 'https://YOUR-PROJECT-REF.supabase.co';
+    const SUPABASE_ANON_KEY = 'YOUR_PUBLIC_ANON_KEY';
+    // ─────────────────────────────────────────────────────────────────────────
+
+    // Minimal bilingual copy (matches the app's strings).
+    const isEs = (navigator.language || 'es').toLowerCase().startsWith('es');
+    const I18N = {
+      loading: ['Verificando tu enlace…', 'Verifying your link…'],
+      title: ['Restablecer contraseña', 'Reset password'],
+      subtitle: ['Escribe tu nueva contraseña.', 'Enter your new password.'],
+      newPassword: ['Nueva contraseña', 'New password'],
+      confirmPassword: ['Repite la contraseña', 'Confirm password'],
+      save: ['Guardar contraseña', 'Save password'],
+      successTitle: ['¡Contraseña actualizada!', 'Password updated!'],
+      successBody: [
+        'Ya puedes volver a la app de UnderForge e iniciar sesión con tu nueva contraseña.',
+        'You can now go back to the UnderForge app and sign in with your new password.',
+      ],
+      openApp: ['Abrir UnderForge', 'Open UnderForge'],
+      invalidTitle: ['Enlace no válido', 'Link no longer valid'],
+      invalidBody: [
+        'Este enlace para restablecer la contraseña no es válido o ha caducado. Solicita uno nuevo desde la pantalla de inicio de sesión.',
+        'This password reset link is invalid or has expired. Please request a new one from the sign-in screen.',
+      ],
+      backToLogin: ['← Volver a iniciar sesión', '← Back to sign in'],
+      mismatch: ['Las contraseñas no coinciden.', 'Passwords do not match.'],
+      tooShort: ['La contraseña debe tener al menos 8 caracteres.', 'Password must be at least 8 characters.'],
+      saving: ['Guardando…', 'Saving…'],
+      genericError: ['No se pudo actualizar la contraseña. Intenta de nuevo.', 'Could not update the password. Please try again.'],
+    };
+    const t = (k) => (I18N[k] ? I18N[k][isEs ? 0 : 1] : k);
+
+    // Apply translations to any element with data-i18n.
+    document.documentElement.lang = isEs ? 'es' : 'en';
+    document.querySelectorAll('[data-i18n]').forEach((el) => {
+      const k = el.getAttribute('data-i18n');
+      if (I18N[k]) el.textContent = t(k);
+    });
+
+    const show = (id) => {
+      ['loading', 'form-view', 'success-view', 'invalid-view'].forEach((v) => {
+        document.getElementById(v).classList.toggle('hidden', v !== id);
+      });
+    };
+
+    // Capture what Supabase returned in the URL BEFORE supabase-js strips the
+    // hash on init. Used only for the temporary diagnostic line below.
+    const RAW_HASH = (window.location.hash || '').replace(/^#/, '');
+    const RAW_SEARCH = (window.location.search || '').replace(/^\?/, '');
+
+    const client = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
+      auth: {
+        flowType: 'implicit',
+        detectSessionInUrl: false,   // we parse the fragment + setSession manually (reliable)
+        persistSession: false,       // this is a one-shot page; don't keep a session
+      },
+    });
+
+    // Supabase returns the recovery tokens in the URL fragment:
+    //   #access_token=...&refresh_token=...&type=recovery
+    function parseTokens() {
+      const p = new URLSearchParams(RAW_HASH || RAW_SEARCH);
+      return {
+        access_token: p.get('access_token'),
+        refresh_token: p.get('refresh_token'),
+        type: p.get('type'),
+        error: p.get('error') || p.get('error_code'),
+        error_description: p.get('error_description'),
+      };
+    }
+
+    // TEMPORARY diagnostic — remove once the flow is confirmed working.
+    let setSessionError = '';
+    function diagnostic() {
+      const t = parseTokens();
+      if (t.error) return t.error + (t.error_description ? ' — ' + decodeURIComponent(t.error_description).replace(/\+/g, ' ') : '');
+      if (RAW_SEARCH.includes('code=')) return 'got a PKCE ?code= instead of an access_token (flow mismatch)';
+      if (!t.access_token) return 'no token in the URL (opened directly, or the fragment was stripped)';
+      if (!t.refresh_token) return 'access_token present but refresh_token missing';
+      if (setSessionError) return 'setSession failed: ' + setSessionError;
+      return 'token present but no session (unknown)';
+    }
+
+    function showInvalid() {
+      const d = document.getElementById('diag');
+      if (d) d.textContent = 'diagnostic: ' + diagnostic();
+      show('invalid-view');
+    }
+
+    async function init() {
+      const t = parseTokens();
+      if (t.error) { showInvalid(); return; }
+      if (!t.access_token || !t.refresh_token) { showInvalid(); return; }
+
+      try {
+        const { error } = await client.auth.setSession({
+          access_token: t.access_token,
+          refresh_token: t.refresh_token,
+        });
+        if (error) { setSessionError = error.message || String(error); showInvalid(); return; }
+        show('form-view');
+      } catch (err) {
+        setSessionError = (err && err.message) || String(err);
+        showInvalid();
+      }
+    }
+
+    document.getElementById('reset-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const pw = document.getElementById('pw').value;
+      const pw2 = document.getElementById('pw2').value;
+      const msg = document.getElementById('form-msg');
+      const btn = document.getElementById('submit-btn');
+      msg.className = 'msg';
+      msg.textContent = '';
+
+      if (pw.length < 8) { msg.className = 'msg error'; msg.textContent = t('tooShort'); return; }
+      if (pw !== pw2) { msg.className = 'msg error'; msg.textContent = t('mismatch'); return; }
+
+      btn.disabled = true;
+      msg.textContent = t('saving');
+      try {
+        const { error } = await client.auth.updateUser({ password: pw });
+        if (error) {
+          btn.disabled = false;
+          msg.className = 'msg error';
+          msg.textContent = error.message || t('genericError');
+          return;
+        }
+        await client.auth.signOut();
+        show('success-view');
+      } catch (err) {
+        btn.disabled = false;
+        msg.className = 'msg error';
+        msg.textContent = (err && err.message) || t('genericError');
+      }
+    });
+
+    init();
+  </script>
+</body>
+</html>

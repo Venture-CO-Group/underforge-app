@@ -1,0 +1,44 @@
+{
+  "rowing-machine": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=TiQC32k8qmk",
+    "duration_sec": 38.0,
+    "title": "¿Cómo hacer una máquina de remo en casa?",
+    "channel": "Triatlón Noticias"
+  },
+  "tuck-front-lever": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=NHsgESsO3kA",
+    "duration_sec": 48.0,
+    "title": "FRONT LEVER TUCK RAISES - TECHNIQUE BREAKDOWN// Calisthenics Exercise Library",
+    "channel": "Moving Athlete"
+  },
+  "human-flag": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=9u_L3mEZK1Q",
+    "duration_sec": 14.0,
+    "title": "BANDERA HUMANA [Human Flag]  Ejercicios, progresiones y rutinas",
+    "channel": "Atleta híbrido "
+  },
+  "inverted-row": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=Eh5FY4dpC3c",
+    "duration_sec": 21.0,
+    "title": "BW Remo invertido en mesa",
+    "channel": "Gimnasio BioFit"
+  },
+  "back-extension": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=TCgjb7voz9k",
+    "duration_sec": 48.0,
+    "title": "Cómo Usar la Silla Romana para Extensión de Espalda en el Gimnasio | PROCLUB",
+    "channel": "Pro Club Panama"
+  },
+  "bird-dog": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=cqe97lhKVP4",
+    "duration_sec": 21.0,
+    "title": "9 - Ejercicio para rodilla: Bird-Dog (Fuerza-Propiocepción)",
+    "channel": "Premium Health & Sport | Salud y deporte"
+  },
+  "assisted-pull-up": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=MOhNdanWIsY",
+    "duration_sec": 56.0,
+    "title": "Como hacer la DOMINADA ASISTIDA CON APOYO EN ALTURA - CALISTENIA | Tutorial en 1 minuto",
+    "channel": "Kranos Calistenia"
+  }
+}

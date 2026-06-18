@@ -1,0 +1,26 @@
+{
+  "hollow-body-hold": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=EsnM8eBtazU",
+    "duration_sec": 9.0,
+    "title": "Hollow Body Hold - OPEX Exercise Library",
+    "channel": "OPEX Fitness"
+  },
+  "mountain-climber": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=zWJQzw1n9zo",
+    "duration_sec": 32.0,
+    "title": "MOUNTAIN CLIMBERS CRUZADOS TÉCNICA DEL EJERCICIO",
+    "channel": "Chino Diaz "
+  },
+  "farmers-walk": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=YP__IooIeaM",
+    "duration_sec": 11.0,
+    "title": "Farmer Walk | Ejercicios con Mancuernas",
+    "channel": "RUSTER FITNESS TV"
+  },
+  "toes-to-bar": {
+    "videoUrlEs": "https://www.youtube.com/watch?v=8nM4pLRRqxU",
+    "duration_sec": 11.0,
+    "title": "Pies a la barra o TOES TO BAR (T2B) en CrossFit",
+    "channel": "VBN Fitness"
+  }
+}

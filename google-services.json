@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "992409097740",
+    "project_id": "glow360-f74e5",
+    "storage_bucket": "glow360-f74e5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992409097740:android:ca71e182ae4b78a6828029",
+        "android_client_info": {
+          "package_name": "com.aprid89.longeviq"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDssdijmJalf7L1M4hPGvAMKm3Pzz7Kt1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992409097740:android:6db26b7179edb314828029",
+        "android_client_info": {
+          "package_name": "com.aprid89.underforge"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDssdijmJalf7L1M4hPGvAMKm3Pzz7Kt1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

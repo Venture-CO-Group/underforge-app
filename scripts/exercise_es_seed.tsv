@@ -1,0 +1,156 @@
+barbell-bench-press	Press de banca con barra
+barbell-incline-bench-press	Press de banca inclinado con barra
+barbell-decline-bench-press	Press de banca declinado con barra
+dumbbell-bench-press	Press de banca con mancuernas
+incline-dumbbell-press	Press inclinado con mancuernas
+decline-dumbbell-press	Press declinado con mancuernas
+chest-fly	Aperturas con mancuernas (pecho)
+cable-crossover	Cruce de cables
+dumbbell-pullover	Pullover con mancuerna
+dumbbell-fly	Cruce con mancuernas (pecho)
+push-up	Flexiones
+dip	Fondos en paralelas (pecho)
+tricep-dip	Fondos de tríceps
+cable-tricep-extension	Extensiones de tríceps en polea alta
+pec-deck	Aperturas en máquina (Pec deck)
+pull-up	Dominadas en pronación
+chin-up	Dominadas en supinación
+lat-pulldown	Jalón al pecho
+barbell-row	Remo con barra
+dumbbell-row	Remo con mancuerna
+one-arm-dumbbell-row	Remo con una mano
+seated-cable-row	Remo sentado en polea
+t-bar-row	Remo en barra T
+face-pull	Face pull
+straight-arm-pulldown	Pullover en polea con brazos rectos
+barbell-deadlift	Peso muerto con barra
+rack-pull	Peso muerto parcial (rack pull)
+barbell-overhead-press	Press militar con barra
+dumbbell-shoulder-press	Press de hombros con mancuernas
+arnold-press	Press Arnold
+lateral-raise	Elevaciones laterales
+cable-lateral-raise	Elevaciones laterales en polea
+front-raise	Elevaciones frontales
+reverse-fly	Pájaro (elevaciones posteriores)
+upright-row	Remo al mentón
+barbell-shrug	Encogimientos con barra
+barbell-curl	Curl de bíceps con barra
+dumbbell-curl	Curl de bíceps con mancuernas
+hammer-curl	Curl martillo
+preacher-curl	Curl en banco Scott
+ez-bar-curl	Curl con barra Z
+concentration-curl	Curl concentrado
+seated-dumbbell-curl	Curl sentado con mancuernas
+incline-dumbbell-curl	Curl inclinado con mancuernas
+cable-curl	Curl en polea baja
+tricep-pushdown	Press de tríceps en polea alta
+rope-pushdown	Extensiones de tríceps con cuerda
+overhead-tricep-extension	Extensiones de tríceps por encima de la cabeza
+lying-tricep-extension	Extensiones de tríceps tumbado
+skull-crusher	Press francés (skull crusher)
+close-grip-bench-press	Press de banca agarre cerrado
+wrist-curl	Curl de muñecas
+reverse-wrist-curl	Curl de muñecas inverso
+barbell-front-squat	Sentadilla frontal con barra
+goblet-squat	Sentadilla goblet
+leg-press	Prensa de piernas
+hack-squat	Sentadilla en máquina hack
+lunge	Zancadas (caminando)
+reverse-lunge	Zancada inversa
+bulgarian-split-squat	Zancada búlgara
+lateral-squat	Sentadilla lateral (cangrejo)
+sumo-squat	Sentadilla sumo
+pistol-squat	Sentadilla pistola
+box-squat	Sentadilla al cajón
+sissy-squat	Sissy squat
+step-up	Subidas al cajón
+leg-extension	Extensiones de rodilla en máquina
+leg-curl	Curl femoral tumbado
+seated-leg-curl	Curl femoral sentado
+romanian-deadlift	Peso muerto rumano
+stiff-leg-deadlift	Peso muerto con piernas rígidas
+good-morning	Good morning
+hip-thrust	Elevación de cadera (hip thrust)
+glute-bridge	Puente de glúteos
+cable-kickback	Patada trasera en polea
+glute-kickback	Patada de glúteo en máquina
+sumo-deadlift	Peso muerto sumo
+cable-pull-through	Pull-through en polea baja
+hip-abduction	Abducción de cadera en máquina
+clamshell	Concha (clam shell)
+standing-calf-raise	Gemelo de pie
+seated-calf-raise	Gemelo sentado
+donkey-calf-raise	Gemelo en burro
+single-leg-calf-raise	Gemelo a una pierna
+calf-raise	Elevaciones de gemelos
+barbell-back-squat	Sentadilla trasera con barra
+crunch	Abdominales cortos (crunch)
+sit-up	Abdominales completos
+leg-raise	Elevación de piernas tumbado
+hanging-leg-raise	Elevación de piernas colgado
+cable-crunch	Abdominales en polea alta
+ab-rollout	Rueda abdominal
+plank	Plancha frontal
+dead-bug	Dead bug
+hollow-body-hold	Hollow body
+mountain-climber	Mountain climber
+v-up	Abdominal en V
+russian-twist	Giro ruso
+bicycle-crunch	Abdominal en bicicleta
+side-plank	Plancha lateral
+woodchop	Corte de madera en polea
+pallof-press	Pallof press
+oblique-crunch	Abdominal oblicuo
+burpee	Burpee
+kettlebell-swing	Swing con kettlebell
+clean-and-press	Cargada y press
+thruster	Thruster
+box-jump	Salto al cajón
+jump-squat	Sentadilla con salto
+battle-rope	Ondas con cuerda
+farmers-walk	Farmer walk
+sled-push	Trineo (empuje)
+swimming	Natación
+rowing-machine	Remoergómetro
+cycling	Ciclismo
+running	Carrera
+elliptical	Elíptica
+stair-climber	Subida de escaleras (máquina)
+jumping-jack	Saltos de tijera
+high-knees	Rodillas altas
+jump-rope	Saltar a la comba
+handstand-push-up	Flexión en pino
+l-sit	L-sit
+muscle-up	Muscle-up
+toes-to-bar	Pies a la barra
+diamond-push-up	Flexiones en diamante
+clap-push-up	Flexiones con palmada
+archer-push-up	Flexión arquero
+wall-sit	Cuadrado en pared
+shrimp-squat	Sentadilla gamba
+nordic-hamstring-curl	Curl nórdico de isquios
+tuck-front-lever	Front lever en tuck
+front-lever	Front lever
+back-lever	Back lever
+skin-the-cat	Skin the cat
+human-flag	Bandera humana
+inverted-row	Remo invertido
+walking-lunge	Zancada caminando
+side-plank-knees-bent	Plancha lateral con rodillas flexionadas
+chest-supported-row	Remo con apoyo de pecho
+back-extension	Hiperextensión de espalda (columna neutra)
+bird-dog	Bird dog
+standing-pallof-hold	Pallof press isométrico de pie
+assisted-pull-up	Dominada asistida
+machine-chest-press	Press de pecho en máquina
+half-kneeling-single-arm-db-press	Press con una mancuerna arrodillado
+prone-y-t-raises	Elevaciones en Y-T prono
+dumbbell-overhead-press	Press vertical con mancuernas
+seated-overhead-press	Press militar sentado
+dumbbell-deadlift	Peso muerto con mancuernas
+dumbbell-front-squat	Sentadilla frontal con mancuernas
+kettlebell-front-squat-single	Sentadilla frontal con una kettlebell
+kettlebell-front-squat-double	Sentadilla frontal con dos kettlebells
+dumbbell-shrug	Encogimientos con mancuernas
+incline-push-up	Flexiones inclinadas
+donkey-kick	Patada de burro

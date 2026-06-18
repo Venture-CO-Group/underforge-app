@@ -1,0 +1,22 @@
+# Supabase project configuration.
+#
+# This file is read by `supabase functions deploy` to apply per-function
+# settings on every deploy, so we don't have to remember to pass
+# `--no-verify-jwt` for the functions that are called by external services
+# (Whoop's OAuth redirect + Whoop's webhook) without a Supabase session.
+
+project_id = "meefxdpgrshyfqhyynzu"
+
+# `providers-oauth-callback` is hit by Whoop's browser redirect on the GET
+# path with no Supabase session — disable gateway-level JWT verification.
+# The POST path (called from the app) still validates the user JWT itself
+# via `userClient.auth.getUser()`, so this does NOT widen the surface for
+# token writes.
+[functions.providers-oauth-callback]
+verify_jwt = false
+
+# `providers-webhook-whoop` is hit by Whoop's servers with a body-level HMAC
+# signature, not a Supabase JWT. The function verifies the signature via
+# `verifyWhoopSignature` before doing anything destructive.
+[functions.providers-webhook-whoop]
+verify_jwt = false

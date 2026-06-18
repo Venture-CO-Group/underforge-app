@@ -1,0 +1,48 @@
+{
+  "$comment": "Human-maintained prose consumed by scripts/generate-exercise-catalog-doc.js. Only descriptions live here; the legal vocabulary itself is the taxonomy block inside assets/exercises/exercises.json, and the muscle-map slug set is TRAINABLE_SLUGS in lib/muscle-activation.ts. Keep these notes current when the meaning of an axis changes; the generator fails (independently of this file) when the DATA uses a value not declared in the taxonomy.",
+  "taxonomyNotes": {
+    "bodyRegions": {
+      "upper": "Upper body — chest, back, shoulders, arms.",
+      "lower": "Lower body — legs and the hip/thigh/calf groups.",
+      "core": "Trunk — abs and obliques."
+    },
+    "muscleGroups": {
+      "chest": "Pressing / pec-dominant.",
+      "back": "Pulls, rows, spinal-erector work (incl. good-morning, back extension, rack pull — treated as back).",
+      "shoulders": "Deltoid-dominant (presses, raises, face pulls, shrugs).",
+      "arms": "Biceps / triceps / forearm isolation.",
+      "legs": "Legs (compound) — general multi-joint leg work (squats, leg press, lunges, conventional + trap-bar deadlift, step-ups, jumps, sled, and running/cycling cardio).",
+      "quads": "Quad isolation (leg extension, sissy squat, wall sit).",
+      "hamstrings": "Hamstring-dominant (RDL, stiff-leg DL, leg curls, Nordic curl).",
+      "glutes": "Glute-dominant (hip thrust, glute bridge, sumo deadlift, pull-through, KB swing, abduction, kickbacks).",
+      "adductors": "Inner-thigh dominant (hip adduction, Copenhagen plank, lateral/Cossack squats & lunges).",
+      "calves": "Gastrocnemius / soleus / tibialis lower-leg work.",
+      "abs": "Rectus abdominis / anterior core (incl. isometric holds like plank, levers).",
+      "obliques": "Lateral core / rotation / anti-rotation (side plank, Russian twist, woodchop, Pallof)."
+    },
+    "categories": {
+      "strength": "Resistance / weightlifting, including isometric holds. The strength-vs-cardio focus split counts this (and power) as strength.",
+      "endurance": "Steady-state cardio / locomotion (run, bike, row, swim, jump rope, elliptical, stair climber, walk, hike). Counts as cardio in the focus split.",
+      "conditioning": "Higher-intensity metabolic work (burpee, mountain climber, battle rope, sled push, bear crawl). Counts as cardio in the focus split.",
+      "mobility": "Flexibility / range-of-motion drills (stretches, dynamic mobility). Excluded from the strength-vs-cardio split.",
+      "power": "Explosive / ballistic work (Olympic lifts, jumps & plyometrics, KB swing). Counts as strength in the focus split."
+    },
+    "movementTypes": {
+      "compound": "Multi-joint.",
+      "isolation": "Single-joint."
+    }
+  },
+  "dashboardAccess": {
+    "summary": "The dashboard treats the catalog as a read-only reference when assigning exercises into a plan. It MAY create user-scoped custom exercises, which must satisfy the same integrity rules as the catalog (see below). It must NOT silently invent classification or activation values outside the declared vocabulary.",
+    "fields": {
+      "id": "system — kebab-case, unique. Custom (user-created) exercises use the USER_CREATED_CUSTOM_ID convention; never collide with a catalog id.",
+      "name": "coach-edit — English display name.",
+      "nameEs / videoUrlEs": "coach-edit — Spanish name + technique video; required for catalog exercises (kept at 100% coverage in exercise_es_overrides.json).",
+      "bodyRegion / muscleGroup / movementType / category": "coach-edit, but constrained to the declared taxonomy. muscleGroup must belong to its bodyRegion.",
+      "equipment": "coach-edit — only tokens from the equipment vocabulary.",
+      "loggingUnit": "coach-edit — 'reps' (default) or 'seconds'.",
+      "muscleActivation": "coach-edit, but every slug must be a TRAINABLE_SLUG and level 1-3. If omitted, the app falls back to MUSCLE_GROUP_TO_SLUGS[muscleGroup] at level 3 — so the muscle map always renders. Prefer explicit activation for accuracy.",
+      "substitutionsRecommended": "coach-edit — must reference real exercise ids."
+    }
+  }
+}
