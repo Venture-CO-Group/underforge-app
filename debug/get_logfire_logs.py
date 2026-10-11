@@ -6,7 +6,7 @@ import os
 import time
 
 # Configuration - REPLACE WITH YOUR VALUES
-READ_TOKEN = "pylf_v1_us_pnR3TQ8d8SsTv19v2L2fnb8DwpQgHCsGFNvM2qNv9Nd5"  # From Logfire Settings > Read tokens
+READ_TOKEN = os.environ["LOGFIRE_READ_TOKEN"]  # Logfire Settings > Read tokens; never commit the value
 PROJECT_SLUG = "glow360"  # Format: organization/project
 OUTPUT_FILE = "debug/logfire_details.csv"
 
